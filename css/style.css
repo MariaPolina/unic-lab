@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Medium.eot');
+    src: url('./fonts/Montserrat-Medium.eot') format('embedded-opentype'),
+        url('./fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('./fonts/Montserrat-Medium.woff') format('woff'),
+        url('./fonts/Montserrat-Medium.ttf') format('truetype'),
+        url('./fonts/Montserrat-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Flex';
+    src: url('./fonts/RobotoFlex-Regular.eot');
+    src: url('./fonts/RobotoFlex-Regular.eot') format('embedded-opentype'),
+        url('./fonts/RobotoFlex-Regular.woff2') format('woff2'),
+        url('./fonts/RobotoFlex-Regular.woff') format('woff'),
+        url('./fonts/RobotoFlex-Regular.ttf') format('truetype'),
+        url('./fonts/RobotoFlex-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Light.eot');
+    src: url('./fonts/Roboto-Light.eot') format('embedded-opentype'),
+        url('./fonts/Roboto-Light.woff2') format('woff2'),
+        url('./fonts/Roboto-Light.woff') format('woff'),
+        url('./fonts/Roboto-Light.ttf') format('truetype'),
+        url('./fonts/Roboto-Light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: url('./fonts/Sansation-Light.eot');
+    src: url('./fonts/Sansation-Light.eot') format('embedded-opentype'),
+        url('./fonts/Sansation-Light.woff2') format('woff2'),
+        url('./fonts/Sansation-Light.woff') format('woff'),
+        url('./fonts/Sansation-Light.ttf') format('truetype'),
+        url('./fonts/Sansation-Light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Medium.eot');
+    src: url('./fonts/Roboto-Medium.eot') format('embedded-opentype'),
+        url('./fonts/Roboto-Medium.woff2') format('woff2'),
+        url('./fonts/Roboto-Medium.woff') format('woff'),
+        url('./fonts/Roboto-Medium.ttf') format('truetype'),
+        url('./fonts/Roboto-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.eot');
+    src: url('./fonts/Roboto-Regular.eot') format('embedded-opentype'),
+        url('./fonts/Roboto-Regular.woff2') format('woff2'),
+        url('./fonts/Roboto-Regular.woff') format('woff'),
+        url('./fonts/Roboto-Regular.ttf') format('truetype'),
+        url('./fonts/Roboto-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*--------------General styles and reset-------------------*/
+
+html, body {
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.wrapper {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container {
+    max-width: 1332px;
+    margin: 0 auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+main {
+    width: 100%;
+    flex: 1 1 auto;
+    margin: 0 auto;
+}
+
+/*--------------Components-------------------*/
+
+/*--------------Header-------------------*/
+
+/*--------------  -------------------*/
+
+/*--------------Footer-------------------*/
