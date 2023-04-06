@@ -192,11 +192,15 @@ main {
 }
 
 .menu__item>a:hover,
-.submenu__item a:hover {
+.menu__item_with-submenu>ul>li a:hover {
     background: linear-gradient(100.08deg, #9FEA00 0.68%, #F7F7F7 133.9%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.menu__item_with-submenu>a {
+    position: relative;
 }
 
 .menu__item_with-submenu>a::after,
@@ -215,11 +219,11 @@ main {
     background: url(../img/arrow-down-g.svg) right center no-repeat;
 }
 
-.menu__item_with-submenu:hover .submenu__items {
+.menu__item_with-submenu:hover>ul {
     display: flex;
 }
 
-.submenu__items {
+.menu__item_with-submenu>ul {
     position: absolute;
     top: 50px;
     left: 50%;
@@ -241,15 +245,15 @@ main {
     justify-content: center;
 }
 
-.submenu__items>li {
+.menu__item_with-submenu>ul>li {
     padding: 30px 50px 30px 50px;
 }
 
-.submenu__items>li:not(:last-child) {
+.menu__item_with-submenu>ul>li:not(:last-child) {
     border-right: 1px solid #272727;
 }
 
-.submenu__item.primary a {
+.menu__item_with-submenu ul li.primary a {
     font-family: 'Roboto Flex';
     font-style: normal;
     font-weight: 400;
@@ -258,8 +262,34 @@ main {
     color: #F7F7F7;
 }
 
-.submenu__group-items .submenu__item:not(:last-child) {
+.menu__item_with-submenu>a>span {
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
+    bottom: -35px;
+    z-index: 3;
+    display: none;
+    width: 40px;
+    height: 11px;
+    background: #171717 url(../img/arrow-g.svg) center center no-repeat;
+}
+
+.menu__item_with-submenu:hover>a>span {
+    display: block;
+}
+
+.menu__item_with-submenu>ul>li>ul>li:not(:last-child) {
     margin-bottom: 30px;
+}
+
+.header-line {
+    display: none;
+    width: 100%;
+    height: 1px;
+    background-color: #272727;
+    position: absolute;
+    top: 80px;
+    left: 0;
 }
 
 .header__callback {
@@ -304,19 +334,32 @@ main {
     letter-spacing: 0.02em;
     color: #F7F7F7;
     cursor: pointer;
+    position: relative;
 }
 
-.header__lang:hover {
+.lang__selected:hover, .lang__option:hover {
     background: linear-gradient(100.08deg, #9FEA00 0.68%, #F7F7F7 133.9%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.lang__selected {}
-
 .lang__option {
     display: none;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.shadow::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: rgba(23, 23, 23, 0.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 
 /*--------------  -------------------*/
