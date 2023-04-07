@@ -121,6 +121,7 @@ ul li {
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow-x: hidden;
 }
 
 .container {
@@ -137,6 +138,129 @@ main {
 }
 
 /*--------------Components-------------------*/
+
+.lightgrey-bg {
+    background: #EAEAEA;
+}
+
+.sub-box {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.box {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.title {
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #171717;
+}
+
+.title-sm {
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #171717;
+}
+
+.subtitle {
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #A1A1A1;
+    padding-left: 8px;
+    border-left: 1px solid #7DB704;
+    margin-bottom: 50px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 135%;
+    color: #404040;
+}
+
+.arrow-btn {
+    padding: 4px 4px;
+    border-bottom: 1px solid #171717;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #171717;
+    position: relative;
+    cursor: pointer;
+}
+
+.arrow-btn::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/Arrow_right_long_dark.svg) center center no-repeat;
+    position: absolute;
+    top: 50%;
+    right: -32px;
+    transform: translateY(-50%);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 1300px) {
+
+    .sub-box {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .box {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .title-sm {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 24px;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .arrow-btn {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
 
 /*--------------Header-------------------*/
 
@@ -196,8 +320,6 @@ main {
     top: 80px;
     left: 0;
 }
-
-
 
 @media (min-width: 1301px) {
 
@@ -910,6 +1032,101 @@ main {
         margin-top: 26px;
         font-size: 16px;
         line-height: 24px;
+    }
+}
+
+/*--------------Do section-------------------*/
+
+.do-section__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.do-section__title {
+    margin-bottom: 20px;
+}
+
+.do-section__text {
+    margin-bottom: 30px;
+}
+
+.do-section__card {
+    background: #EAEAEA;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 4px 15px #C9C9C9;
+    border-radius: 5px;
+    padding: 20px 30px 44px 30px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease;
+}
+
+.do-section__card:hover {
+    border: 1px solid #9FEA00;
+    box-shadow: 0px 4px 15px #C9C9C9;
+    transform: translateY(-12px);
+}
+
+.do-section__card-image {
+    max-width: 70px;
+    max-height: 70px;
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+
+.do-section__card-title {
+    margin-bottom: 16px;
+}
+
+.do-section__card-text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #404040;
+}
+
+@media (max-width: 1300px) {
+    .do-section__cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .do-section__title {
+        margin-bottom: 8px;
+    }
+
+    .do-section__text {
+        margin-bottom: 18px;
+    }
+
+    .do-section__info {
+        margin-bottom: 30px;
+    }
+
+    .do-section__card {
+        box-shadow: -1px 2px 7px #C9C9C9;
+        border-radius: 2px;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        align-items: center;
+    }
+
+    .do-section__card-image {
+        max-width: 50px;
+        max-height: 50px;
+        align-self: center;
+        margin-bottom: 0;
+    }
+
+    .do-section__card-title {
+        margin-bottom: 0;
+    }
+
+    .do-section__card-text {
+        display: none;
     }
 }
 
