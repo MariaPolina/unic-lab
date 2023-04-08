@@ -102,5 +102,17 @@ $(document).ready(function () {
 
     });
 
+    // mobile slider for projects cards
+
+    if ($(window).width() < 1301) {
+
+        $(".project-section__items").on("click", ".project-section__item_small", function () {
+            $('.project-section__wrapper_big>div').removeClass('project-section__item_big').addClass('project-section__item_small').appendTo($(".project-section__wrapper_small"));
+            $(this).appendTo($(".project-section__wrapper_big")).addClass('project-section__item_big').removeClass('project-section__item_small');
+        });
+    }
+
+
+
 
 });
