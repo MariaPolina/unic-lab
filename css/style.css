@@ -95,6 +95,8 @@ html, body {
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    min-height: 0;
+    min-width: 0;
 }
 
 a:focus, a:active {
@@ -1807,7 +1809,67 @@ main {
     }
 }
 
-/*--------------  -------------------*/
+/*-------------- Partners section -------------------*/
+
+.partner-section__container {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    column-gap: 60px;
+}
+
+.partner-section__title {
+    margin-bottom: 20px;
+}
+
+.partners-slider {
+    padding-left: 10px;
+}
+
+.partner {
+    background: #161616;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.27);
+    border-radius: 4px;
+    padding: 60px 45px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    max-width: 265px;
+}
+
+.partner__image {
+    max-width: 175px;
+    max-height: 35px;
+}
+
+@media (max-width: 1300px) {
+    .partner-section__container {
+        grid-template-columns: 1fr;
+        row-gap: 24px;
+    }
+
+    .partner-section__title {
+        margin-bottom: 8px;
+    }
+
+    .partners-slider {
+        padding-left: 0;
+        max-width: 440px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .partner {
+        padding: 30px;
+        max-width: 156px;
+    }
+
+    .partner__image {
+        max-width: 65px;
+        max-height: 15px;
+    }
+}
+
 /*--------------  -------------------*/
 /*--------------  -------------------*/
 

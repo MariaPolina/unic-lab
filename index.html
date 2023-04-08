@@ -363,7 +363,11 @@
                                 mode: 'horizontal',
                                 slidesPerView: 1,
                                 spaceBetween: 30,
-                                autoplay: false,
+                                speed: 1000,
+                                autoplay: true,
+                                autoplay: {
+                                    delay: 10000,
+                                },
                                 autoplayDisableOnInteraction: true,
                                 paginationClickable: true,
                                 loop: false,
@@ -524,6 +528,72 @@
                                 различных направлениях.</p>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section class="partner-section dark-bg box">
+                <div class="partner-section__container container">
+                    <div>
+                        <h2 class="partner-section__title title light">Наши партнеры</h2>
+                        <p class="partner-section__text text light">Долгосрочные отношения с партнерами подтверждают
+                            нашу
+                            высокую квалификацию и соответствие международным требованиям деловой этики</p>
+                    </div>
+                    <div class="partners-slider">
+                        <div class="slideshow swiper-viewport">
+                            <div id="slideshow2" class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/partner.png" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/partner.png" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/partner.png" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/logo.svg" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/logo.svg" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/logo.svg" alt="slide">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            const swiper2 = new Swiper('#slideshow2', {
+                                mode: 'horizontal',
+                                slidesPerView: 2,
+                                spaceBetween: 16,
+                                speed: 1000,
+                                autoplay: true,
+                                autoplay: {
+                                    delay: 500,
+                                },
+                                autoplayDisableOnInteraction: true,
+                                paginationClickable: true,
+                                loop: true,
+
+                                breakpoints: {
+                                    1300: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 20,
+                                    },
+                                }
+                            });
+                        </script>
+                    </div>
+
+
                 </div>
             </section>
         </main>
