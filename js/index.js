@@ -19,6 +19,8 @@ $(document).ready(function () {
         });
     }
 
+    // menu burger
+
     if ($(window).width() < 1301) {
         $('.menu__item_with-submenu').on('click', function () {
             $(this).toggleClass('active');
@@ -41,6 +43,8 @@ $(document).ready(function () {
         });
     }
 
+    // fix header on scroll
+
     $(window).on("scroll", function () {
         if ($(window).scrollTop() > 50) {
             $(".header").addClass("active");
@@ -48,5 +52,55 @@ $(document).ready(function () {
             $(".header").removeClass("active");
         }
     });
+
+    //trigger click for main slider buttons
+
+    if ($('.swiper-button-next').hasClass('swiper-button-disabled')) {
+        $('#swiperNext').addClass('swiper-button-disabled');
+    } else {
+        $('#swiperNext').removeClass('swiper-button-disabled');
+    }
+
+    if ($('.swiper-button-prev').hasClass('swiper-button-disabled')) {
+        $('#swiperPrev').addClass('swiper-button-disabled');
+    } else {
+        $('#swiperPrev').removeClass('swiper-button-disabled');
+    }
+
+
+    $('#swiperPrev').on('click', function () {
+        $('.main-slider .swiper-button-prev').trigger('click');
+
+        if ($('.swiper-button-next').hasClass('swiper-button-disabled')) {
+            $('#swiperNext').addClass('swiper-button-disabled');
+        } else {
+            $('#swiperNext').removeClass('swiper-button-disabled');
+        }
+
+        if ($('.swiper-button-prev').hasClass('swiper-button-disabled')) {
+            $('#swiperPrev').addClass('swiper-button-disabled');
+        } else {
+            $('#swiperPrev').removeClass('swiper-button-disabled');
+        }
+
+    });
+
+    $('#swiperNext').on('click', function () {
+        $('.main-slider .swiper-button-next').trigger('click');
+
+        if ($('.swiper-button-next').hasClass('swiper-button-disabled')) {
+            $('#swiperNext').addClass('swiper-button-disabled');
+        } else {
+            $('#swiperNext').removeClass('swiper-button-disabled');
+        }
+
+        if ($('.swiper-button-prev').hasClass('swiper-button-disabled')) {
+            $('#swiperPrev').addClass('swiper-button-disabled');
+        } else {
+            $('#swiperPrev').removeClass('swiper-button-disabled');
+        }
+
+    });
+
 
 });
