@@ -112,7 +112,11 @@ $(document).ready(function () {
         });
     }
 
+    //faq section
 
 
+    $('.faq-section__question').on('click', function () {
+        $($(this).parent()).toggleClass('active');
+    });
 
 });
