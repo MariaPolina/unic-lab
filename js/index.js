@@ -149,4 +149,32 @@ $(document).ready(function () {
         }
     });
 
+    //----modal windows----//
+
+    $('.button-modal').on('click', function (e) {
+
+        var modalButtonId = $(this).attr("id");
+        var modalButtonData = $('#' + modalButtonId).data("modal");
+
+        $('#' + modalButtonData).show(false, e).css('display', 'flex');
+
+        $('body,html').css('overflow-y', 'hidden');
+
+        $('.modal__content .close').on('click', function () {
+            $('.modal__wrapper').css('display', 'none');
+            $('body,html').css('overflow-y', 'auto');
+        });
+
+        //close modal on click OUT of modal
+
+        $(document).mouseup(function (e) {
+            var div = $('.modal__content');
+            if (!div.is(e.target)
+                && div.has(e.target).length === 0) {
+                $('.modal__content .close').trigger('click');
+            }
+        });
+
+    });
+
 });

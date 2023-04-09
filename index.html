@@ -678,7 +678,8 @@
                                                 данных</a></p>
                                     </label>
                                 </div>
-                                <button class="contact-form__send" type="submit">Отправить</button>
+                                <button class="contact-form__send button-modal" id="formsend" type="submit"
+                                    data-modal="modal-formsend">Отправить</button>
                                 <p class="contact-form__text">*обязательные поля для заполнения</p>
                             </fieldset>
                         </form>
@@ -756,6 +757,16 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <div class="modal__wrapper" id="modal-formsend">
+        <div class="modal__content">
+            <div class="close"></div>
+            <div class="formsend-messege">
+                <p class="formsend-messege__text-main">Ваша форма успешно отправлена!</p>
+                <p class="formsend-messege__text text">В ближайшее время с Вами свяжутся наши специалисты.</p>
+            </div>
+        </div>
     </div>
 
     <script src="./js/jquery-2.1.1.min.js"></script>
