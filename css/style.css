@@ -2538,6 +2538,7 @@ progress {
     overflow-y: auto;
     overflow-x: auto;
     background: rgba(23, 23, 23, 0.6);
+    padding: 16px;
 }
 
 .modal__content {
@@ -2589,4 +2590,26 @@ progress {
     text-align: center;
     letter-spacing: 0.02em;
     color: #171717;
+}
+
+@media (max-width: 1300px) {
+
+    .modal__content {
+        padding: 40px 16px;
+    }
+
+    .close {
+        top: 15px;
+        right: 15px;
+    }
+
+    .formsend-messege__text-main {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .formsend-messege__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
