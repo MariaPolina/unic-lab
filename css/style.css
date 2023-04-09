@@ -1870,8 +1870,452 @@ main {
     }
 }
 
-/*--------------  -------------------*/
-/*--------------  -------------------*/
+/*-------------- Contact section -------------------*/
+
+.contact-section {
+    background: #EAEAEA url(../img/background-l.png) left center no-repeat;
+    background-size: cover;
+}
+
+.contact-section__container {
+    display: grid;
+    grid-template-columns: calc(42% - 130px) 58%;
+    column-gap: 130px;
+}
+
+.contact-section__title {
+    margin-bottom: 30px;
+}
+
+.contact-section__text {
+    margin-bottom: 20px;
+}
+
+.create-task-btn {
+    color: #171717;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+}
+
+.contact-form__wrapper {
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.input-name {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #171717;
+    margin-bottom: 4px;
+}
+
+.input input {
+    padding: 8px;
+    border-bottom: 1px solid #A1A1A1;
+    background: #EAEAEA;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #171717;
+    outline: 0;
+}
+
+.input input::placeholder {
+    font-weight: 300;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #AFAFAF;
+}
+
+.contact-form__tel>div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 16px;
+}
+
+.contact-form__company {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.input textarea {
+    resize: none;
+    padding: 8px;
+    background: #EAEAEA;
+    border: 1px solid #A1A1A1;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #171717;
+    outline: 0;
+}
+
+.contact-form__question, .contact-form__agree, .contact-form__file {
+    margin-bottom: 30px;
+}
+
+.contact-form__file input {
+    opacity: 0;
+    margin-left: -15px;
+    width: 0px;
+    height: 0;
+}
+
+.contact-form__file input+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 38px;
+    text-align: center;
+    border: 1px dashed #A1A1A1;
+    border-radius: 4px 0px 0px 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #171717;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.contact-form__file input+label span {
+    color: #7DB704;
+    text-decoration: underline;
+}
+
+.contact-form__file input+label p {
+    width: fit-content;
+    padding-left: 20px;
+    height: 21px;
+    background: url(../img/fileinput.svg) left center no-repeat;
+}
+
+.progress {
+    padding-left: 20px;
+    background: url(../img/plus.svg) left center no-repeat;
+}
+
+.progress:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.progress__info {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.progress__name {
+    padding-left: 30px;
+    background: url(../img/folder.svg) left center no-repeat;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #171717;
+}
+
+.progress__size {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #A1A1A1;
+    width: fit-content;
+}
+
+.progress__size.ready {
+    color: #404040;
+    padding-right: 30px;
+    background: url(../img/complete.svg) right center no-repeat;
+}
+
+.progress__close {
+    width: 30px;
+    height: 30px;
+    background: url(../img/del.svg) center center no-repeat;
+    cursor: pointer;
+}
+
+.progress__close:hover {
+    background: url(../img/del-red.svg) center center no-repeat;
+}
+
+progress {
+    width: 100%;
+    height: 4px;
+    border: none;
+    background: #7DB704;
+    border-radius: 4px;
+}
+
+.contact-form__send {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 15px;
+    background: #101010;
+    border-radius: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #E3E3E3;
+    cursor: pointer;
+}
+
+.contact-form__text {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #404040;
+}
+
+/*------my select--------*/
+
+.my-select {
+    position: relative;
+    z-index: 2;
+    width: 78px;
+    border-bottom: 1px solid #A1A1A1;
+}
+
+.my-select>div:nth-child(2) {
+    display: none;
+    background: #EAEAEA;
+    position: absolute;
+    top: 0;
+    width: 50px;
+}
+
+.my-select>div:first-child {
+    background: url(../img/arrow-down-b.svg) right 8px center no-repeat;
+    padding: 8px 48px 8px 8px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #171717;
+}
+
+.my-select div:nth-child(2)>div {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #171717;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/*------checkbox--------*/
+
+.checkbox-styled {
+    z-index: -1;
+    opacity: 0;
+    margin-left: -15px;
+    width: 1px;
+    height: 1px;
+}
+
+.checkbox-styled+label {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    column-gap: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #404040;
+}
+
+.checkbox-styled+label a {
+    text-decoration: underline;
+}
+
+.checkbox-styled+label>span {
+    content: " ";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    background: #EAEAEA;
+    border: solid 1px #A1A1A1;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.checkbox-styled:checked+label>span {
+    content: " ";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/ok.svg) center center no-repeat;
+    border: solid 1px #E3E3E3;
+    border-radius: 3px;
+}
+
+@media (max-width: 1300px) {
+    .contact-section {
+        background: #EAEAEA;
+    }
+
+    .contact-section__container {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .contact-section__title {
+        margin-bottom: 8px;
+    }
+
+    .contact-section__text {
+        margin-bottom: 16px;
+    }
+
+    .contact-form__wrapper {
+        display: grid;
+        grid-template: auto auto auto auto/ 1fr;
+        row-gap: 16px;
+    }
+
+    .input-name {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .input input {
+        padding: 12px 8px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .input input::placeholder {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .contact-form__tel>div {
+        column-gap: 12px;
+    }
+
+    .contact-form__company {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .input textarea {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .contact-form__question, .contact-form__agree, .contact-form__file {
+        margin-bottom: 16px;
+    }
+
+    .contact-form__file input {
+        padding: 0;
+    }
+
+    .contact-form__file input+label {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+
+    .progress:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .progress__info {
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "name close""size close";
+        row-gap: 8px;
+    }
+
+    .progress__name {
+        grid-area: name;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .progress__size {
+        grid-area: size;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .progress__close {
+        grid-area: close;
+    }
+
+    .contact-form__send {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .contact-form__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /*------my select--------*/
+
+    .my-select>div:first-child {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .my-select div:nth-child(2)>div {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /*------checkbox--------*/
+
+    .checkbox-styled+label {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
 
 /*--------------Footer-------------------*/
 

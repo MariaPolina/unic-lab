@@ -596,7 +596,95 @@
 
                 </div>
             </section>
-            <section></section>
+            <section class="contact-section box">
+                <div class="contact-section__container container">
+                    <div>
+                        <h2 class="contact-section__title title">Связаться с нами</h2>
+                        <p class="contact-section__text text">По любым вопросам вы можете обратиться к нам через форму
+                            обратной
+                            связи или составить более подробное техническое задание, и наши специалисты свяжутся с вами
+                        </p>
+                        <div class="callback-btn create-task-btn">
+                            <div class="callback-btn_inner">Составить ТЗ онлайн</div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form action="#" method="post">
+                            <fieldset>
+                                <div class="contact-form__wrapper">
+                                    <div class="input">
+                                        <label for="name" class="input-name">Ваше имя *</label>
+                                        <input id="name" type="text" placeholder="Иван" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="surname" class="input-name">Ваша фамилия *</label>
+                                        <input id="surname" type="text" placeholder="Иванов" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="email" class="input-name">Ваш электронный адрес *</label>
+                                        <input id="email" type="email" placeholder="ivan.ivanov@mial.ru" required>
+                                    </div>
+                                    <div class="contact-form__tel input">
+                                        <label for="telephone" class="input-name">Ваш номер телефона</label>
+                                        <div>
+                                            <div class="my-select" id="my-select">
+                                                <div data="">BY</div>
+                                                <div>
+                                                    <div data="BY">BY</div>
+                                                    <div data="RU">RU</div>
+                                                    <div data="KZ">KZ</div>
+                                                </div>
+                                                <input type="hidden" value="">
+                                            </div>
+                                            <input id="telephone" type="text" placeholder="(xx) xxx xx xx" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-form__company input">
+                                    <label for="company" class="input-name">Ваша компания *</label>
+                                    <input id="company" type="text" placeholder="IvanIvan" required>
+                                </div>
+                                <div class="contact-form__question input">
+                                    <label for="question" class="input-name">Ваш вопрос</label>
+                                    <textarea name="question" id="question" rows="3"></textarea>
+                                </div>
+                                <div class="contact-form__file input">
+                                    <input type="file" id="file">
+                                    <label for="file">
+                                        <p>Перетащите или <span>выберите </span>файлы</p>
+                                    </label>
+                                    <div class="progress">
+                                        <div class="progress__info">
+                                            <p class="progress__name">document_ivanov.doc</p>
+                                            <div class="progress__size ready">120 Kb</div>
+                                            <div class="progress__close"></div>
+                                        </div>
+                                        <progress id="progressBar" value="0" max="100"></progress>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress__info">
+                                            <p class="progress__name">document_ivanov.doc</p>
+                                            <div class="progress__size">45 Kb / 120 Kb</div>
+                                            <div class="progress__close"></div>
+                                        </div>
+                                        <progress id="progressBar" value="0" max="100"></progress>
+                                    </div>
+                                </div>
+                                <div class="contact-form__agree">
+                                    <input type="checkbox" class="checkbox-styled" id="agree">
+                                    <label for="agree"> <span></span>
+                                        <p>Я согласен с правилами <a href="#">сбора
+                                                персональных
+                                                данных</a></p>
+                                    </label>
+                                </div>
+                                <button class="contact-form__send" type="submit">Отправить</button>
+                                <p class="contact-form__text">*обязательные поля для заполнения</p>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="footer__container container">
