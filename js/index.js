@@ -2,12 +2,12 @@ $(document).ready(function () {
 
     if ($(window).width() > 1300) {
         // Line over header submenu
-        $('.menu__item_with-submenu').on('mouseover', function () {
+        $('.menu-item-has-children').on('mouseover', function () {
             $('.header-line').css('display', 'block');
             $('.wrapper').addClass('shadow');
         });
 
-        $('.menu__item_with-submenu').on('mouseout', function () {
+        $('.menu-item-has-children').on('mouseout', function () {
             $('.header-line').css('display', 'none');
             $('.wrapper').removeClass('shadow');
         });
@@ -21,25 +21,33 @@ $(document).ready(function () {
 
     // menu burger
 
+    //---------calculation of menu-hight---------//
+
     if ($(window).width() < 1301) {
-        $('.menu__item_with-submenu').on('click', function () {
+        $('.menu-item-has-children').on('click', function () {
             $(this).toggleClass('active');
         });
 
         $('.header__burger').on('click', function () {
             $('.header__nav').addClass('active');
+            $('.header__nav').appendTo($("html"));
             $('.wrapper').addClass('blur');
+            $('body').css('overflow-y', 'hidden');
         });
 
         $('.burger-close').on('click', function () {
             $('.header__nav').removeClass('active');
             $('.wrapper').removeClass('blur');
+            $('body').css('overflow-y', 'auto');
+            $('.header__nav').appendTo($(".header__container"));
         });
 
-        $($('.header__menu li').not('.menu__item_with-submenu')).on('click', function () {
+        $($('.header__menu li').not('.menu-item-has-children')).on('click', function () {
             $('.header__nav').removeClass('active');
+            $('.header__nav').appendTo($(".header__container"));
             $('.wrapper').removeClass('blur');
-            $('.menu__item_with-submenu').removeClass('active');
+            $('body').css('overflow-y', 'auto');
+            $('.menu-item-has-children').removeClass('active');
         });
     }
 
