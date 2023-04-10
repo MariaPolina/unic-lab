@@ -15,7 +15,21 @@ $(document).ready(function () {
         // Language select
 
         $('.lang__selected').on('click', function () {
-            $('.lang__option').slideToggle(200);
+            $('.lang__options').toggleClass('active');
+        });
+
+        $('.lang__option').on('click', function () {
+            $('.lang__options').removeClass('active');
+        });
+
+
+        //close select on click OUT of select
+        $(document).mouseup(function (e) {
+            var div = $('.header__lang');
+            if (!div.is(e.target)
+                && div.has(e.target).length === 0) {
+                $('.lang__options').removeClass('active');
+            }
         });
     }
 
@@ -129,22 +143,23 @@ $(document).ready(function () {
 
     // select
 
-    $('.my-select>div:first-child').on('click', function (event) {
+    $('.my-select>div:first-child').on('click', function () {
         $('.my-select>div:nth-child(2):not(#' + $($(this).parent('div')).attr('id') + '>div:nth-child(2))').css('display', 'none');
         $($(this).next('div')).slideToggle(0);
         $('.my-select').css('z-index', '2');
         $($(this).parent('div')).css('z-index', '3');
         $(this).toggleClass('active');
-
+        $('.my-select').addClass('border');
     });
 
-    $('.my-select >div:nth-child(2)> div').on('click', function (event) {
+    $('.my-select >div:nth-child(2)> div').on('click', function () {
         $('.my-select div:nth-child(2)> div').removeClass('active');
         $(this).addClass('active');
 
         $($($(this).parent()).next('input')).val($(this).attr('data'));
 
         $($($(this).parent()).prev("div")).text($(this).text()).trigger('click');
+        $('.my-select').removeClass('border');
 
     });
 
@@ -154,6 +169,7 @@ $(document).ready(function () {
         if (!div.is(e.target)
             && div.has(e.target).length === 0) {
             div.hide();
+            $('.my-select').removeClass('border');
         }
     });
 

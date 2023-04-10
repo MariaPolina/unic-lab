@@ -81,7 +81,9 @@
                     </div>
                     <div class="header__lang lang">
                         <div class="lang__selected">RU</div>
-                        <div class="lang__option"><a href="#">EN</a></div>
+                        <div class="lang__options">
+                            <div class="lang__option"><a href="#">EN</a></div>
+                        </div>
                     </div>
                     <div class="burger-close"></div>
                 </div>
@@ -620,7 +622,7 @@
                                 <div class="contact-form__wrapper">
                                     <div class="input">
                                         <label for="name" class="input-name">Ваше имя *</label>
-                                        <input id="name" type="text" placeholder="Иван" required>
+                                        <input class="error" id="name" type="text" placeholder="Иван" required>
                                     </div>
                                     <div class="input">
                                         <label for="surname" class="input-name">Ваша фамилия *</label>
@@ -673,7 +675,7 @@
                                             <div class="progress__size">45 Kb / 120 Kb</div>
                                             <div class="progress__close"></div>
                                         </div>
-                                        <progress id="progressBar" value="0" max="100"></progress>
+                                        <progress id="progressBar" value="50" max="100"></progress>
                                     </div>
                                 </div>
                                 <div class="contact-form__agree">
