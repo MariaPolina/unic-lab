@@ -2767,7 +2767,7 @@ progress::-webkit-progress-value {
 
 /*------main screen animation--------*/
 
-/* @keyframes appear {
+@keyframes appear {
     from {
         opacity: 0;
     }
@@ -2890,4 +2890,4 @@ progress::-webkit-progress-value {
     -webkit-animation: appearLeft 2s;
     animation: appearLeft 2s forwards;
     animation-delay: 11.5s;
-} */
+}
