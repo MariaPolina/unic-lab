@@ -436,7 +436,6 @@ main {
         display: none;
     }
 
-
     .swiper-pagination {
         column-gap: 16px;
     }
@@ -650,21 +649,13 @@ main {
         line-height: 24px;
         color: #E3E3E3;
         border-radius: 20px;
-        background: linear-gradient(100.08deg, #9FEA00 0.68%, #F7F7F7 133.9%);
+        background: transparent;
+        border: 1px solid #9FEA00;
         width: 207px;
         height: 44px;
         cursor: pointer;
         position: relative;
         z-index: 3;
-    }
-
-    .header__callback_inner {
-        width: calc(100% - 2px);
-        height: calc(100% - 2px);
-        border-radius: 20px;
-        background: #171717;
-        padding: 8px 26px;
-        font: inherit;
     }
 
     .burger-close {
@@ -702,8 +693,8 @@ main {
         -webkit-text-fill-color: transparent;
     }
 
-    .header__callback:hover .header__callback_inner {
-        background: transparent;
+    .header__callback:hover {
+        background: linear-gradient(100.08deg, #9FEA00 0.68%, #F7F7F7 133.9%);
         color: #171717;
     }
 }
@@ -905,12 +896,12 @@ main {
 
 .main-section {
     background: #101010 url(../img/background.png) top center no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .main-section__hello {
     background: url(../img/background-hello.png) top center no-repeat;
-    background-size: contain;
+    background-size: cover;
     margin-top: -80px;
     padding-top: 280px;
     padding-bottom: 100px;
