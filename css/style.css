@@ -234,6 +234,7 @@ main {
     color: #171717;
     position: relative;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .arrow-btn.light {
@@ -701,7 +702,7 @@ main {
     }
 }
 
-@media (hover: hover) {
+@media (min-width: 1301px) {
 
     .menu__item>a:hover,
     .menu-item-has-children>ul>li a:hover {
@@ -928,6 +929,7 @@ main {
         padding: 15px 38px 15px 85px;
         background: rgba(255, 255, 255, 0.07) url(../img/round.svg) left 7px center no-repeat;
         font: inherit;
+        white-space: nowrap;
     }
 
 }
@@ -1185,6 +1187,7 @@ main {
     color: #E3E3E3;
     position: relative;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .learn-more::after {
@@ -1677,7 +1680,7 @@ main {
     padding-right: 32px;
 }
 
-@media (hover: hover) {
+@media (min-width: 1301px) {
     .project-section__item_big:hover .project-section__item_title {
         font-family: 'Roboto Flex';
         font-style: normal;
@@ -2767,127 +2770,131 @@ progress::-webkit-progress-value {
 
 /*------main screen animation--------*/
 
-@keyframes appear {
-    from {
+@media (min-width: 1301px) {
+
+    @keyframes appear {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes appearSlightUp {
+
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes appearDown {
+
+        from {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+
+    @keyframes appearScale {
+
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes appearLeft {
+
+        from {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(33%);
+        }
+    }
+
+    .main-section {
         opacity: 0;
+
+        -webkit-animation: appear 3s;
+        animation: appear 3s forwards;
     }
 
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes appearSlightUp {
-
-    from {
+    .main-section__hello {
         opacity: 0;
-        transform: translateY(30px);
+
+        -webkit-animation: appearSlightUp 3s;
+        animation: appearSlightUp 3s forwards;
+        animation-delay: 3s;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-@keyframes appearDown {
-
-    from {
+    .header {
         opacity: 0;
         transform: translateY(-100%);
+
+        -webkit-animation: appearDown 2s;
+        animation: appearDown 2s forwards;
+        animation-delay: 6s;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
-
-@keyframes appearScale {
-
-    from {
+    .main-section .more-btn {
         transform: scale(0);
+
+        -webkit-animation: appearScale 2s;
+        animation: appearScale 2s forwards;
+        animation-delay: 8s;
     }
 
-    to {
-        transform: scale(1);
+    .main-section__title {
+        opacity: 0;
+
+        -webkit-animation: appear 1s;
+        animation: appear 1s forwards;
+        animation-delay: 10s;
     }
-}
 
-@keyframes appearLeft {
+    .main-section__text {
+        opacity: 0;
 
-    from {
+        -webkit-animation: appear 1s;
+        animation: appear 1s forwards;
+        animation-delay: 10.5s;
+    }
+
+    .main-section .callback-btn {
+        opacity: 0;
+
+        -webkit-animation: appear 1s;
+        animation: appear 1s forwards;
+        animation-delay: 11s;
+    }
+
+    .main-section__steps {
         opacity: 0;
         transform: translateX(-100%);
+
+        -webkit-animation: appearLeft 2s;
+        animation: appearLeft 2s forwards;
+        animation-delay: 11.5s;
     }
 
-    to {
-        opacity: 1;
-        transform: translateX(33%);
-    }
-}
-
-.main-section {
-    opacity: 0;
-
-    -webkit-animation: appear 3s;
-    animation: appear 3s forwards;
-}
-
-.main-section__hello {
-    opacity: 0;
-
-    -webkit-animation: appearSlightUp 3s;
-    animation: appearSlightUp 3s forwards;
-    animation-delay: 3s;
-}
-
-.header {
-    opacity: 0;
-    transform: translateY(-100%);
-
-    -webkit-animation: appearDown 2s;
-    animation: appearDown 2s forwards;
-    animation-delay: 6s;
-}
-
-.main-section .more-btn {
-    transform: scale(0);
-
-    -webkit-animation: appearScale 2s;
-    animation: appearScale 2s forwards;
-    animation-delay: 8s;
-}
-
-.main-section__title {
-    opacity: 0;
-
-    -webkit-animation: appear 1s;
-    animation: appear 1s forwards;
-    animation-delay: 10s;
-}
-
-.main-section__text {
-    opacity: 0;
-
-    -webkit-animation: appear 1s;
-    animation: appear 1s forwards;
-    animation-delay: 10.5s;
-}
-
-.main-section .callback-btn {
-    opacity: 0;
-
-    -webkit-animation: appear 1s;
-    animation: appear 1s forwards;
-    animation-delay: 11s;
-}
-
-.main-section__steps {
-    opacity: 0;
-    transform: translateX(-100%);
-
-    -webkit-animation: appearLeft 2s;
-    animation: appearLeft 2s forwards;
-    animation-delay: 11.5s;
 }
