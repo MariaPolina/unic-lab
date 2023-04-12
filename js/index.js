@@ -77,54 +77,54 @@ $(document).ready(function () {
         }
     });
 
-    //trigger click for main slider buttons
+    // //trigger click for main slider buttons
 
-    if ($('.swiper-button-next').hasClass('swiper-button-disabled')) {
-        $('#swiperNext').addClass('swiper-button-disabled');
-    } else {
-        $('#swiperNext').removeClass('swiper-button-disabled');
-    }
+    // if ($('.swiper-button-next').hasClass('swiper-button-disabled')) {
+    //     $('#swiperNext').addClass('swiper-button-disabled');
+    // } else {
+    //     $('#swiperNext').removeClass('swiper-button-disabled');
+    // }
 
-    if ($('.swiper-button-prev').hasClass('swiper-button-disabled')) {
-        $('#swiperPrev').addClass('swiper-button-disabled');
-    } else {
-        $('#swiperPrev').removeClass('swiper-button-disabled');
-    }
+    // if ($('.swiper-button-prev').hasClass('swiper-button-disabled')) {
+    //     $('#swiperPrev').addClass('swiper-button-disabled');
+    // } else {
+    //     $('#swiperPrev').removeClass('swiper-button-disabled');
+    // }
 
 
-    $('#swiperPrev').on('click', function () {
-        $('.main-slider .swiper-button-prev').trigger('click');
+    // $('#swiperPrev').on('click', function () {
+    //     $('.main-slider .swiper-button-prev').trigger('click');
 
-        if ($('.swiper-button-next').hasClass('swiper-button-disabled')) {
-            $('#swiperNext').addClass('swiper-button-disabled');
-        } else {
-            $('#swiperNext').removeClass('swiper-button-disabled');
-        }
+    //     if ($('.swiper-button-next').hasClass('swiper-button-disabled')) {
+    //         $('#swiperNext').addClass('swiper-button-disabled');
+    //     } else {
+    //         $('#swiperNext').removeClass('swiper-button-disabled');
+    //     }
 
-        if ($('.swiper-button-prev').hasClass('swiper-button-disabled')) {
-            $('#swiperPrev').addClass('swiper-button-disabled');
-        } else {
-            $('#swiperPrev').removeClass('swiper-button-disabled');
-        }
+    //     if ($('.swiper-button-prev').hasClass('swiper-button-disabled')) {
+    //         $('#swiperPrev').addClass('swiper-button-disabled');
+    //     } else {
+    //         $('#swiperPrev').removeClass('swiper-button-disabled');
+    //     }
 
-    });
+    // });
 
-    $('#swiperNext').on('click', function () {
-        $('.main-slider .swiper-button-next').trigger('click');
+    // $('#swiperNext').on('click', function () {
+    //     $('.main-slider .swiper-button-next').trigger('click');
 
-        if ($('.swiper-button-next').hasClass('swiper-button-disabled')) {
-            $('#swiperNext').addClass('swiper-button-disabled');
-        } else {
-            $('#swiperNext').removeClass('swiper-button-disabled');
-        }
+    //     if ($('.swiper-button-next').hasClass('swiper-button-disabled')) {
+    //         $('#swiperNext').addClass('swiper-button-disabled');
+    //     } else {
+    //         $('#swiperNext').removeClass('swiper-button-disabled');
+    //     }
 
-        if ($('.swiper-button-prev').hasClass('swiper-button-disabled')) {
-            $('#swiperPrev').addClass('swiper-button-disabled');
-        } else {
-            $('#swiperPrev').removeClass('swiper-button-disabled');
-        }
+    //     if ($('.swiper-button-prev').hasClass('swiper-button-disabled')) {
+    //         $('#swiperPrev').addClass('swiper-button-disabled');
+    //     } else {
+    //         $('#swiperPrev').removeClass('swiper-button-disabled');
+    //     }
 
-    });
+    // });
 
     // mobile slider for projects cards
 

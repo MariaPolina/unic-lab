@@ -408,10 +408,6 @@
                             });   
                         </script>
                     </div>
-                    <div class="swiper-navigation">
-                        <div id="swiperPrev"></div>
-                        <div id="swiperNext"></div>
-                    </div>
                     <div class="complex-section__btn arrow-btn light">Узнать больше</div>
                 </div>
             </section>
@@ -580,6 +576,10 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/partner.png" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
                                         <div class="partner__image image"><img src="./img/logo.svg" alt="slide">
                                         </div>
                                     </div>
@@ -612,6 +612,11 @@
                                     1300: {
                                         slidesPerView: 3,
                                         spaceBetween: 20,
+                                    },
+
+                                    500: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 16,
                                     },
                                 }
                             });
@@ -677,6 +682,7 @@
                                     <input type="file" id="file">
                                     <label for="file">
                                         <p>Перетащите или <span>выберите</span> файлы</p>
+                                        <p>Прикрепить файл</p>
                                     </label>
                                     <div class="progress">
                                         <div class="progress__info">
