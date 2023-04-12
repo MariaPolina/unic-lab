@@ -173,7 +173,6 @@
                         </div>
                     </div>
                 </div>
-
             </section>
             <section class="do-section lightgrey-bg sub-box">
                 <div class="container">
@@ -384,7 +383,7 @@
 
                         </div>
                         <script type="text/javascript">
-                            const swiper = new Swiper('#slideshow1', {
+                            const swiper1 = new Swiper('#slideshow1', {
                                 mode: 'horizontal',
                                 slidesPerView: 1,
                                 spaceBetween: 30,
@@ -410,7 +409,7 @@
                             const elem = document.querySelector('.complex-section__container');
 
                             document.addEventListener('DOMContentLoaded', function () {
-                                swiper.autoplay.stop();
+                                swiper1.autoplay.stop();
                                 document.addEventListener('scroll', onScroll);
                             });
 
@@ -418,7 +417,7 @@
                                 const posTop = elem.getBoundingClientRect().top;
 
                                 if (posTop + elem.clientHeight <= window.innerHeight && posTop >= 0) {
-                                    swiper.autoplay.start();
+                                    swiper1.autoplay.start();
                                 };
                             }
                         </script>
@@ -434,7 +433,7 @@
                             <div class="project-section__item project-section__item_big">
                                 <div class="project-section__item_title">Устройство сбора и передачи данных</div>
                                 <div class="project-section__item_image image">
-                                    <img src="./img/projectbig.png" alt="project">
+                                    <img src="./img/project1.png" alt="project">
                                 </div>
                             </div>
                         </div>
@@ -442,29 +441,114 @@
                             <div class="project-section__item project-section__item_small">
                                 <div class="project-section__item_title">Система контроля доступа для парковок</div>
                                 <div class="project-section__item_image image">
-                                    <img src="./img/project-sm1.png" alt="project">
+                                    <img src="./img/project4.png" alt="project">
                                 </div>
                             </div>
                             <div class="project-section__item project-section__item_small">
                                 <div class="project-section__item_title">Сервер для умного дома</div>
                                 <div class="project-section__item_image image">
-                                    <img src="./img/project-sm2.png" alt="project">
+                                    <img src="./img/project3.png" alt="project">
                                 </div>
                             </div>
                             <div class="project-section__item project-section__item_small">
                                 <div class="project-section__item_title">Умный ультразвуковой счетчик газа</div>
                                 <div class="project-section__item_image image">
-                                    <img src="./img/project-sm3.png" alt="project">
+                                    <img src="./img/project2.png" alt="project">
                                 </div>
                             </div>
                             <div class="project-section__item project-section__item_small">
                                 <div class="project-section__item_title">Iot-платформа</div>
                                 <div class="project-section__item_image image">
-                                    <img src="./img/project-sm4.png" alt="project">
+                                    <img src="./img/project5.png" alt="project">
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="mobile-project-slider">
+                        <div class="slideshow swiper-viewport">
+                            <div id="slideshow3" class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide  project-section__item project-section__item_big">
+                                        <div class="project-section__item_title">Устройство сбора и передачи данных
+                                        </div>
+                                        <div class="project-section__item_image image">
+                                            <img src="./img/project1.png" alt="project">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide project-section__item project-section__item_big">
+                                        <div class="project-section__item_title">Система контроля доступа для парковок
+                                        </div>
+                                        <div class="project-section__item_image image">
+                                            <img src="./img/project4.png" alt="project">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide project-section__item project-section__item_big">
+                                        <div class="project-section__item_title">Сервер для умного дома
+                                        </div>
+                                        <div class="project-section__item_image image">
+                                            <img src="./img/project3.png" alt="project">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide project-section__item project-section__item_big">
+                                        <div class="project-section__item_title">Умный ультразвуковой счетчик газа
+                                        </div>
+                                        <div class="project-section__item_image image">
+                                            <img src="./img/project2.png" alt="project">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide project-section__item project-section__item_big">
+                                        <div class="project-section__item_title">Iot-платформа
+                                        </div>
+                                        <div class="project-section__item_image image">
+                                            <img src="./img/project5.png" alt="project">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-section__wrapper_small">
+                                    <div class="project-section__item project-section__item_small">
+                                        <div class="project-section__item_image image">
+                                            <img src="./img/project4.png" alt="project">
+                                        </div>
+                                    </div>
+                                    <div class="project-section__item project-section__item_small">
+                                        <div class="project-section__item_image image">
+                                            <img src="./img/project3.png" alt="project">
+                                        </div>
+                                    </div>
+                                    <div class="project-section__item project-section__item_small">
+                                        <div class="project-section__item_image image">
+                                            <img src="./img/project2.png" alt="project">
+                                        </div>
+                                    </div>
+                                    <div class="project-section__item project-section__item_small">
+                                        <div class="project-section__item_image image">
+                                            <img src="./img/project5.png" alt="project">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                        <script type="text/javascript">
+                            const swiper3 = new Swiper('#slideshow3', {
+                                mode: 'horizontal',
+                                slidesPerView: 1,
+                                spaceBetween: 30,
+                                autoplay: false,
+                                paginationClickable: true,
+                                loop: true,
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                    type: 'bullets',
+                                    clickable: true
+                                },
+                            });
+                        </script>
+
+                    </div>
+
                     <div class="project-section__btn">
                         <div class="arrow-btn">Больше проектов</div>
                     </div>
@@ -819,7 +903,6 @@
 
     <script src="./js/jquery-2.1.1.min.js"></script>
     <script src="./js/index.js"></script>
-
 </body>
 
 </html>
