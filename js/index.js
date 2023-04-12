@@ -126,6 +126,7 @@ $(document).ready(function () {
 
     // });
 
+
     // mobile slider for projects cards
 
     if ($(window).width() < 1301) {
@@ -137,7 +138,6 @@ $(document).ready(function () {
     }
 
     //faq section
-
 
     $('.faq-section__question').on('click', function () {
         $($(this).parent()).toggleClass('active');
@@ -201,6 +201,12 @@ $(document).ready(function () {
             }
         });
 
+    });
+
+    //preloader for submit button
+
+    $('.contact-form__send').on('click', function () {
+        $(this).addClass('loading');
     });
 
 });
