@@ -1,15 +1,18 @@
 $(document).ready(function () {
 
     if ($(window).width() > 1300) {
-        // Line over header submenu
+        // Line over header submenu and header hover
         $('.menu-item-has-children').on('mouseover', function () {
             $('.header-line').css('display', 'block');
             $('.wrapper').addClass('shadow');
+            $('.header').addClass('hover');
+
         });
 
         $('.menu-item-has-children').on('mouseout', function () {
             $('.header-line').css('display', 'none');
             $('.wrapper').removeClass('shadow');
+            $('.header').removeClass('hover');
         });
 
         // Language select
@@ -21,7 +24,6 @@ $(document).ready(function () {
         $('.lang__option').on('click', function () {
             $('.lang__options').removeClass('active');
         });
-
 
         //close select on click OUT of select
         $(document).mouseup(function (e) {
