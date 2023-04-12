@@ -77,66 +77,6 @@ $(document).ready(function () {
         }
     });
 
-    // //trigger click for main slider buttons
-
-    // if ($('.swiper-button-next').hasClass('swiper-button-disabled')) {
-    //     $('#swiperNext').addClass('swiper-button-disabled');
-    // } else {
-    //     $('#swiperNext').removeClass('swiper-button-disabled');
-    // }
-
-    // if ($('.swiper-button-prev').hasClass('swiper-button-disabled')) {
-    //     $('#swiperPrev').addClass('swiper-button-disabled');
-    // } else {
-    //     $('#swiperPrev').removeClass('swiper-button-disabled');
-    // }
-
-
-    // $('#swiperPrev').on('click', function () {
-    //     $('.main-slider .swiper-button-prev').trigger('click');
-
-    //     if ($('.swiper-button-next').hasClass('swiper-button-disabled')) {
-    //         $('#swiperNext').addClass('swiper-button-disabled');
-    //     } else {
-    //         $('#swiperNext').removeClass('swiper-button-disabled');
-    //     }
-
-    //     if ($('.swiper-button-prev').hasClass('swiper-button-disabled')) {
-    //         $('#swiperPrev').addClass('swiper-button-disabled');
-    //     } else {
-    //         $('#swiperPrev').removeClass('swiper-button-disabled');
-    //     }
-
-    // });
-
-    // $('#swiperNext').on('click', function () {
-    //     $('.main-slider .swiper-button-next').trigger('click');
-
-    //     if ($('.swiper-button-next').hasClass('swiper-button-disabled')) {
-    //         $('#swiperNext').addClass('swiper-button-disabled');
-    //     } else {
-    //         $('#swiperNext').removeClass('swiper-button-disabled');
-    //     }
-
-    //     if ($('.swiper-button-prev').hasClass('swiper-button-disabled')) {
-    //         $('#swiperPrev').addClass('swiper-button-disabled');
-    //     } else {
-    //         $('#swiperPrev').removeClass('swiper-button-disabled');
-    //     }
-
-    // });
-
-
-    // mobile slider for projects cards
-
-    if ($(window).width() < 1301) {
-
-        $(".project-section__items").on("click", ".project-section__item_small", function () {
-            $('.project-section__wrapper_big>div').removeClass('project-section__item_big').addClass('project-section__item_small').appendTo($(".project-section__wrapper_small"));
-            $(this).appendTo($(".project-section__wrapper_big")).addClass('project-section__item_big').removeClass('project-section__item_small');
-        });
-    }
-
     //faq section
 
     $('.faq-section__question').on('click', function () {
