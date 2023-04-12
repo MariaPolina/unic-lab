@@ -996,8 +996,13 @@ main {
 /*-------------- Main section -------------------*/
 
 .main-section {
-    background: #101010 url(../img/blur.png) top -240px right -420px no-repeat;
+    background: #101010 url(../img/blur.svg) top -240px right -420px no-repeat;
     background-size: cover;
+}
+
+.main-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .main-section__bg {
@@ -1187,10 +1192,6 @@ main {
     color: #A1A1A1;
 }
 
-.main-section__about {
-    max-width: 1250px;
-}
-
 .main-section__subtitle {
     font-family: 'Roboto Flex';
     font-style: normal;
@@ -1208,6 +1209,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 130px;
+    max-width: 1250px;
 }
 
 .main-section__info_start {
@@ -1296,7 +1298,7 @@ main {
 
 
     .main-section {
-        background: #101010 url(../img/blur.png) top 20px right -450px no-repeat;
+        background: #101010 url(../img/blur.svg) top 20px right -450px no-repeat;
         background-size: cover;
     }
 
@@ -1586,7 +1588,7 @@ main {
 /*--------------complex section-------------------*/
 
 .complex-section {
-    background: url(../img/bg.png) center center no-repeat;
+    background: #101010 url(../img/slider-bg.svg) top left no-repeat;
     background-size: cover;
 }
 
@@ -1650,6 +1652,11 @@ main {
 }
 
 @media (max-width: 1300px) {
+
+    .complex-section {
+        background: #101010 url(../img/slider-bg.svg) left 70% top no-repeat;
+        background-size: cover;
+    }
 
     .complex-section__container {
         padding-top: 120px;
@@ -1937,7 +1944,7 @@ main {
 
 .why-section__item {
     background: #161616;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.27);
+    box-shadow: -2px -2px 4px rgba(82, 81, 81, 0.22), 4px 4px 15px rgba(0, 0, 0, 0.27);
     border-radius: 4px;
     padding: 20px 20px 32px 20px;
     max-width: 310px;
@@ -1947,8 +1954,26 @@ main {
     width: 84px;
     height: 84px;
     margin-bottom: 16px;
-    background: url(../img/blur-green.png) center center no-repeat;
-    background-size: contain;
+    position: relative;
+}
+
+.why-section__item-image img {
+    position: relative;
+    z-index: 2;
+}
+
+.why-section__item-image::before {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: #A8F800;
+    filter: blur(25px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
 }
 
 @media (max-width: 1300px) {
@@ -2054,7 +2079,7 @@ main {
 
 .partner {
     background: #161616;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.27);
+    box-shadow: -2px -2px 4px rgba(80, 79, 79, 0.22), 4px 4px 15px rgba(0, 0, 0, 0.27);
     border-radius: 4px;
     padding: 47px 17px;
     display: flex;

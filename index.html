@@ -93,7 +93,7 @@
         </header>
         <main>
             <section class="main-section">
-                <div class="main-section__bg">
+                <div class="main-section__bg main-wrapper">
                     <div class="main-section__hello">
                         <div class="main-section__main container">
                             <h1 class="main-section__title">Любой <span>прогресс</span> начинается <br>
@@ -405,7 +405,22 @@
                                     nextEl: '.swiper-button-next',
                                     prevEl: '.swiper-button-prev',
                                 },
-                            });   
+                            });
+
+                            const elem = document.querySelector('.complex-section__container');
+
+                            document.addEventListener('DOMContentLoaded', function () {
+                                swiper.autoplay.stop();
+                                document.addEventListener('scroll', onScroll);
+                            });
+
+                            function onScroll() {
+                                const posTop = elem.getBoundingClientRect().top;
+
+                                if (posTop + elem.clientHeight <= window.innerHeight && posTop >= 0) {
+                                    swiper.autoplay.start();
+                                };
+                            }
                         </script>
                     </div>
                     <div class="complex-section__btn arrow-btn light">Узнать больше</div>
@@ -437,7 +452,7 @@
                                 </div>
                             </div>
                             <div class="project-section__item project-section__item_small">
-                                <div class="project-section__item_title">Умный ультрозвуковой счетчик газа</div>
+                                <div class="project-section__item_title">Умный ультразвуковой счетчик газа</div>
                                 <div class="project-section__item_image image">
                                     <img src="./img/project-sm3.png" alt="project">
                                 </div>
@@ -460,19 +475,19 @@
                     <h2 class="why-section__title title light">ПОЧЕМУ UNIC LAB?</h2>
                     <div class="why-section__items">
                         <div class="why-section__item">
-                            <div class="why-section__item-image image"><img src="./img/why1.png" alt="UNIC LAB"></div>
+                            <div class="why-section__item-image image"><img src="./img/why1.svg" alt="UNIC LAB"></div>
                             <h3 class="why-section__item-title main-section__step_title">Оснащенность</h3>
                             <p class="why-section__item-text main-section__step_text">Огромный комплекс
                                 технологического оборудования для разных задач</p>
                         </div>
                         <div class="why-section__item">
-                            <div class="why-section__item-image image"><img src="./img/why2.png" alt="UNIC LAB"></div>
+                            <div class="why-section__item-image image"><img src="./img/why2.svg" alt="UNIC LAB"></div>
                             <h3 class="why-section__item-title main-section__step_title">Инновации</h3>
                             <p class="why-section__item-text main-section__step_text">В процессе разработки наши
                                 заказчики получают патенты на изобретение</p>
                         </div>
                         <div class="why-section__item">
-                            <div class="why-section__item-image image"><img src="./img/why3.png" alt="UNIC LAB"></div>
+                            <div class="why-section__item-image image"><img src="./img/why3.svg" alt="UNIC LAB"></div>
                             <h3 class="why-section__item-title main-section__step_title">Экспертиза</h3>
                             <p class="why-section__item-text main-section__step_text">Более 100 штатных инженеров со
                                 средним опытом 12+ лет</p>
