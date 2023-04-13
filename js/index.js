@@ -37,8 +37,6 @@ $(document).ready(function () {
 
     // menu burger
 
-    //---------calculation of menu-hight---------//
-
     if ($(window).width() < 1301) {
         $('.menu-item-has-children').on('click', function () {
             $(this).toggleClass('active');
@@ -148,5 +146,25 @@ $(document).ready(function () {
     $('.contact-form__send').on('click', function () {
         $(this).addClass('loading');
     });
+
+    // mobile slider for projects cards
+
+    if ($(window).width() < 1301) {
+
+        swiper4.disable();
+
+        swiper3.on('slideNextTransitionEnd', function () {
+            swiper4.enable();
+            $('#slideshow4 .swiper-button-next').trigger('click');
+            swiper4.disable();
+        });
+
+        swiper3.on('slidePrevTransitionEnd', function () {
+            swiper4.enable();
+            $('#slideshow4 .swiper-button-prev').trigger('click');
+            swiper4.disable();
+        });
+
+    }
 
 });
