@@ -478,6 +478,7 @@ main {
     transform: rotate(180deg);
     box-shadow: -4px 4px 10px rgba(17, 17, 17, 0.35);
     backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -499,6 +500,7 @@ main {
     background: rgba(255, 255, 255, 0.04) url(../img/next.svg) left 33px center no-repeat;
     box-shadow: -4px 4px 10px rgba(17, 17, 17, 0.35);
     backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -972,6 +974,7 @@ main {
         background: rgba(255, 255, 255, 0.07);
         box-shadow: -8px 8px 10px rgba(179, 179, 179, 0.35);
         backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
         max-width: fit-content;
         height: 54px;
         border-radius: 25px;
@@ -1084,6 +1087,7 @@ main {
     background: rgba(255, 255, 255, 0.07);
     box-shadow: -8px 8px 10px rgba(17, 17, 17, 0.35);
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     border-radius: 25px;
     font-weight: 400;
     font-size: 18px;
@@ -1159,6 +1163,7 @@ main {
     background: rgba(255, 255, 255, 0.04);
     box-shadow: -4px 4px 10px rgba(17, 17, 17, 0.35);
     backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
     border-radius: 50%;
     position: absolute;
     top: -40px;
@@ -1198,6 +1203,7 @@ main {
     background: linear-gradient(90deg, rgba(44, 44, 44, 0.5) 7.62%, rgba(54, 54, 54, 0.33) 49.61%, rgba(52, 52, 52, 0.5) 87.83%);
     box-shadow: -8px 8px 10px rgba(17, 17, 17, 0.35);
     backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
     border-radius: 5px 0px 0px 5px;
     padding: 20px 0;
     display: grid;
@@ -2200,6 +2206,7 @@ main {
     background: rgba(255, 255, 255, 0.07);
     box-shadow: -8px 8px 10px rgba(179, 179, 179, 0.35);
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     border-radius: 25px;
     font-weight: 400;
     font-size: 18px;
