@@ -76,7 +76,8 @@
                             <li class="menu__item"><a href="#">Контакты</a></li>
                         </ul>
                     </nav>
-                    <div class="header__callback">Связаться с нами
+                    <div class="header__callback button-modal" id="callback" data-modal="modal-callback">Связаться с
+                        нами
                         <div class="header__callback_inner"></div>
                     </div>
                     <div class="header__lang lang">
@@ -954,12 +955,118 @@
         </footer>
     </div>
 
+    <div class="accept-cookies container">
+        <div class="accept-cookies__wrapper">
+            <p class="accept-cookies__text">Мы используем файлы cookies для улучшения работы сайта. Оставаясь на нашем
+                сайте, Вы соглашаетесь с условиями использования файлов cookies. Чтобы ознакомиться с нашими Положениями
+                о
+                конфиденциальности и об использовании файлов cookie, <a href="#">нажмите здесь.</a></p>
+            <div class="accept-cookies__btn">Принять</div>
+        </div>
+    </div>
+
     <div class="modal__wrapper" id="modal-formsend">
         <div class="modal__content">
             <div class="close"></div>
             <div class="formsend-messege">
                 <p class="formsend-messege__text-main">Ваша форма успешно отправлена!</p>
                 <p class="formsend-messege__text text">В ближайшее время с Вами свяжутся наши специалисты.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal__wrapper" id="modal-callback">
+        <div class="modal__content">
+            <div class="close"></div>
+            <div class="callback__modal-form">
+                <h2 class="contact-section__title title">Связаться с нами</h2>
+                <p class="contact-section__text text">По любым вопросам вы можете обратиться к нам через форму
+                    обратной
+                    связи или составить более подробное техническое задание, и наши специалисты свяжутся с вами
+                </p>
+                <div class="create-task-btn">Составить ТЗ онлайн
+                    <div class="callback-btn_inner"></div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <div class="contact-form__wrapper">
+                                <div class="input">
+                                    <label for="name" class="input-name">Ваше имя *</label>
+                                    <input class="error" id="name" type="text" placeholder="Иван" required>
+                                </div>
+                                <div class="input">
+                                    <label for="surname" class="input-name">Ваша фамилия *</label>
+                                    <input id="surname" type="text" placeholder="Иванов" required>
+                                </div>
+                                <div class="input">
+                                    <label for="email" class="input-name">Ваш электронный адрес *</label>
+                                    <input id="email" type="email" placeholder="ivan.ivanov@mial.ru" required>
+                                </div>
+                                <div class="contact-form__tel input">
+                                    <label for="telephone" class="input-name">Ваш номер телефона</label>
+                                    <div>
+                                        <div class="my-select" id="my-select">
+                                            <div data="">BY</div>
+                                            <div>
+                                                <div data="BY">BY</div>
+                                                <div data="RU">RU</div>
+                                                <div data="KZ">KZ</div>
+                                            </div>
+                                            <input type="hidden" value="">
+                                        </div>
+                                        <div class="contact-form__tel_code"><input class="contact-form__code"
+                                                type="text" value="+375"><input id="telephone" type="text"
+                                                placeholder="(xx) xxx xx xx" required></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-form__company input">
+                                <label for="company" class="input-name">Ваша компания *</label>
+                                <input id="company" type="text" placeholder="IvanIvan" required>
+                            </div>
+                            <div class="contact-form__question input">
+                                <label for="question" class="input-name">Ваш вопрос</label>
+                                <textarea name="question" id="question" rows="3"></textarea>
+                            </div>
+                            <div class="contact-form__file input">
+                                <input type="file" id="file">
+                                <label for="file">
+                                    <p>Перетащите или <span>выберите</span> файлы</p>
+                                    <p>Прикрепить файл</p>
+                                </label>
+                                <div class="progress">
+                                    <div class="progress__info">
+                                        <p class="progress__name">document_ivanov.doc</p>
+                                        <div class="progress__size ready">120 Kb</div>
+                                        <div class="progress__close"></div>
+                                    </div>
+                                    <progress id="progressBar" value="0" max="100"></progress>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress__info">
+                                        <p class="progress__name">document_ivanov.doc</p>
+                                        <div class="progress__size">45 Kb / 120 Kb</div>
+                                        <div class="progress__close"></div>
+                                    </div>
+                                    <progress id="progressBar" value="50" max="100"></progress>
+                                </div>
+                            </div>
+                            <div class="contact-form__agree">
+                                <input type="checkbox" class="checkbox-styled" id="agree">
+                                <label for="agree"> <span></span>
+                                    <p>Я согласен с правилами <a href="#">сбора
+                                            персональных
+                                            данных</a></p>
+                                </label>
+                            </div>
+                            <button class="contact-form__send button-modal" id="formsend" type="submit"
+                                data-modal="modal-formsend">Отправить</button>
+                            <p class="contact-form__text">*обязательные поля для заполнения</p>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
