@@ -1952,11 +1952,8 @@ main {
         right: 12px;
     }
 
-    .project-section__wrapper_small {
+    .project-section__small_slider {
         max-width: 640px;
-        grid-auto-flow: column;
-        grid-template: unset;
-        gap: 16px;
         margin-bottom: 24px;
     }
 
