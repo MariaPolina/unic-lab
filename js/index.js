@@ -167,4 +167,10 @@ $(document).ready(function () {
 
     }
 
+    // accept cookies
+
+    $('.accept-cookies__btn').on('click', function () {
+        $('.accept-cookies').remove();
+    });
+
 });
