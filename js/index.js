@@ -173,4 +173,10 @@ $(document).ready(function () {
         $('.accept-cookies').remove();
     });
 
+    // trigger click foc callback button
+
+    $('.callback-btn').on('click', function () {
+        $('#callback').trigger('click');
+    });
+
 });

@@ -86,8 +86,10 @@ html, body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-
     scroll-behavior: smooth;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
 }
 
 * {
@@ -121,9 +123,7 @@ input {
 }
 
 .wrapper {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
+
     display: flex;
     flex-direction: column;
     position: relative;
@@ -222,6 +222,7 @@ main {
     font-size: 18px;
     line-height: 135%;
     color: #404040;
+    letter-spacing: 0.02em;
 }
 
 .text.light {
@@ -3109,6 +3110,27 @@ progress::-webkit-progress-value {
     }
 }
 
+/*------callback modal--------*/
+
+#modal-callback .modal__content {
+    max-width: 1050px;
+    padding: 50px 150px;
+}
+
+#modal-callback .contact-form {
+    margin-top: 50px;
+}
+
+@media (max-width: 1300px) {
+    #modal-callback .modal__content {
+        padding: 40px 16px;
+    }
+
+    #modal-callback .contact-form {
+        margin-top: 40px;
+    }
+}
+
 /*------cookies accept--------*/
 
 .accept-cookies {
@@ -3173,7 +3195,6 @@ progress::-webkit-progress-value {
         justify-items: center;
         row-gap: 20px;
     }
-
 }
 
 /*------main screen animation--------*/
