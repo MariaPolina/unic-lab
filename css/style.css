@@ -775,7 +775,7 @@ main {
         -webkit-text-fill-color: transparent;
     }
 
-    .menu-item-has-children>a:hover .menu-item-has-children>a::after,
+    .menu-item-has-children>a:hover::after,
     .header__lang:hover .lang__selected::after {
         background: url(../img/arrow-down-g.svg) right center no-repeat;
     }
