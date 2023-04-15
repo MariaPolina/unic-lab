@@ -244,10 +244,6 @@ h1 {
     font-weight: 400;
 }
 
-.text:not(:last-child) {
-    margin-bottom: 20px;
-}
-
 .text.light {
     color: #A1A1A1;
 }
@@ -390,10 +386,6 @@ h1 {
     .text {
         font-size: 14px;
         line-height: 20px;
-    }
-
-    .text:not(:last-child) {
-        margin-bottom: 16px;
     }
 
     .arrow-btn {
@@ -3679,6 +3671,10 @@ progress::-webkit-progress-value {
     margin-bottom: 20px;
 }
 
+.expertise-section__text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 .expertise-section__video {
     grid-area: video;
     position: relative;
@@ -3718,6 +3714,10 @@ progress::-webkit-progress-value {
     .expertise-section__important {
         font-size: 14px;
         line-height: 20px;
+        margin-bottom: 16px;
+    }
+
+    .expertise-section__text:not(:last-child) {
         margin-bottom: 16px;
     }
 
