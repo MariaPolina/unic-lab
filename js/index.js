@@ -2,14 +2,14 @@ $(document).ready(function () {
 
     if ($(window).width() > 1300) {
         // Line over header submenu and header hover
-        $('.menu-item-has-children').on('mouseover', function () {
+        $('.menu__items > .menu-item-has-children').on('mouseover', function () {
             $('.header-line').css('display', 'block');
             $('.wrapper').addClass('shadow');
             $('.header').addClass('hover');
 
         });
 
-        $('.menu-item-has-children').on('mouseout', function () {
+        $('.menu__items > .menu-item-has-children').on('mouseout', function () {
             $('.header-line').css('display', 'none');
             $('.wrapper').removeClass('shadow');
             $('.header').removeClass('hover');
