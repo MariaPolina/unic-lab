@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIC LAB</title>
+    <link rel="shortcut icon" href="./img/favicon.svg">
+    <link href="./css/style.css" rel="stylesheet">
+    <!--scripts for sliders-->
+    <link rel="stylesheet" href="./js/swiper-9.1.1/package/swiper-bundle.min.css">
+    <script src="./js/swiper-9.1.1/package/swiper-bundle.min.js"></script>
+    <!--//-->
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__logo">
+                    <a href="#"></a>
+                </div>
+                <div class="header__nav">
+                    <nav class="header__menu menu">
+                        <ul class="menu__items">
+                            <li class="menu__item menu-item-has-children">
+                                <a href="#">Компания <span></span></a>
+                                <ul>
+                                    <li><a href="">О компании</a></li>
+                                    <li><a href="">Процесс разработки продукта</a></li>
+                                    <li><a href="">Технологии</a></li>
+                                    <li><a href="">Блог</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item menu-item-has-children">
+                                <a href="#">Услуги <span></span></a>
+                                <ul>
+                                    <li>
+                                        <ul>
+                                            <li><a href="">Разработка аппаратной части</a>
+                                                <ul>
+                                                    <li><a href="">Разработка печатных плат</a></li>
+                                                    <li><a href="">Разработка схемотехники</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="">Разработка программного
+                                                    обеспечения</a>
+                                                <ul>
+                                                    <li><a href="">Встроенное программное обеспечение</a>
+                                                    </li>
+                                                    <li><a href="">Облачное программное обеспечение</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="">Научное исследование</a></li>
+                                            <li><a href="">Промышленный дизайн</a></li>
+                                            <li><a href="">Прототипирование</a></li>
+                                            <li><a href="">Подготовка и производство</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#">IoT</a></li>
+                            <li class="menu__item"><a href="#">Проекты</a></li>
+                            <li class="menu__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__callback button-modal" id="callback" data-modal="modal-callback">Связаться с
+                        нами
+                        <div class="header__callback_inner"></div>
+                    </div>
+                    <div class="header__lang lang">
+                        <div class="lang__selected">RU</div>
+                        <div class="lang__options">
+                            <div class="lang__option"><a href="#">EN</a></div>
+                        </div>
+                    </div>
+                    <div class="burger-close"></div>
+                </div>
+                <div class="header__burger"></div>
+            </div>
+            <div class="header-line"></div>
+        </header>
+        <main>
+            <section class="about-section section-top">
+                <div class="about-section__container container">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li class="breadcrumb"><a href="#">Главная</a></li>
+                            <li class="breadcrumb"><a href="#">Компания</a></li>
+                            <li class="breadcrumb active"><a href="#">О компании</a></li>
+                        </ul>
+                    </div>
+                    <div class="about-section__info">
+                        <h1 class="about-section__title">О КОМПАНИИ</h1>
+                        <p class="about-section__info_start text"> <span>ЮНИК ЛАБ</span> - это большая команда
+                            специалистов,
+                            предоставляющая полный цикл услуг в области
+                            разработки электроники и программного обеспечения</p>
+                        <p class="about-section__info_text">Создание нового продукта, доработка существующего решения
+                            или обратное проектирование - наши
+                            компетенции помогают решить любую из поставленных задач. Всего один запрос, чтобы запустить
+                            полный цикл работ над вашим проектом: от первых обсуждений идеи до серийного выпуска</p>
+                    </div>
+                </div>
+            </section>
+            <section class="us-section lightgrey-bg sub-box">
+                <div class="container">
+                    <h3 class="us-section__subtitle subtitle">о нас</h3>
+                    <div class="us-section__info">
+                        <div class="us-section__info-image image"><img src="./img/us-all.jpg" alt="о нас"></div>
+                        <div class="us-section__info-info">
+                            <div>
+                                <h2 class="us-section__title title">ЮНИК ЛАБ - это о людях</h2>
+                                <p class="us-section__text text">Программисты, тестировщики, схемотехники, электроники,
+                                    конструкторы, дизайнеры, испытатели, проектные менеджеры и бизнес-аналитики.</p>
+                                <p class="us-section__text text">Они делятся опытом, изобретают и создают ради одной
+                                    цели:
+                                    превращать самые невероятные
+                                    теории в технологичные продукты.
+                                </p>
+                            </div>
+                            <div>
+                                <h2 class="us-section__title title">ЮНИК ЛАБ - это о доверии</h2>
+                                <p class="us-section__text text">Множество реализованных проектов и благодарных
+                                    партнеров
+                                    будут тому подтверждением. Симбиоз ваших идей и нашей экспертизы позволяют создавать
+                                    поистине уникальные решения.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="roof-section darkgrey-bg box">
+                <div class="roof-section__container container">
+                    <h2 class="roof-section__title title">Все под одной крышей</h2>
+                    <p class="roof-section__text text">Исследование, разработка, тестирование и производство - все этапы
+                        мы собрали под одной крышей</p>
+                    <div class="roof-section__items">
+                        <div class="roof-section__item image"><img src="./img/roof1.jpg" alt="image"></div>
+                        <div class="roof-section__item image"><img src="./img/roof2.jpg" alt="image"></div>
+                        <div class="roof-section__item image"><img src="./img/roof3.jpg" alt="image"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="expertise-section lightgrey-bg box">
+                <div class="expertise-section__container container">
+                    <h2 class="expertise-section__title title">Экспертиза</h2>
+                    <div class="expertise-section__info">
+                        <p class="expertise-section__important">телекоммуникации, технологии передачи данных,
+                            промышленная
+                            автоматизация, Потребительская электроника , медицина, автоэлектроника, Интернет вещей,
+                            энергетика и силовая электроника</p>
+                        <p class="expertise-section__text text">Из множества направлений наша ключевая экспертиза
+                            заключена в IoT.</p>
+                        <p class="expertise-section__text text">Но это совсем не значит, что мы не найдем решения для
+                            вашей
+                            отраслевой задачи. Ведь наша команда
+                            - это более 100 профессиональных инженеров, с многолетним и уникальным опытом из разных
+                            индустрий.</p>
+                    </div>
+                    <div class="expertise-section__video">
+                        <video id="expertiseVideo" src="./img/vid-3.mp4" muted></video>
+                        <div class="video__start-btn"></div>
+                    </div>
+
+                    <script type="text/javascript">
+
+                        const playVideoButton = document.querySelector('.video__start-btn');
+                        const expertiseVideo = document.getElementById('expertiseVideo');
+
+                        document.addEventListener('DOMContentLoaded', function () {
+                            document.addEventListener('scroll', videoScroll);
+                        });
+
+                        function videoScroll() {
+                            const videoWrapper = document.querySelector('.expertise-section');
+                            const posTop = videoWrapper.getBoundingClientRect().top;
+
+                            if (posTop + videoWrapper.clientHeight <= window.innerHeight && posTop >= 0) {
+                                playVideoButton.style.display = "none";
+                                expertiseVideo.setAttribute("controls", true);
+                                expertiseVideo.play();
+                            };
+                        }
+
+                        expertiseVideo.addEventListener('ended', function () {
+                            playVideoButton.style.display = "block";
+                            expertiseVideo.removeAttribute("controls");
+                        }, false);
+
+                        playVideoButton.addEventListener("click", function () {
+                            playVideoButton.style.display = "none";
+                            expertiseVideo.setAttribute("controls", true);
+                            expertiseVideo.play();
+                        });
+                    </script>
+                </div>
+            </section>
+            <section class="complex-section dark-bg">
+                <div class="complex-section__container container">
+                    <h2 class="complex-section__title title light">КОМПЛЕКСНАЯ РАЗРАБОТКА ЭЛЕКТРОНИКИ</h2>
+                    <div class="main-slider">
+                        <div class="slideshow swiper-viewport">
+                            <div id="slideshow1" class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide banner">
+                                        <div class="slide__info">
+                                            <h4 class="slide__title title-sm light">Разработка концепции</h4>
+                                            <p class="slide__text text">Анализируем возможность реализации проекта,
+                                                определяем бюджет и оцениваем сроки</p>
+                                            <div class="slide__item">Научное исследование</div>
+                                            <div class="slide__item">Бизнес-анализ</div>
+                                            <div class="slide__item">Разработка ТЗ</div>
+                                        </div>
+                                        <div class="slider__image image"><img class="slider__image"
+                                                src="./img/banner1.png" alt="slide"></div>
+                                    </div>
+
+                                    <div class="swiper-slide banner">
+                                        <div class="slide__info">
+                                            <h4 class="slide__title title-sm light">РАЗРАБОТКА АППАРАТНОЙ ЧАСТИ</h4>
+                                            <p class="slide__text text">Создаем архитектуру схемы, подбираем элементную
+                                                базу, прорабатываем конструктив прибора и его печатной платы, трассируем
+                                                плату</p>
+                                        </div>
+                                        <div class="slider__image image"><img class="slider__image"
+                                                src="./img/banner2.png" alt="slide"></div>
+                                    </div>
+
+                                    <div class="swiper-slide banner">
+                                        <div class="slide__info">
+                                            <h4 class="slide__title title-sm light">РАЗРАБОТКА ПО</h4>
+                                            <p class="slide__text text">Разрабатываем и проводим отладку программного
+                                                обеспечения</p>
+                                            <div class="slide__item">Облачная разработка</div>
+                                            <div class="slide__item">Встроенное ПО</div>
+                                            <div class="slide__item">Графический интерфейс (GUI)</div>
+                                        </div>
+                                        <div class="slider__image image"><img class="slider__image"
+                                                src="./img/banner3.png" alt="slide"></div>
+                                    </div>
+
+                                    <div class="swiper-slide banner">
+                                        <div class="slide__info">
+                                            <h4 class="slide__title title-sm light">ПРОМЫШЛЕННЫЙ ДИЗАЙН
+                                                И ПРОТОТИПИРОВАНИЕ</h4>
+                                            <p class="slide__text text">Разрабатываем дизайна и/или конструкцию корпуса.
+                                                <br>
+                                                <br>
+                                                Создаем «черновую» реализацию будущего продукта для комплексного анализа
+                                                работы системы. Прототипирование позволяет получить подтверждение
+                                                работоспособности устройства/идеи/концепции, экономя время и деньги на
+                                                логистике и изготовлении
+                                            </p>
+
+                                        </div>
+                                        <div class="slider__image image"><img class="slider__image"
+                                                src="./img/banner4.png" alt="slide"></div>
+                                    </div>
+
+                                    <div class="swiper-slide banner">
+                                        <div class="slide__info">
+                                            <h4 class="slide__title title-sm light">Подготовка и производство</h4>
+                                            <p class="slide__text text">Разрабатываем технологическую документацию,
+                                                готовим технологическую оснастку, создаем стенды для проверки и
+                                                прошивки, работаем над повышением технологичности изделия. <br>
+                                                <br>
+                                                Запускаем серийное производство, осуществляем инженерную поддержку и
+                                                персональное сопровождение, при необходимости берем на себя
+                                                корпусирование и упаковку
+                                            </p>
+                                        </div>
+                                        <div class="slider__image image"><img class="slider__image"
+                                                src="./img/banner5.png" alt="slide"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+
+                        </div>
+                        <script type="text/javascript">
+                            const swiper1 = new Swiper('#slideshow1', {
+                                mode: 'horizontal',
+                                slidesPerView: 1,
+                                spaceBetween: 30,
+                                speed: 1000,
+                                autoplay: true,
+                                autoplay: {
+                                    delay: 10000,
+                                },
+                                autoplayDisableOnInteraction: true,
+                                paginationClickable: true,
+                                loop: false,
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                    type: 'bullets',
+                                    clickable: true
+                                },
+                                navigation: {
+                                    nextEl: '.swiper-button-next',
+                                    prevEl: '.swiper-button-prev',
+                                },
+                            });
+
+                            const elem = document.querySelector('.complex-section__container');
+
+                            document.addEventListener('DOMContentLoaded', function () {
+                                swiper1.autoplay.stop();
+                                document.addEventListener('scroll', onScroll);
+                            });
+
+                            function onScroll() {
+                                const posTop = elem.getBoundingClientRect().top;
+
+                                if (posTop + elem.clientHeight <= window.innerHeight && posTop >= 0) {
+                                    swiper1.autoplay.start();
+                                };
+                            }
+                        </script>
+                    </div>
+                    <div class="complex-section__btn arrow-btn light">Узнать больше</div>
+                </div>
+            </section>
+            <section class="history-section lightgrey-bg sub-box">
+                <div class="history-section__container container">
+                    <h3 class="history-section__subtitle subtitle">история компании</h3>
+                    <h2 class="history-section__title title">НЕМНОГО ИСТОРИИ</h2>
+                    <div class="history-section__items">
+                        <div class="history-section__item">
+                            <div>
+                                <div class="history-section__date title">1995</div>
+                                <p class="history-section__event">Первые шаги</p>
+                            </div>
+                            <div class="history-section__text text">
+                                <p>Собрана первая команда инженеров.</p>
+                                <p>Путь начинается с разработки и собственного производства устройств автоматики</p>
+                            </div>
+                        </div>
+                        <div class="history-section__item">
+                            <div>
+                                <div class="history-section__date title">2000</div>
+                                <p class="history-section__event">Первый патент</p>
+                            </div>
+                            <div class="history-section__text text">
+                                <p>Получен патент на изобретение.</p>
+                                <p> С этого момента разработанные устройства и системы начинают взаимодействовать на
+                                    собственном протоколе PLC</p>
+                            </div>
+                        </div>
+                        <div class="history-section__item">
+                            <div>
+                                <div class="history-section__date title">2007</div>
+                                <p class="history-section__event">Направление разработки - IoT</p>
+                            </div>
+                            <div class="history-section__text text">
+                                <p>Разработаны первые умные счётчики.</p>
+                                <p>Это положило старт развитию направления интеллектуальной системы учета энергоресурсов
+                                </p>
+                            </div>
+                        </div>
+                        <div class="history-section__item">
+                            <div>
+                                <div class="history-section__date title">2016</div>
+                                <p class="history-section__event">Unic Lab</p>
+                            </div>
+                            <div class="history-section__text text">
+                                <p>Определена новая область развития - контрактная
+                                    разработка электроники и программного обеспечения.</p>
+                                <p>Член Белорусского Парка высоких технологий (Hi-Tech Park Belarus)</p>
+                            </div>
+                        </div>
+                        <div class="history-section__item">
+                            <div>
+                                <div class="history-section__date title">СЕГОДНЯ</div>
+                            </div>
+                            <div class="history-section__text text">Десятки партнеров, сотни успешно реализованных
+                                проектов, тысячи собранных прототипов и миллионы произведенных устройств</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="why-section dark-bg box">
+                <div class="why-section__container_big container">
+                    <div class="why-section__info">
+                        <h2 class="why-section__title title light">ПОЧЕМУ UNIC LAB?</h2>
+                        <p class="why-section__text text light">Исследование, разработка, тестирование и производство -
+                            все этапы мы
+                            собрали под одной крышей
+                        </p>
+                    </div>
+                    <div class="why-section__item">
+                        <div class="why-section__item-image image"><img src="./img/why1.svg" alt="UNIC LAB"></div>
+                        <h3 class="why-section__item-title main-section__step_title">Оснащенность</h3>
+                        <p class="why-section__item-text main-section__step_text">Огромный комплекс
+                            технологического оборудования для разных задач</p>
+                    </div>
+                    <div class="why-section__item">
+                        <div class="why-section__item-image image"><img src="./img/why2.svg" alt="UNIC LAB"></div>
+                        <h3 class="why-section__item-title main-section__step_title">Инновации</h3>
+                        <p class="why-section__item-text main-section__step_text">В процессе разработки наши
+                            заказчики получают патенты на изобретение</p>
+                    </div>
+                    <div class="why-section__item">
+                        <div class="why-section__item-image image"><img src="./img/why3.svg" alt="UNIC LAB"></div>
+                        <h3 class="why-section__item-title main-section__step_title">Экспертиза</h3>
+                        <p class="why-section__item-text main-section__step_text">Более 100 штатных инженеров со
+                            средним опытом 12+ лет</p>
+                    </div>
+                    <div class="why-section__item">
+                        <div class="why-section__item-image image"><img src="./img/why4.svg" alt="UNIC LAB"></div>
+                        <h3 class="why-section__item-title main-section__step_title">Качество</h3>
+                        <p class="why-section__item-text main-section__step_text">90% разработанных нами устройств
+                            выпускается серийно </p>
+                    </div>
+                    <div class="why-section__item">
+                        <div class="why-section__item-image image"><img src="./img/why5.svg" alt="UNIC LAB"></div>
+                        <h3 class="why-section__item-title main-section__step_title">Возможности</h3>
+                        <p class="why-section__item-text main-section__step_text">Проверенные поставщики и лучшие цены
+                            на комплектующие </p>
+                    </div>
+                </div>
+            </section>
+            <section class="faq-section darkgrey-bg box">
+                <div class="container">
+                    <h2 class="faq-section__title title">FAQ</h2>
+                    <div class="faq-section__items">
+                        <div class="faq-section__item">
+                            <p class="faq-section__question subtitle-text">С какими проектами работает ваша компания?
+                            </p>
+                            <p class="faq-section__answer text">Наш фокус — разработка электроники и ПО в направлении
+                                «Интернета вещей» (IoT). Однако наша команда — это 90+ разработчиков с опытом 10+ лет в
+                                различных направлениях.</p>
+                        </div>
+                        <div class="faq-section__item">
+                            <p class="faq-section__question subtitle-text">В вашем портфолио нет проекта, похожего на
+                                мой. Справитесь ли вы с его реализацией?
+                            </p>
+                            <p class="faq-section__answer text">Наш фокус — разработка электроники и ПО в направлении
+                                «Интернета вещей» (IoT). Однако наша команда — это 90+ разработчиков с опытом 10+ лет в
+                                различных направлениях: промышленная автоматизация, устройства обработки сигналов,
+                                автомобильная электроника, телекоммуникации и технологии передачи данных,
+                                потребительская электроника, измерительная электроника, силовая электроника,
+                                импульсно-преобразовательная электроника.</p>
+                        </div>
+                        <div class="faq-section__item">
+                            <p class="faq-section__question subtitle-text">Как рассчитывается стоимость проекта?
+                            </p>
+                            <p class="faq-section__answer text">Наш фокус — разработка электроники и ПО в направлении
+                                «Интернета вещей» (IoT). Однако наша команда — это 90+ разработчиков с опытом 10+ лет в
+                                различных направлениях.</p>
+                        </div>
+                        <div class="faq-section__item">
+                            <p class="faq-section__question subtitle-text">Сколько времени занимает реализация проекта?
+                            </p>
+                            <p class="faq-section__answer text">Наш фокус — разработка электроники и ПО в направлении
+                                «Интернета вещей» (IoT). Однако наша команда — это 90+ разработчиков с опытом 10+ лет в
+                                различных направлениях.</p>
+                        </div>
+                        <div class="faq-section__item">
+                            <p class="faq-section__question subtitle-text">Какую информацию нужно предоставить для
+                                оценки сроков реализации проекта и его стоимости?
+                            </p>
+                            <p class="faq-section__answer text">Наш фокус — разработка электроники и ПО в направлении
+                                «Интернета вещей» (IoT). Однако наша команда — это 90+ разработчиков с опытом 10+ лет в
+                                различных направлениях.</p>
+                        </div>
+                        <div class="faq-section__item">
+                            <p class="faq-section__question subtitle-text">Какие преимущества при заказе проекта в вашей
+                                компании?
+                            </p>
+                            <p class="faq-section__answer text">Наш фокус — разработка электроники и ПО в направлении
+                                «Интернета вещей» (IoT). Однако наша команда — это 90+ разработчиков с опытом 10+ лет в
+                                различных направлениях.</p>
+                        </div>
+                        <div class="faq-section__item">
+                            <p class="faq-section__question subtitle-text">Кому будут принадлежать права на разработку
+                                по ее завершении?
+                            </p>
+                            <p class="faq-section__answer text">Наш фокус — разработка электроники и ПО в направлении
+                                «Интернета вещей» (IoT). Однако наша команда — это 90+ разработчиков с опытом 10+ лет в
+                                различных направлениях.</p>
+                        </div>
+                        <div class="faq-section__item">
+                            <p class="faq-section__question subtitle-text">Гарантируется ли конфиденциальность
+                                передаваемой мной информации?
+                            </p>
+                            <p class="faq-section__answer text">Наш фокус — разработка электроники и ПО в направлении
+                                «Интернета вещей» (IoT). Однако наша команда — это 90+ разработчиков с опытом 10+ лет в
+                                различных направлениях.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="partner-section dark-bg box">
+                <div class="partner-section__container container">
+                    <div>
+                        <h2 class="partner-section__title title light">Наши партнеры</h2>
+                        <p class="partner-section__text text light">Долгосрочные отношения с партнерами подтверждают
+                            нашу
+                            высокую квалификацию и соответствие международным требованиям деловой этики</p>
+                    </div>
+                    <div class="partners-slider">
+                        <div class="slideshow swiper-viewport">
+                            <div id="slideshow2" class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/partner.png" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/partner.png" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/partner.png" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/partner.png" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/logo.svg" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/logo.svg" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/logo.svg" alt="slide">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            const swiper2 = new Swiper('#slideshow2', {
+                                mode: 'horizontal',
+                                slidesPerView: 2,
+                                spaceBetween: 16,
+                                speed: 1000,
+                                autoplay: true,
+                                autoplay: {
+                                    delay: 500,
+                                },
+                                autoplayDisableOnInteraction: true,
+                                paginationClickable: true,
+                                loop: true,
+
+                                breakpoints: {
+                                    1300: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 20,
+                                    },
+
+                                    500: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 16,
+                                    },
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-section command-section box">
+                <div class="contact-section__container container">
+                    <div>
+                        <h2 class="contact-section__title title">Хочешь стать частью нашей команды?</h2>
+                        <p class="contact-section__text text">Присылай резюме на почту <span
+                                class="green">hr@unic-lab.by</span> или сделай это прямо сейчас!
+                        </p>
+                    </div>
+                    <div class="contact-form">
+                        <form action="#" method="post">
+                            <fieldset>
+                                <div class="contact-form__wrapper">
+                                    <div class="input">
+                                        <label for="name" class="input-name">Ваше имя *</label>
+                                        <input class="error" id="name" type="text" placeholder="Иван" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="surname" class="input-name">Ваша фамилия *</label>
+                                        <input id="surname" type="text" placeholder="Иванов" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="email" class="input-name">Ваш электронный адрес *</label>
+                                        <input id="email" type="email" placeholder="ivan.ivanov@mial.ru" required>
+                                    </div>
+                                    <div class="contact-form__tel input">
+                                        <label for="telephone" class="input-name">Ваш номер телефона</label>
+                                        <div>
+                                            <div class="my-select" id="my-select">
+                                                <div data="">BY</div>
+                                                <div>
+                                                    <div data="BY">BY</div>
+                                                    <div data="RU">RU</div>
+                                                    <div data="KZ">KZ</div>
+                                                </div>
+                                                <input type="hidden" value="">
+                                            </div>
+                                            <div class="contact-form__tel_code"><input class="contact-form__code"
+                                                    type="text" value="+375"><input id="telephone" type="text"
+                                                    placeholder="(xx) xxx xx xx" required></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-form__question input">
+                                    <label for="question" class="input-name">Сопроводительное письмо</label>
+                                    <textarea name="question" id="question" rows="3"></textarea>
+                                </div>
+                                <div class="contact-form__file input">
+                                    <input type="file" id="file">
+                                    <label for="file">
+                                        <p>Перетащите или <span>выберите</span> файлы</p>
+                                        <p>Прикрепить файл</p>
+                                    </label>
+                                    <div class="progress">
+                                        <div class="progress__info">
+                                            <p class="progress__name">document_ivanov.doc</p>
+                                            <div class="progress__size ready">120 Kb</div>
+                                            <div class="progress__close"></div>
+                                        </div>
+                                        <progress id="progressBar" value="0" max="100"></progress>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress__info">
+                                            <p class="progress__name">document_ivanov.doc</p>
+                                            <div class="progress__size">45 Kb / 120 Kb</div>
+                                            <div class="progress__close"></div>
+                                        </div>
+                                        <progress id="progressBar" value="50" max="100"></progress>
+                                    </div>
+                                </div>
+                                <div class="contact-form__agree">
+                                    <input type="checkbox" class="checkbox-styled" id="agree">
+                                    <label for="agree"> <span></span>
+                                        <p>Я согласен с правилами <a href="#">сбора
+                                                персональных
+                                                данных</a></p>
+                                    </label>
+                                </div>
+                                <button class="contact-form__send button-modal" id="formsend" type="submit"
+                                    data-modal="modal-formsend">Отправить</button>
+                                <p class="contact-form__text">*обязательные поля для заполнения</p>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__logo">
+                    <a href="#"></a>
+                    <p class="text light">Контрактная разработка электроники и программного обеспечения</p>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__contacts">
+                        <h5 class="footer__subtitle main-section__step_title">Контакты</h5>
+                        <ul class="footer__menu">
+                            <li>
+                                <p class="text light">223016, Республика Беларусь,
+                                    Минская обл., Минский р-н,
+                                    Новодворский с/с, 74</p>
+                            </li>
+                            <li class="footer__tel">
+                                <a href="tel:+375296016832">BY: +375 (29) 601-68-32</a>
+                            </li>
+                            <li class="footer__tel">
+                                <a href="tel:+79587628608">RU: +7 (958) 762-86-08</a>
+                            </li>
+                            <li class="footer__mail">
+                                <a href="mailto:sales@unic-lab.by">sales@unic-lab.by</a>
+                            </li>
+                            <li class="footer__social">
+                                <a class="footer__telegram" href="#">Telegram</a>
+                                <a class="footer__linkedin" href="#">Linkidin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-wrapper">
+                        <div>
+                            <h5 class="footer__subtitle main-section__step_title">Компания</h5>
+                            <ul class="footer__menu">
+                                <li class="text light"><a href="#">О компании</a></li>
+                                <li class="text light"><a href="#">Технологии</a></li>
+                                <li class="text light"><a href="#">Проекты</a></li>
+                                <li class="text light"><a href="#">IoT</a></li>
+                                <li class="text light"><a href="#">Блог</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="footer__subtitle main-section__step_title">Услуги</h5>
+                            <div class="footer__menu_col">
+                                <ul class="footer__menu">
+                                    <li class="text light"><a href="#">Научные исследования</a></li>
+                                    <li class="text light"><a href="#">Промышленный дизайн</a></li>
+                                    <li class="text light"><a href="#">Прототипирование</a></li>
+                                    <li class="text light"><a href="#">Подготовка и производство</a></li>
+                                </ul>
+                                <ul class="footer__menu">
+                                    <li class="text light"><a href="#">Разработка ПО</a></li>
+                                    <li class="text light"><a href="#">Встроенное ПО</a></li>
+                                    <li class="text light"><a href="#">Облачная разработка</a></li>
+                                    <li class="text light"><a href="#">Разработка аппаратной части</a></li>
+                                    <li class="text light"><a href="#">Проектирование печатных платг</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__copyright">
+                <div class="copyright__container container">
+                    <p class="text light">© 2016-2022 Unic Lab Company</p>
+                    <a class="footer__copyright_policy text light" href="#">Политика конфидециальности</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal__wrapper" id="modal-formsend">
+        <div class="modal__content">
+            <div class="close"></div>
+            <div class="formsend-messege">
+                <p class="formsend-messege__text-main">Ваша форма успешно отправлена!</p>
+                <p class="formsend-messege__text text">В ближайшее время с Вами свяжутся наши специалисты.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal__wrapper" id="modal-callback">
+        <div class="modal__content">
+            <div class="close"></div>
+            <div class="callback__modal-form">
+                <h2 class="contact-section__title title">Связаться с нами</h2>
+                <p class="contact-section__text text">По любым вопросам вы можете обратиться к нам через форму
+                    обратной
+                    связи или составить более подробное техническое задание, и наши специалисты свяжутся с вами
+                </p>
+                <div class="create-task-btn">Составить ТЗ онлайн
+                    <div class="callback-btn_inner"></div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <div class="contact-form__wrapper">
+                                <div class="input">
+                                    <label for="name" class="input-name">Ваше имя *</label>
+                                    <input class="error" id="name" type="text" placeholder="Иван" required>
+                                </div>
+                                <div class="input">
+                                    <label for="surname" class="input-name">Ваша фамилия *</label>
+                                    <input id="surname" type="text" placeholder="Иванов" required>
+                                </div>
+                                <div class="input">
+                                    <label for="email" class="input-name">Ваш электронный адрес *</label>
+                                    <input id="email" type="email" placeholder="ivan.ivanov@mial.ru" required>
+                                </div>
+                                <div class="contact-form__tel input">
+                                    <label for="telephone" class="input-name">Ваш номер телефона</label>
+                                    <div>
+                                        <div class="my-select" id="my-select">
+                                            <div data="">BY</div>
+                                            <div>
+                                                <div data="BY">BY</div>
+                                                <div data="RU">RU</div>
+                                                <div data="KZ">KZ</div>
+                                            </div>
+                                            <input type="hidden" value="">
+                                        </div>
+                                        <div class="contact-form__tel_code"><input class="contact-form__code"
+                                                type="text" value="+375"><input id="telephone" type="text"
+                                                placeholder="(xx) xxx xx xx" required></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-form__company input">
+                                <label for="company" class="input-name">Ваша компания *</label>
+                                <input id="company" type="text" placeholder="IvanIvan" required>
+                            </div>
+                            <div class="contact-form__question input">
+                                <label for="question" class="input-name">Ваш вопрос</label>
+                                <textarea name="question" id="question" rows="3"></textarea>
+                            </div>
+                            <div class="contact-form__file input">
+                                <input type="file" id="file">
+                                <label for="file">
+                                    <p>Перетащите или <span>выберите</span> файлы</p>
+                                    <p>Прикрепить файл</p>
+                                </label>
+                                <div class="progress">
+                                    <div class="progress__info">
+                                        <p class="progress__name">document_ivanov.doc</p>
+                                        <div class="progress__size ready">120 Kb</div>
+                                        <div class="progress__close"></div>
+                                    </div>
+                                    <progress id="progressBar" value="0" max="100"></progress>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress__info">
+                                        <p class="progress__name">document_ivanov.doc</p>
+                                        <div class="progress__size">45 Kb / 120 Kb</div>
+                                        <div class="progress__close"></div>
+                                    </div>
+                                    <progress id="progressBar" value="50" max="100"></progress>
+                                </div>
+                            </div>
+                            <div class="contact-form__agree">
+                                <input type="checkbox" class="checkbox-styled" id="agree">
+                                <label for="agree"> <span></span>
+                                    <p>Я согласен с правилами <a href="#">сбора
+                                            персональных
+                                            данных</a></p>
+                                </label>
+                            </div>
+                            <button class="contact-form__send button-modal" id="formsend" type="submit"
+                                data-modal="modal-formsend">Отправить</button>
+                            <p class="contact-form__text">*обязательные поля для заполнения</p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
