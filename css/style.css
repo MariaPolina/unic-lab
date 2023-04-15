@@ -656,7 +656,7 @@ h1 {
         padding: 8px 6px;
     }
 
-    .menu-item-has-children>a::after,
+    .menu__items>.menu-item-has-children>a::after,
     .lang__selected::after {
         content: '';
         display: inline-block;
@@ -715,7 +715,7 @@ h1 {
         transition: all 0.4s ease;
     }
 
-    .menu-item-has-children>a {
+    .menu__items>.menu-item-has-children>a {
         position: relative;
     }
 
