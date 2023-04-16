@@ -1392,6 +1392,7 @@ h1 {
     color: #E3E3E3;
     position: relative;
     cursor: pointer;
+    display: block;
     white-space: nowrap;
 }
 
