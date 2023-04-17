@@ -252,6 +252,7 @@ h1 {
 }
 
 .arrow-btn {
+    display: block;
     padding: 4px 4px;
     border-bottom: 1px solid #171717;
     width: fit-content;
@@ -1231,7 +1232,7 @@ h1 {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: #E3E3E3;
+    color: #E3E3E3 !important;
     max-width: fit-content;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -1382,6 +1383,7 @@ h1 {
 }
 
 .learn-more {
+    display: block;
     margin-top: 30px;
     padding: 4px 4px;
     border-bottom: 1px solid #E3E3E3;
@@ -1389,7 +1391,7 @@ h1 {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #E3E3E3;
+    color: #E3E3E3 !important;
     position: relative;
     cursor: pointer;
     display: block;
@@ -1409,7 +1411,7 @@ h1 {
 }
 
 .learn-more:hover {
-    color: #9FEA00;
+    color: #9FEA00 !important;
     border-bottom: 1px solid #9FEA00;
 }
 
@@ -2813,7 +2815,7 @@ progress::-webkit-progress-value {
     width: 24px;
     height: 24px;
     background: url(../img/ok.svg) center center no-repeat;
-    border: solid 1px #E3E3E3;
+    border: solid 1px #A1A1A1;
     border-radius: 3px;
 }
 
