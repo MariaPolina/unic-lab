@@ -147,6 +147,103 @@ $(document).ready(function () {
         $(this).addClass('loading');
     });
 
+    // slider1
+
+    const swiper1 = new Swiper('#slideshow1', {
+        mode: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        speed: 1000,
+        autoplay: true,
+        autoplay: {
+            delay: 10000,
+        },
+        autoplayDisableOnInteraction: true,
+        paginationClickable: true,
+        loop: false,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    const elem = document.querySelector('.complex-section__container');
+
+    document.addEventListener('DOMContentLoaded', function () {
+        swiper1.autoplay.stop();
+        document.addEventListener('scroll', onScroll);
+    });
+
+    function onScroll() {
+        const posTop = elem.getBoundingClientRect().top;
+
+        if (posTop + elem.clientHeight <= window.innerHeight && posTop >= 0) {
+            swiper1.autoplay.start();
+        };
+    }
+
+    // slider 2
+
+    const swiper2 = new Swiper('#slideshow2', {
+        mode: 'horizontal',
+        slidesPerView: 2,
+        spaceBetween: 16,
+        speed: 1000,
+        autoplay: true,
+        autoplay: {
+            delay: 500,
+        },
+        autoplayDisableOnInteraction: true,
+        paginationClickable: true,
+        loop: true,
+
+        breakpoints: {
+            1300: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+
+            500: {
+                slidesPerView: 3,
+                spaceBetween: 16,
+            },
+        }
+    });
+
+    // slider3+4
+
+    const swiper3 = new Swiper('#slideshow3', {
+        mode: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: false,
+        paginationClickable: true,
+        loop: false,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+    });
+
+    const swiper4 = new Swiper('#slideshow4', {
+        mode: 'horizontal',
+        slidesPerView: 4,
+        spaceBetween: 16,
+        autoplay: false,
+        loop: false,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+
     // mobile slider for projects cards
 
     if ($(window).width() < 1301) {

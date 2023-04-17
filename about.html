@@ -10,7 +10,6 @@
     <link href="./css/style.css" rel="stylesheet">
     <!--scripts for sliders-->
     <link rel="stylesheet" href="./js/swiper-9.1.1/package/swiper-bundle.min.css">
-    <script src="./js/swiper-9.1.1/package/swiper-bundle.min.js"></script>
     <!--//-->
 </head>
 
@@ -174,38 +173,6 @@
                         <video id="expertiseVideo" src="./img/vid-3.mp4" muted></video>
                         <div class="video__start-btn"></div>
                     </div>
-
-                    <script type="text/javascript">
-
-                        const playVideoButton = document.querySelector('.video__start-btn');
-                        const expertiseVideo = document.getElementById('expertiseVideo');
-
-                        document.addEventListener('DOMContentLoaded', function () {
-                            document.addEventListener('scroll', videoScroll);
-                        });
-
-                        function videoScroll() {
-                            const videoWrapper = document.querySelector('.expertise-section');
-                            const posTop = videoWrapper.getBoundingClientRect().top;
-
-                            if (posTop + videoWrapper.clientHeight <= window.innerHeight && posTop >= 0) {
-                                playVideoButton.style.display = "none";
-                                expertiseVideo.setAttribute("controls", true);
-                                expertiseVideo.play();
-                            };
-                        }
-
-                        expertiseVideo.addEventListener('ended', function () {
-                            playVideoButton.style.display = "block";
-                            expertiseVideo.removeAttribute("controls");
-                        }, false);
-
-                        playVideoButton.addEventListener("click", function () {
-                            playVideoButton.style.display = "none";
-                            expertiseVideo.setAttribute("controls", true);
-                            expertiseVideo.play();
-                        });
-                    </script>
                 </div>
             </section>
             <section class="complex-section dark-bg">
@@ -290,49 +257,9 @@
                                 <div class="swiper-button-prev"></div>
                                 <div class="swiper-button-next"></div>
                             </div>
-
                         </div>
-                        <script type="text/javascript">
-                            const swiper1 = new Swiper('#slideshow1', {
-                                mode: 'horizontal',
-                                slidesPerView: 1,
-                                spaceBetween: 30,
-                                speed: 1000,
-                                autoplay: true,
-                                autoplay: {
-                                    delay: 10000,
-                                },
-                                autoplayDisableOnInteraction: true,
-                                paginationClickable: true,
-                                loop: false,
-                                pagination: {
-                                    el: '.swiper-pagination',
-                                    type: 'bullets',
-                                    clickable: true
-                                },
-                                navigation: {
-                                    nextEl: '.swiper-button-next',
-                                    prevEl: '.swiper-button-prev',
-                                },
-                            });
-
-                            const elem = document.querySelector('.complex-section__container');
-
-                            document.addEventListener('DOMContentLoaded', function () {
-                                swiper1.autoplay.stop();
-                                document.addEventListener('scroll', onScroll);
-                            });
-
-                            function onScroll() {
-                                const posTop = elem.getBoundingClientRect().top;
-
-                                if (posTop + elem.clientHeight <= window.innerHeight && posTop >= 0) {
-                                    swiper1.autoplay.start();
-                                };
-                            }
-                        </script>
                     </div>
-                    <div class="complex-section__btn arrow-btn light">Узнать больше</div>
+                    <a href="#" class="complex-section__btn arrow-btn light">Узнать больше</a>
                 </div>
             </section>
             <section class="history-section lightgrey-bg sub-box">
@@ -548,33 +475,6 @@
                                 </div>
                             </div>
                         </div>
-                        <script type="text/javascript">
-                            const swiper2 = new Swiper('#slideshow2', {
-                                mode: 'horizontal',
-                                slidesPerView: 2,
-                                spaceBetween: 16,
-                                speed: 1000,
-                                autoplay: true,
-                                autoplay: {
-                                    delay: 500,
-                                },
-                                autoplayDisableOnInteraction: true,
-                                paginationClickable: true,
-                                loop: true,
-
-                                breakpoints: {
-                                    1300: {
-                                        slidesPerView: 3,
-                                        spaceBetween: 20,
-                                    },
-
-                                    500: {
-                                        slidesPerView: 3,
-                                        spaceBetween: 16,
-                                    },
-                                }
-                            });
-                        </script>
                     </div>
                 </div>
             </section>
@@ -602,18 +502,9 @@
                                         <label for="email" class="input-name">Ваш электронный адрес *</label>
                                         <input id="email" type="email" placeholder="ivan.ivanov@mial.ru" required>
                                     </div>
-                                    <div class="contact-form__tel input">
+                                    <div class="input">
                                         <label for="telephone" class="input-name">Ваш номер телефона</label>
                                         <div>
-                                            <div class="my-select" id="my-select">
-                                                <div data="">BY</div>
-                                                <div>
-                                                    <div data="BY">BY</div>
-                                                    <div data="RU">RU</div>
-                                                    <div data="KZ">KZ</div>
-                                                </div>
-                                                <input type="hidden" value="">
-                                            </div>
                                             <div class="contact-form__tel_code"><input class="contact-form__code"
                                                     type="text" value="+375"><input id="telephone" type="text"
                                                     placeholder="(xx) xxx xx xx" required></div>
@@ -755,9 +646,9 @@
                     обратной
                     связи или составить более подробное техническое задание, и наши специалисты свяжутся с вами
                 </p>
-                <div class="create-task-btn">Составить ТЗ онлайн
+                <a href="#" class="create-task-btn">Составить ТЗ онлайн
                     <div class="callback-btn_inner"></div>
-                </div>
+                </a>
 
                 <div class="contact-form">
                     <form action="#" method="post">
@@ -842,8 +733,40 @@
         </div>
     </div>
 
+    <script type="text/javascript">
+        const playVideoButton = document.querySelector('.video__start-btn');
+        const expertiseVideo = document.getElementById('expertiseVideo');
+
+        document.addEventListener('scroll', videoScroll);
+
+        function videoScroll() {
+            const videoWrapper = document.querySelector('.expertise-section');
+            const posTop = videoWrapper.getBoundingClientRect().top;
+
+            if (posTop + videoWrapper.clientHeight <= window.innerHeight && posTop >= 0) {
+                playVideoButton.style.display = "none";
+                expertiseVideo.setAttribute("controls", true);
+                expertiseVideo.play();
+            };
+        }
+
+        expertiseVideo.addEventListener('ended', function () {
+            playVideoButton.style.display = "block";
+            expertiseVideo.removeAttribute("controls");
+        }, false);
+
+        playVideoButton.addEventListener("click", function () {
+            playVideoButton.style.display = "none";
+            expertiseVideo.setAttribute("controls", true);
+            expertiseVideo.play();
+        }); 
+    </script>
+
     <script src="./js/jquery-2.1.1.min.js"></script>
     <script src="./js/index.js"></script>
+    <!--scripts for sliders-->
+    <script src="./js/swiper-9.1.1/package/swiper-bundle.min.js"></script>
+    <!--//-->
 </body>
 
 </html>
