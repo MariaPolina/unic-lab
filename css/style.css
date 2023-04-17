@@ -3908,7 +3908,7 @@ progress::-webkit-progress-value {
 }
 
 .technologies-section__item-title {
-    max-width: 265px;
+    max-width: 310px;
 }
 
 .technologies-section__list li:not(:last-child) {
@@ -3954,6 +3954,7 @@ progress::-webkit-progress-value {
     .technologies-section__item-title {
         max-width: 100%;
         margin-bottom: 12px;
+        text-transform: none;
     }
 
     .technologies-section__list li:not(:last-child) {
@@ -3979,8 +3980,6 @@ progress::-webkit-progress-value {
         flex-wrap: wrap;
     }
 
-
 }
-
 
 /*--------------------------------------------------TECHNOLOGY PAGE end----------------------------------------*/
