@@ -322,25 +322,22 @@ h1 {
     padding-left: 12px;
 }
 
-.breadcrumbs ul {
+.breadcrumbs {
     display: flex;
     flex-direction: row;
     column-gap: 4px;
     flex-wrap: nowrap;
+    color: #EAEAEA;
 }
 
-.breadcrumb a {
+.breadcrumbs a {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #EAEAEA;
 }
 
-.breadcrumb:not(:last-child) a::after {
-    content: ' / ';
-}
-
-.breadcrumb:last-child a {
+.breadcrumbs .breadcrumb_last {
     color: #404040;
 }
 
@@ -3559,8 +3556,8 @@ progress::-webkit-progress-value {
     max-width: 535px;
 }
 
-.us-section__info-info>div:not(:last-child) {
-    margin-bottom: 50px;
+.us-section__title:not(:first-child) {
+    margin-top: 50px;
 }
 
 .us-section__info-image {
@@ -3592,8 +3589,8 @@ progress::-webkit-progress-value {
         max-width: 100%;
     }
 
-    .us-section__info-info>div:not(:last-child) {
-        margin-bottom: 24px;
+    .us-section__title:not(:first-child) {
+        margin-top: 24px;
     }
 
     .us-section__title {
