@@ -3930,6 +3930,12 @@ progress::-webkit-progress-value {
     grid-template-columns: 1fr 1fr;
 }
 
+.technologies-section__list_4 {
+    max-width: 860px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 @media (max-width: 1300px) {
     .technologies-section__wrapper:not(:last-child) {
         margin-bottom: 40px;
@@ -3960,7 +3966,8 @@ progress::-webkit-progress-value {
 
     .technologies-section__list_3,
     .technologies-section__list_2,
-    .technologies-section__list_2-2 {
+    .technologies-section__list_2-2,
+    .technologies-section__list_4 {
         max-width: 100%;
         display: flex;
         flex-direction: row;
@@ -3984,6 +3991,132 @@ progress::-webkit-progress-value {
 /*--------------------------------------------------SERVICE PAGE start----------------------------------------*/
 
 /*------service section--------*/
+
+.service-section {
+    background: #0B0B0B url(../img/service-bg.svg) center center no-repeat;
+    background-size: cover;
+    padding-top: 129px;
+    padding-bottom: 100px;
+}
+
+.service-section__title {
+    margin-bottom: 20px;
+}
+
+.service-section__text {
+    max-width: 530px;
+    margin-bottom: 50px;
+}
+
+.service-section__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.service-section__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 30px 50px 30px;
+    background: rgba(22, 22, 22, 0.5);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.27);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 4px;
+}
+
+.service-section__item-title {
+    max-width: 420px;
+}
+
+.service-section__info {
+    margin-right: 83px;
+}
+
+.service-section__item-text {
+    margin-bottom: 20px;
+}
+
+.service-section__btn {
+    margin-top: 28px;
+}
+
+.service-section__item-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.service-section__item-list li a {
+    display: block;
+    background: #161616 url(../img/arrow-right-w.svg) right 17px center no-repeat;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.27);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 4px;
+    padding: 14px 50px 14px 30px;
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #E3E3E3;
+}
+
+@media (max-width: 1300px) {
+    .service-section {
+        background: #0B0B0B;
+        padding-top: 88px;
+        padding-bottom: 20px;
+    }
+
+    .service-section__title {
+        margin-bottom: 8px;
+    }
+
+    .service-section__text {
+        margin-bottom: 40px;
+    }
+
+    .service-section__items {
+        row-gap: 16px;
+    }
+
+    .service-section__item {
+        grid-template-columns: 1fr;
+        padding: 20px 16px;
+    }
+
+    .service-section__item-title {
+        max-width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .service-section__info {
+        margin-right: 0;
+    }
+
+    .service-section__item-text {
+        margin-bottom: 8px;
+    }
+
+    .service-section__btn {
+        margin-top: 18px;
+    }
+
+    .service-section__item-list {
+        row-gap: 8px;
+    }
+
+    .service-section__item-list li a {
+        background: #161616 url(../img/arrow-right-w.svg) right 15px center no-repeat;
+        padding: 12px 50px 12px 8px;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: none;
+    }
+}
 
 
 /*--------------------------------------------------SERVICE PAGE end----------------------------------------*/
