@@ -3559,8 +3559,8 @@ progress::-webkit-progress-value {
     max-width: 535px;
 }
 
-.us-section__info-info>div:not(:last-child) {
-    margin-bottom: 50px;
+.us-section__title:not(:first-child) {
+    margin-top: 50px;
 }
 
 .us-section__info-image {
@@ -3592,8 +3592,8 @@ progress::-webkit-progress-value {
         max-width: 100%;
     }
 
-    .us-section__info-info>div:not(:last-child) {
-        margin-bottom: 24px;
+    .us-section__title:not(:first-child) {
+        margin-top: 24px;
     }
 
     .us-section__title {
