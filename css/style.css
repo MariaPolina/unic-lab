@@ -3908,7 +3908,7 @@ progress::-webkit-progress-value {
 }
 
 .technologies-section__item-title {
-    max-width: 310px;
+    max-width: 265px;
 }
 
 .technologies-section__list li:not(:last-child) {
