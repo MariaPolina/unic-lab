@@ -195,7 +195,8 @@ h1 {
     color: #171717;
 }
 
-.title.light {
+.title.light,
+.title-sm.light {
     color: #E3E3E3;
 }
 
@@ -339,6 +340,8 @@ h1 {
 
 .breadcrumbs .breadcrumb_last {
     color: #404040;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 @media (max-width: 1300px) {
@@ -1872,7 +1875,7 @@ h1 {
 
 }
 
-/*-------------- Projects section -------------------*/
+/*-------------- Project section -------------------*/
 
 .project-section__title {
     margin-bottom: 30px;
@@ -4019,9 +4022,7 @@ progress::-webkit-progress-value {
     grid-template-columns: 1fr 1fr;
     padding: 50px 30px 50px 30px;
     background: rgba(22, 22, 22, 0.5);
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.27);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    box-shadow: -2px -2px 4px rgba(80, 79, 79, 0.22), 4px 4px 15px rgba(0, 0, 0, 0.27);
     border-radius: 4px;
 }
 
@@ -4050,18 +4051,24 @@ progress::-webkit-progress-value {
 .service-section__item-list li a {
     display: block;
     background: #161616 url(../img/arrow-right-w.svg) right 17px center no-repeat;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.27);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    box-shadow: -2px -2px 4px rgba(80, 79, 79, 0.22), 4px 4px 15px rgba(0, 0, 0, 0.27);
     border-radius: 4px;
+    border: 1px solid transparent;
     padding: 14px 50px 14px 30px;
     font-family: 'Roboto Flex';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    text-transform: uppercase;
     color: #E3E3E3;
+}
+
+.service-section__item-list li a:hover {
+    border: 1px solid #7DB704;
+}
+
+.service-section__item-list li a:active {
+    border: 1px solid #9FEA00;
 }
 
 @media (max-width: 1300px) {
@@ -4114,8 +4121,379 @@ progress::-webkit-progress-value {
         padding: 12px 50px 12px 8px;
         font-size: 14px;
         line-height: 20px;
-        text-transform: none;
     }
 }
 
 /*--------------------------------------------------SERVICE PAGE end----------------------------------------*/
+
+/*--------------------------------------------------PROJECTS PAGE start----------------------------------------*/
+
+/*-------------- Projects section -------------------*/
+
+.projects-section {
+    padding-top: 129px;
+    padding-bottom: 50px;
+}
+
+.projects-section__title {
+    margin-bottom: 16px;
+}
+
+.projects-section__text {
+    max-width: 550px;
+    margin-bottom: 50px;
+}
+
+.projects-section__tags {
+    margin-bottom: 50px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.tag {
+    width: fit-content;
+    background: rgba(47, 47, 47, 0.2);
+    box-shadow: -1px -1px 2px rgba(86, 86, 86, 0.22), 4px 4px 15px rgba(30, 30, 30, 0.27);
+    border-radius: 5px;
+    padding: 11px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #E3E3E3;
+    border: 1px solid transparent;
+}
+
+.tag-btn {
+    cursor: pointer;
+}
+
+.tag.active {
+    border: 1px solid #7DB704;
+}
+
+.projects-section__select_mob {
+    display: none;
+}
+
+.projects-section__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin-bottom: 58px;
+}
+
+.projects-section__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto 1fr auto;
+    column-gap: 20px;
+    filter: drop-shadow(-2px -2px 5px rgba(45, 45, 45, 0.58)) drop-shadow(10px 10px 25px rgba(0, 0, 0, 0.44));
+    border-radius: 4px;
+}
+
+.projects-section__item:nth-child(odd) {
+    grid-template-areas: 'name image''tags image''subname image''text image''button image';
+    padding-left: 40px;
+    background: #161616 url(../img/projects-bg-r.png) right center no-repeat;
+    background-size: cover;
+}
+
+.projects-section__item:nth-child(even) {
+    padding-right: 40px;
+    grid-template-areas: 'image name''image tags''image subname''image text''image button';
+    background: #161616 url(../img/projects-bg-l.png) left center no-repeat;
+    background-size: cover;
+}
+
+.projects-section__item-title {
+    grid-area: name;
+    text-transform: none;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.projects-section__item-tags {
+    grid-area: tags;
+    margin-bottom: 20px;
+}
+
+.projects-section__item-sub-title {
+    grid-area: subname;
+    text-transform: none;
+    margin-bottom: 12px;
+}
+
+.projects-section__item-text {
+    grid-area: text;
+    margin-bottom: 20px;
+}
+
+.projects-section__btn {
+    grid-area: button;
+    margin-bottom: 40px;
+}
+
+.projects-section__item-image {
+    grid-area: image;
+    align-self: flex-end;
+    max-width: 620px;
+    max-height: 420px;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.projects-section__item-image img:nth-child(2) {
+    display: none;
+}
+
+.projects-section__item-image.active>img {
+    -webkit-animation: scaleCard 0.8s forwards;
+    animation: scaleCard 0.8s forwards;
+}
+
+.projects-section__pagination {
+    justify-content: flex-end;
+}
+
+.page-pagination {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.pagination__btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 19px;
+    height: 27px;
+}
+
+.pagination__btn[disabled] {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.pagination__prev {
+    background: transparent url(../img/arrow-right-w.svg) center center no-repeat;
+    transform: rotate(180deg);
+}
+
+.pagination__prev:hover {
+    background: transparent url(../img/arrow-right-g.svg) center center no-repeat;
+    transform: rotate(180deg);
+}
+
+.pagination__next {
+    background: transparent url(../img/arrow-right-w.svg) center center no-repeat;
+}
+
+.pagination__next:hover {
+    background: transparent url(../img/arrow-right-g.svg) center center no-repeat;
+}
+
+.pagination__page {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #E3E3E3;
+    border-bottom: 1px solid transparent;
+}
+
+.pagination__page:hover {
+    color: #9FEA00;
+}
+
+.pagination__page.active {
+    color: #9FEA00;
+    border-bottom: 1px solid #9FEA00;
+}
+
+.pagination__dots {
+    pointer-events: none;
+}
+
+.projects-section__loader_mob {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .projects-section {
+        padding-top: 104px;
+        padding-bottom: 75px;
+    }
+
+    .projects-section__title {
+        margin-bottom: 8px;
+    }
+
+    .projects-section__text {
+        margin-bottom: 24px;
+    }
+
+    .projects-section__tags {
+        display: none !important;
+    }
+
+    .tags {
+        column-gap: 8px;
+        row-gap: 16px;
+    }
+
+    .tag {
+        padding: 7px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .projects-section__select_mob {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    /*-------------- dark select -------------------*/
+
+    .my-select.dark-select {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        border: 1px solid transparent;
+    }
+
+    .my-select.dark-select.border>div:first-child {
+        border: 1px solid #404040;
+        background: #101010 url(../img/arrow-down-w2.svg) right 15px center no-repeat;
+    }
+
+    .my-select.dark-select>div:nth-child(2) {
+        display: none;
+        background: #101010;
+        box-shadow: 5px 5px 15px rgba(11, 11, 11, 0.25);
+        border: 1px solid #404040;
+        filter: drop-shadow(-1px -1px 2px rgba(80, 79, 79, 0.22)) drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.27));
+        position: absolute;
+        top: 46px;
+        width: 100%;
+        padding: 4px;
+        max-height: 230px;
+        overflow-y: auto;
+    }
+
+    .my-select.dark-select>div:first-child {
+        background: rgba(47, 47, 47, 0.2) url(../img/arrow-down-w2.svg) right 15px center no-repeat;
+        box-shadow: -1px -1px 2px rgba(80, 79, 79, 0.22), 4px 4px 15px rgba(0, 0, 0, 0.27);
+        border-radius: 2px;
+        padding: 12px 44px 12px 16px;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 20px;
+        color: #E3E3E3;
+        border: 1px solid transparent;
+    }
+
+    .my-select.dark-select>div:first-child.active {
+        background: rgba(47, 47, 47, 0.2) url(../img/arrow-up-w.svg) right 15px center no-repeat;
+
+    }
+
+    .my-select.dark-select>div:first-child:hover {
+        border: 1px solid #404040;
+    }
+
+    .my-select.dark-select>div:first-child:active {
+        border: 1px solid #9FEA00;
+        background: rgba(47, 47, 47, 0.2) url(../img/arrow-down-g.svg) right 15px center no-repeat;
+    }
+
+    .my-select.dark-select div:nth-child(2)>div {
+        font-size: 14px;
+        line-height: 20px;
+        color: #E3E3E3;
+        padding: 12px 16px;
+        cursor: pointer;
+    }
+
+    .my-select.dark-select div:nth-child(2)>div:hover,
+    .my-select.dark-select div:nth-child(2)>div:active {
+        background: #404040;
+        border-radius: 2px;
+    }
+
+    .projects-section__items {
+        row-gap: 24px;
+        margin-bottom: 80px;
+    }
+
+    .projects-section__item {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        filter: drop-shadow(-1px -1px 2px rgba(80, 79, 79, 0.22)) drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.27));
+        border-radius: 2px;
+    }
+
+    .projects-section__item:nth-child(odd),
+    .projects-section__item:nth-child(even) {
+        grid-template-areas: 'name''tags''image''subname''text''button';
+        padding: 19px 16px 24px 16px;
+        background: #161616 url(../img/projects-bg-c.png) center center no-repeat;
+        background-size: cover;
+    }
+
+    .projects-section__item-title {
+        margin-bottom: 16px;
+        margin-top: 0px;
+    }
+
+    .projects-section__item-tags {
+        margin-bottom: 16px;
+    }
+
+    .projects-section__item-sub-title {
+        margin-bottom: 8px;
+    }
+
+    .projects-section__btn {
+        margin-bottom: 0;
+    }
+
+    .projects-section__item-image {
+        align-self: auto;
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .projects-section__item-image img:nth-child(1) {
+        display: none;
+    }
+
+    .projects-section__item-image img:nth-child(2) {
+        display: block;
+    }
+
+    .projects-section__pagination {
+        display: none !important;
+    }
+
+    .projects-section__loader_mob {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .loader_round {
+        width: 44px;
+        height: 44px;
+        background: transparent url(../img/preloader-round.svg) center center no-repeat;
+        background-size: contain;
+    }
+}
+
+/*--------------------------------------------------PROJECTS PAGE end----------------------------------------*/

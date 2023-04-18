@@ -276,4 +276,19 @@ $(document).ready(function () {
         $('#callback').trigger('click');
     });
 
+    // select tags
+    $('.tag-btn').on('click', function () {
+        $('.tag-btn').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    //hover on project card button
+    $('.projects-section__btn').on('mouseover', function () {
+        $($(this).parent()).children('.projects-section__item-image').addClass('active');
+    });
+
+    $('.projects-section__btn').on('mouseout', function () {
+        $($(this).parent()).children('.projects-section__item-image').removeClass('active');
+    });
+
 });
