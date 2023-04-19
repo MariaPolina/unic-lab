@@ -4601,3 +4601,117 @@ progress::-webkit-progress-value {
 }
 
 /*--------------------------------------------------CONTACT PAGE end----------------------------------------*/
+
+/*--------------------------------------------------BLOG PAGE end----------------------------------------*/
+
+/*-------------- blog section -------------------*/
+
+.blog-section__title {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.blog-section__item {
+    background: #161616;
+    box-shadow: -2px -2px 4px rgba(80, 79, 79, 0.22), 4px 4px 15px rgba(0, 0, 0, 0.27);
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.blog-section__item-date {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #E3E3E3;
+    margin-bottom: 20px;
+}
+
+.blog-section__item-info {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    column-gap: 70px;
+}
+
+.blog-section__item-image {
+    border-radius: 5px;
+    overflow: hidden;
+    width: 450px;
+    height: 270px;
+}
+
+.blog-section__item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-section__item-title {
+    text-transform: none;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+}
+
+.blog-section__item-text {
+    margin-bottom: 24px;
+}
+
+.blog-section__pagination {
+    justify-content: flex-end;
+}
+
+.blog-section__loader_mob {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+
+    .blog-section {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .blog-section__title {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    .blog-section__item {
+        padding: 16px;
+    }
+
+    .blog-section__item-date {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 16px;
+    }
+
+    .blog-section__item-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+    }
+
+    .blog-section__item-image {
+        width: 100%;
+        height: auto;
+        max-width: 450px;
+        max-height: 270px;
+    }
+
+    .blog-section__item-title {
+        margin-bottom: 8px;
+    }
+
+    .blog-section__pagination {
+        display: none;
+    }
+
+    .blog-section__loader_mob {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+
+/*--------------------------------------------------BLOG PAGE end----------------------------------------*/
