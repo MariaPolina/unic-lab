@@ -2732,6 +2732,10 @@ progress::-webkit-progress-value {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.my-select>div:nth-child(2).active {
+    display: block !important;
+}
+
 .my-select>div:first-child {
     background: #EAEAEA url(../img/arrow-down-b.svg) right 8px center no-repeat;
     padding: 8px 48px 8px 8px;
@@ -4371,12 +4375,12 @@ progress::-webkit-progress-value {
 
     .my-select.dark-select.border>div:first-child {
         border: 1px solid #404040;
-        background: #101010 url(../img/arrow-down-w2.svg) right 15px center no-repeat;
+        background: #161616 url(../img/arrow-down-w2.svg) right 15px center no-repeat;
     }
 
     .my-select.dark-select>div:nth-child(2) {
         display: none;
-        background: #101010;
+        background: #161616;
         box-shadow: 5px 5px 15px rgba(11, 11, 11, 0.25);
         border: 1px solid #404040;
         filter: drop-shadow(-1px -1px 2px rgba(80, 79, 79, 0.22)) drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.27));
@@ -4411,7 +4415,7 @@ progress::-webkit-progress-value {
 
     .my-select.dark-select>div:first-child:active {
         border: 1px solid #9FEA00;
-        background: rgba(47, 47, 47, 0.2) url(../img/arrow-down-g.svg) right 15px center no-repeat;
+        background: rgba(47, 47, 47, 0.2) url(../img/arrow-down-g2.svg) right 15px center no-repeat;
     }
 
     .my-select.dark-select div:nth-child(2)>div {
@@ -4423,7 +4427,8 @@ progress::-webkit-progress-value {
     }
 
     .my-select.dark-select div:nth-child(2)>div:hover,
-    .my-select.dark-select div:nth-child(2)>div:active {
+    .my-select.dark-select div:nth-child(2)>div:active,
+    .my-select div:nth-child(2)>div.active {
         background: #404040;
         border-radius: 2px;
     }

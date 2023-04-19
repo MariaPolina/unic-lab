@@ -85,7 +85,7 @@ $(document).ready(function () {
 
     $('.my-select>div:first-child').on('click', function () {
         $('.my-select>div:nth-child(2):not(#' + $($(this).parent('div')).attr('id') + '>div:nth-child(2))').css('display', 'none');
-        $($(this).next('div')).slideToggle(0);
+        $($(this).next('div')).toggleClass('active');
         $('.my-select').css('z-index', '2');
         $($(this).parent('div')).css('z-index', '3');
         $(this).toggleClass('active');
