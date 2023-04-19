@@ -4497,3 +4497,102 @@ progress::-webkit-progress-value {
 }
 
 /*--------------------------------------------------PROJECTS PAGE end----------------------------------------*/
+
+/*--------------------------------------------------CONTACT PAGE end----------------------------------------*/
+
+/*-------------- contacts section -------------------*/
+
+.contacts-section {
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+
+.contacts-section__title {
+    margin-bottom: 50px;
+}
+
+.contacts-section__card {
+    background: #161616;
+    filter: drop-shadow(-2px -2px 5px rgba(45, 45, 45, 0.58)) drop-shadow(10px 10px 25px rgba(0, 0, 0, 0.44));
+    border-radius: 4px;
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 88px;
+}
+
+.contacts-section__subtitle {
+    text-transform: none;
+    margin-bottom: 20px;
+}
+
+.contacts-section__tel a {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #E3E3E3;
+}
+
+.contacts-section__tel:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.contacts-section__tel:last-child {
+    margin-bottom: 30px;
+}
+
+.contacts-section__card .footer__mail a {
+    font-weight: 300;
+}
+
+.contacts-section__card .text {
+    letter-spacing: normal;
+}
+
+@media (max-width: 1300px) {
+    .contacts-section {
+        padding-top: 88px;
+        padding-bottom: 40px;
+    }
+
+    .contacts-section__title {
+        margin-bottom: 24px;
+    }
+
+    .contacts-section__card {
+        box-shadow: -2px -2px 4px rgba(80, 79, 79, 0.22), 4px 4px 15px rgba(0, 0, 0, 0.27);
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 88px;
+        row-gap: 24px;
+    }
+
+    .contacts-section__subtitle {
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .contacts-section__tel a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .contacts-section__tel:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .contacts-section__tel:last-child {
+        margin-bottom: 16px;
+    }
+
+    .contacts-section__card .text {
+        letter-spacing: 0.02em;
+    }
+
+}
+
+/*--------------------------------------------------CONTACT PAGE end----------------------------------------*/
