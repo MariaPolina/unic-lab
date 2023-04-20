@@ -4178,7 +4178,7 @@ progress::-webkit-progress-value {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: #E3E3E3;
+    color: #E3E3E3 !important;
     border: 1px solid transparent;
 }
 
