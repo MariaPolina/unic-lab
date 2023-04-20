@@ -4886,25 +4886,30 @@ progress::-webkit-progress-value {
     margin-bottom: 30px;
 }
 
-.article__block ul:not(:last-child) {
-
+.article__block ul:not(:last-child),
+.article__block ol:not(:last-child) {
     margin-bottom: 50px;
 }
 
 .article__block p,
-.article__block ul li {
+.article__block ul li,
+.article__block ol li {
     font-size: 24px;
     line-height: 34px;
     letter-spacing: 0.02em;
     color: #404040;
 }
-.article__block p>strong {
 
+.article__block p>strong {
     font-weight: 500;
 }
 
 .article__block ul {
     padding-left: 16px;
+}
+
+.article__block ol {
+    padding-left: 32px;
 }
 
 .article__block ul li {
@@ -4924,6 +4929,7 @@ progress::-webkit-progress-value {
 }
 
 @media (max-width: 1300px) {
+
     .article__container {
         margin-bottom: 66px;
     }
@@ -4943,16 +4949,17 @@ progress::-webkit-progress-value {
         padding-top: 40px;
         padding-bottom: 40px;
         clip-path: inset(0 -100vw);
-
     }
 
     .article__block p:not(:last-child),
-    .article__block ul:not(:last-child) {
+    .article__block ul:not(:last-child),
+    .article__block ol:not(:last-child) {
         margin-bottom: 8px;
     }
 
     .article__block p,
-    .article__block ul li {
+    .article__block ul li,
+    .article__block ol li {
         font-size: 14px;
         line-height: 20px;
     }
@@ -4961,13 +4968,16 @@ progress::-webkit-progress-value {
         padding-left: 8px;
     }
 
+    .article__block ol {
+        padding-left: 16px;
+    }
+
     .article__block ul li {
         background: url(../img/list-dot.svg) no-repeat top 6px left;
         padding-left: 12px;
     }
 
     .article__change {
-
         display: flex;
         flex-direction: row;
         justify-content: space-between;
