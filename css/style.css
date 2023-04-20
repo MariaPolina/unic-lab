@@ -4229,7 +4229,7 @@ progress::-webkit-progress-value {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: #E3E3E3;
+    color: #E3E3E3 !important;
     border: 1px solid transparent;
 }
 
@@ -4887,6 +4887,7 @@ progress::-webkit-progress-value {
 }
 
 .article__block ul:not(:last-child) {
+
     margin-bottom: 50px;
 }
 
@@ -4897,8 +4898,8 @@ progress::-webkit-progress-value {
     letter-spacing: 0.02em;
     color: #404040;
 }
-
 .article__block p>strong {
+
     font-weight: 500;
 }
 
@@ -4942,6 +4943,7 @@ progress::-webkit-progress-value {
         padding-top: 40px;
         padding-bottom: 40px;
         clip-path: inset(0 -100vw);
+
     }
 
     .article__block p:not(:last-child),
@@ -4965,6 +4967,7 @@ progress::-webkit-progress-value {
     }
 
     .article__change {
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
