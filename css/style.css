@@ -4500,7 +4500,7 @@ progress::-webkit-progress-value {
         background: rgba(47, 47, 47, 0.2) url(../img/arrow-down-g2.svg) right 15px center no-repeat;
     }
 
-    .my-select.dark-select div:nth-child(2)>div {
+    .my-select.dark-select div:nth-child(2)>* {
         font-size: 14px;
         line-height: 20px;
         color: #E3E3E3;
@@ -4508,9 +4508,9 @@ progress::-webkit-progress-value {
         cursor: pointer;
     }
 
-    .my-select.dark-select div:nth-child(2)>div:hover,
-    .my-select.dark-select div:nth-child(2)>div:active,
-    .my-select div:nth-child(2)>div.active {
+    .my-select.dark-select div:nth-child(2)>*:hover,
+    .my-select.dark-select div:nth-child(2)>*:active,
+    .my-select div:nth-child(2)>*.active {
         background: #404040;
         border-radius: 2px;
     }
