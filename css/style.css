@@ -4284,14 +4284,31 @@ progress::-webkit-progress-value {
     justify-content: flex-end;
 }
 
-.page-pagination {
+@media (max-width: 1300px) {
+    .blog-section__pagination {
+        justify-content: center;
+    }
+}
+
+.page-pagination,
+.nav-links {
     display: flex;
     flex-direction: row;
     column-gap: 25px;
     align-items: center;
+    justify-content: flex-end;
 }
 
-.pagination__btn {
+@media (max-width: 1300px) {
+
+    .page-pagination,
+    .nav-links {
+        justify-content: center;
+    }
+}
+
+.pagination__btn,
+.page-numbers {
     background: transparent;
     border: none;
     cursor: pointer;
@@ -4304,32 +4321,39 @@ progress::-webkit-progress-value {
     pointer-events: none;
 }
 
-.pagination__prev {
+.pagination__prev,
+.prev.page-numbers {
+    display: block;
     background: transparent url(../img/arrow-right-w.svg) center center no-repeat;
     transform: rotate(180deg);
 }
 
-.pagination__prev:hover {
+.pagination__prev:hover,
+.prev.page-numbers:hover {
     background: transparent url(../img/arrow-right-g.svg) center center no-repeat;
     transform: rotate(180deg);
 }
 
-.pagination__next {
+.pagination__next,
+.next.page-numbers {
+    display: block;
     background: transparent url(../img/arrow-right-w.svg) center center no-repeat;
 }
 
-.pagination__next:hover {
+.pagination__next:hover,
+.next.page-numbers:hover {
     background: transparent url(../img/arrow-right-g.svg) center center no-repeat;
 }
 
-.pagination__page {
+.pagination__page,
+.page-numbers {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
-    color: #E3E3E3;
+    color: #E3E3E3 !important;
     border-bottom: 1px solid transparent;
 }
 
@@ -4337,7 +4361,8 @@ progress::-webkit-progress-value {
     color: #9FEA00;
 }
 
-.pagination__page.active {
+.pagination__page.active,
+.page-numbers.current {
     color: #9FEA00;
     border-bottom: 1px solid #9FEA00;
 }
