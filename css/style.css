@@ -5143,11 +5143,10 @@ progress::-webkit-progress-value {
 .direction-section__item-name {
     font-size: 18px;
     line-height: 24px;
-    text-align: center;
     letter-spacing: 0.02em;
     color: #F7F7F7;
     text-align: center;
-    padding: 20px;
+    padding: 8px 20px;
     min-height: 90px;
     background: rgba(24, 24, 24, 0.5);
     backdrop-filter: blur(2.5px);
