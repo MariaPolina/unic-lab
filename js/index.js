@@ -285,4 +285,56 @@ $(document).ready(function () {
         $($(this).parent()).children('.projects-section__item-image').removeClass('active');
     });
 
+
+    //hover effect on the sphere
+
+    const sphereItems = document.querySelectorAll('.sphere__item');
+    const sphereImage = document.querySelector('.sphere__image');
+
+    let currentPosition = 0;
+    let targetPosition = 0;
+    let rotationInterval;
+
+    function rotateImage() {
+        if (currentPosition === targetPosition) {
+            clearInterval(rotationInterval);
+            return;
+        }
+        if (currentPosition < targetPosition) {
+            currentPosition += 1;
+        } else {
+            currentPosition -= 1;
+        }
+        sphereImage.style.transform = `translate(-50%, -50%) rotate(${currentPosition * 26}deg)`;
+    }
+
+    sphereItems.forEach((sphereItem, index) => {
+        sphereItem.addEventListener('mouseenter', function () {
+            targetPosition = index;
+            clearInterval(rotationInterval);
+            rotationInterval = setInterval(rotateImage, 10);
+            sphereItems.forEach((sphereItem) => {
+                sphereItem.classList.remove('active');
+            })
+            this.classList.add('active');
+        });
+    });
+
+    if ($(window).width() < 1301) {
+        $(window).scroll(function () {
+            $('.sphere__item').each(function () {
+                let itemTop = $(this).offset().top;
+                let itemBottom = itemTop + $(this).outerHeight();
+                let screenTop = $(window).scrollTop();
+                let screenBottom = screenTop + $(window).height();
+                if (itemBottom <= screenBottom && itemTop >= 0) {
+                    $('.sphere__item').removeClass('active');
+                    $(this).addClass('active');
+                } else {
+                    $(this).removeClass('active');
+                }
+            });
+        });
+    }
+
 });
