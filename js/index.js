@@ -313,7 +313,7 @@ $(document).ready(function () {
             sphereImage.style.transform = `translate(-50%, -50%) rotate(${currentPosition * 25}deg)`;
         }
 
-        if (!sphereImage || sphereImage === null) {
+        if (!sphereImage2 || sphereImage2 === null) {
             return;
         } else {
             sphereImage2.style.transform = `translate(-50%, -50%) rotate(${currentPosition * 23}deg)`;
