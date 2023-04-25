@@ -290,6 +290,7 @@ $(document).ready(function () {
 
     const sphereItems = document.querySelectorAll('.sphere__item');
     const sphereImage = document.querySelector('.sphere__image');
+    const sphereImage2 = document.querySelector('.sphere.sphere7 .sphere__image');
 
     let currentPosition = 0;
     let targetPosition = 0;
@@ -305,14 +306,26 @@ $(document).ready(function () {
         } else {
             currentPosition -= 1;
         }
-        sphereImage.style.transform = `translate(-50%, -50%) rotate(${currentPosition * 26}deg)`;
+
+        if (!sphereImage || sphereImage === null) {
+            return;
+        } else {
+            sphereImage.style.transform = `translate(-50%, -50%) rotate(${currentPosition * 25}deg)`;
+        }
+
+        if (!sphereImage || sphereImage === null) {
+            return;
+        } else {
+            sphereImage2.style.transform = `translate(-50%, -50%) rotate(${currentPosition * 23}deg)`;
+        }
+
     }
 
     sphereItems.forEach((sphereItem, index) => {
         sphereItem.addEventListener('mouseenter', function () {
             targetPosition = index;
             clearInterval(rotationInterval);
-            rotationInterval = setInterval(rotateImage, 10);
+            rotationInterval = setInterval(rotateImage);
             sphereItems.forEach((sphereItem) => {
                 sphereItem.classList.remove('active');
             })
