@@ -2243,6 +2243,10 @@ h2.light {
         margin-bottom: 34px;
     }
 
+    .equipment-section .mobile-project-slider {
+        margin-bottom: 0px;
+    }
+
     .project-section__item {
         box-shadow: none;
         border: 1px solid transparent;
@@ -5739,7 +5743,7 @@ progress::-webkit-progress-value {
     background: url(../img/way7-7-g.svg) center center no-repeat;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
     .steps-section {
         background: #101010;
     }
@@ -5956,6 +5960,7 @@ ul.light {
     .equipment-section__item {
         border-radius: 5px;
         padding: 20px 16px;
+        box-shadow: none;
     }
 
     .equipment-section__item-image {
