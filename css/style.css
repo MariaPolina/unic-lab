@@ -1961,6 +1961,11 @@ h2.light {
         background-size: 150% 150%, cover;
     }
 
+    .complex-section.service {
+        background: #101010 url(../img/slider-bg.svg) left 90% top 90% no-repeat;
+        background-size: 150% 150%, cover;
+    }
+
     .complex-section__container {
         padding-top: 120px;
         padding-bottom: 110px;
@@ -5362,8 +5367,9 @@ progress::-webkit-progress-value {
     }
 
     .direction-section.light .direction-section__item-image {
-        aspect-ratio: auto;
-        height: 76px;
+        max-width: 86px;
+        aspect-ratio: 1.13/1;
+        height: auto;
     }
 
     .direction-section__item-name {
