@@ -338,7 +338,8 @@ $(document).ready(function () {
             $('.sphere__item').each(function () {
                 let itemTop = $(this).offset().top;
                 let itemHeight = $(this).outerHeight();
-                let prevItemHeight = $(this).prev('.sphere__item').outerHeight();
+                let prevItem = $(this).prev('.sphere__item');
+                let prevItemHeight = prevItem.length > 0 ? prevItem.outerHeight() : 0;
                 let screenTop = $(window).scrollTop();
                 if (itemTop <= screenTop + itemHeight + prevItemHeight) {
                     $('.sphere__item').removeClass('active');
