@@ -1962,8 +1962,7 @@ h2.light {
     }
 
     .complex-section.service {
-        background: #101010 url(../img/slider-bg.svg) left 90% top 90% no-repeat;
-        background-size: 150% 150%, cover;
+        background: #101010 url(../img/dev-slide-bg-mob.png) top center no-repeat;
     }
 
     .complex-section__container {
@@ -5370,6 +5369,10 @@ progress::-webkit-progress-value {
         max-width: 86px;
         aspect-ratio: 1.13/1;
         height: auto;
+    }
+
+    .direction-section.light .direction-section__item-image img {
+        object-fit: contain;
     }
 
     .direction-section__item-name {

@@ -337,14 +337,12 @@ $(document).ready(function () {
         $(window).scroll(function () {
             $('.sphere__item').each(function () {
                 let itemTop = $(this).offset().top;
-                let itemBottom = itemTop + $(this).outerHeight();
+                let itemHeight = $(this).outerHeight();
+                let prevItemHeight = $(this).prev('.sphere__item').outerHeight();
                 let screenTop = $(window).scrollTop();
-                let screenBottom = screenTop + $(window).height();
-                if (itemBottom <= screenBottom && itemTop >= 0) {
+                if (itemTop <= screenTop + itemHeight + prevItemHeight) {
                     $('.sphere__item').removeClass('active');
                     $(this).addClass('active');
-                } else {
-                    $(this).removeClass('active');
                 }
             });
         });
