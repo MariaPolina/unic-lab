@@ -1890,7 +1890,9 @@ h4.light {
     margin-bottom: 16px;
 }
 
-.slide__text {
+.slide__info p {
+    font-size: 18px;
+    line-height: 135%;
     margin-bottom: 28px;
     letter-spacing: 0.02em;
     color: #A1A1A1;
@@ -2033,7 +2035,9 @@ h4.light {
         margin-bottom: 8px;
     }
 
-    .slide__text {
+    .slide__info p {
+        font-size: 14px;
+        line-height: 20px;
         margin-bottom: 16px;
     }
 
