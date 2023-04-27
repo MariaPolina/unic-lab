@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIC LAB</title>
+    <link rel="shortcut icon" href="./img/favicon.svg">
+    <link href="./css/style.css" rel="stylesheet">
+    <!--scripts for sliders-->
+    <link rel="stylesheet" href="./js/swiper-9.1.1/package/swiper-bundle.min.css">
+    <!--//-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__logo">
+                    <a href="#"></a>
+                </div>
+                <div class="header__nav">
+                    <nav class="header__menu menu">
+                        <ul class="menu__items">
+                            <li class="menu__item menu-item-has-children">
+                                <a href="#">Компания <span></span></a>
+                                <ul>
+                                    <li><a href="">О компании</a></li>
+                                    <li><a href="">Процесс разработки продукта</a></li>
+                                    <li><a href="">Технологии</a></li>
+                                    <li><a href="">Блог</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item menu-item-has-children">
+                                <a href="#">Услуги <span></span></a>
+                                <ul>
+                                    <li>
+                                        <ul>
+                                            <li><a href="">Разработка аппаратной части</a>
+                                                <ul>
+                                                    <li><a href="">Разработка печатных плат</a></li>
+                                                    <li><a href="">Разработка схемотехники</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="">Разработка программного
+                                                    обеспечения</a>
+                                                <ul>
+                                                    <li><a href="">Встроенное программное обеспечение</a>
+                                                    </li>
+                                                    <li><a href="">Облачное программное обеспечение</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="">Научное исследование</a></li>
+                                            <li><a href="">Промышленный дизайн</a></li>
+                                            <li><a href="">Прототипирование</a></li>
+                                            <li><a href="">Подготовка и производство</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#">IoT</a></li>
+                            <li class="menu__item"><a href="#">Проекты</a></li>
+                            <li class="menu__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__callback button-modal" id="callback" data-modal="modal-callback">Связаться с
+                        нами
+                        <div class="header__callback_inner"></div>
+                    </div>
+                    <div class="header__lang lang">
+                        <div class="lang__selected">RU</div>
+                        <div class="lang__options">
+                            <div class="lang__option"><a href="#">EN</a></div>
+                        </div>
+                    </div>
+                    <div class="burger-close"></div>
+                </div>
+                <div class="header__burger"></div>
+            </div>
+            <div class="header-line"></div>
+        </header>
+        <main>
+            <section class="project-main-section section-top dark-bg">
+                <div class="project-main-section__container container">
+                    <div class="breadcrumbs">
+                        <p id="breadcrumbs">
+                            <span><span>
+                                    <a href="http://uniclab/">Главная</a>
+                                </span> / <span>
+                                    <a href="http://uniclab/">Проекты</a>
+                                </span> / <span class="breadcrumb_last" aria-current="page">Кральчатый счетчик
+                                    воды</span></span>
+                        </p>
+                    </div>
+                    <div class="project-main-section__info">
+                        <div>
+                            <h1 class="project-main-section__title">Кральчатый счетчик воды</h1>
+                            <h4 class="light">с дистанционным съемом показаний</h4>
+                            <div class="project-main-section__image">
+                                <img src="./img/project1-main.png" alt="project">
+                            </div>
+                            <div class="project-main-section__tags tags">
+                                <div class="tag">SigFox</div>
+                                <div class="tag">Nero UNB</div>
+                                <div class="tag">NB-IoT</div>
+                                <div class="tag">C</div>
+                                <div class="tag">STM32</div>
+                                <div class="tag">Lora</div>
+                            </div>
+                            <div class="project-main-section__params">
+                                <p class="text light">Направление</p>
+                                <div class="slide__item">Интернет Вещей</div>
+                                <p class="text light">Индустрия</p>
+                                <div class="slide__item">Система учета</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="fundamentals-section darkgrey-bg box">
+                <div class="container">
+                    <h3 class="fundamentals__title title">Задача</h3>
+                    <div class="fundamentals__wrapper project-main-task">
+                        <div>
+                            <p>
+                                Разработать электронные автономные крыльчатые счетчики, позволяющие измерять потребление
+                                холодной и горячей воды, а также передавать показания по радиоканалу и обладать
+                                встроенной энергонезависимой памятью</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="project-descr-section lightgrey-bg sub-box">
+                <div class="container">
+                    <h4 class="subtitle">разработка</h4>
+                    <h3 class="project-descr-section__title title">чем наделили устройство?</h3>
+
+                </div>
+            </section>
+            <section class="project-section lightgrey-bg box">
+                <div class="container">
+                    <h2 class="project-section__title title">ПРОЕКТЫ</h2>
+                    <div class="project-section__items">
+                        <div class="project-section__wrapper_big">
+                            <div class="project-section__item project-section__item_big">
+                                <div class="project-section__item_title">Устройство сбора и передачи данных</div>
+                                <div class="project-section__item_image image">
+                                    <img src="./img/project1.png" alt="project">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-section__wrapper_small">
+                            <div class="project-section__item project-section__item_small">
+                                <div class="project-section__item_title">Система контроля доступа для парковок</div>
+                                <div class="project-section__item_image image">
+                                    <img src="./img/project2.png" alt="project">
+                                </div>
+                            </div>
+                            <div class="project-section__item project-section__item_small">
+                                <div class="project-section__item_title">Сервер для умного дома</div>
+                                <div class="project-section__item_image image">
+                                    <img src="./img/project3.png" alt="project">
+                                </div>
+                            </div>
+                            <div class="project-section__item project-section__item_small">
+                                <div class="project-section__item_title">Умный ультразвуковой счетчик газа</div>
+                                <div class="project-section__item_image image">
+                                    <img src="./img/project4.png" alt="project">
+                                </div>
+                            </div>
+                            <div class="project-section__item project-section__item_small">
+                                <div class="project-section__item_title">Iot-платформа</div>
+                                <div class="project-section__item_image image">
+                                    <img src="./img/project5.png" alt="project">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mobile-project-slider">
+                        <div class="project-section__big_slider">
+                            <div class="slideshow swiper-viewport">
+                                <div id="slideshow3" class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide  project-section__item project-section__item_big">
+                                            <div class="project-section__item_title">Устройство сбора и передачи данных
+                                            </div>
+                                            <div class="project-section__item_image image">
+                                                <img src="./img/project1.png" alt="project">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide project-section__item project-section__item_big">
+                                            <div class="project-section__item_title">Система контроля доступа для
+                                                парковок
+                                            </div>
+                                            <div class="project-section__item_image image">
+                                                <img src="./img/project2.png" alt="project">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide project-section__item project-section__item_big">
+                                            <div class="project-section__item_title">Сервер для умного дома
+                                            </div>
+                                            <div class="project-section__item_image image">
+                                                <img src="./img/project3.png" alt="project">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide project-section__item project-section__item_big">
+                                            <div class="project-section__item_title">Умный ультразвуковой счетчик газа
+                                            </div>
+                                            <div class="project-section__item_image image">
+                                                <img src="./img/project4.png" alt="project">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide project-section__item project-section__item_big">
+                                            <div class="project-section__item_title">Iot-платформа
+                                            </div>
+                                            <div class="project-section__item_image image">
+                                                <img src="./img/project5.png" alt="project">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-section__small_slider">
+                                        <div class="slideshow swiper-viewport">
+                                            <div id="slideshow4" class="swiper">
+                                                <div class="project-section__swiper-wrapper swiper-wrapper">
+                                                    <div
+                                                        class="swiper-slide project-section__item project-section__item_small">
+                                                        <div class="project-section__item_image image">
+                                                            <img src="./img/project2.png" alt="project">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="swiper-slide project-section__item project-section__item_small">
+                                                        <div class="project-section__item_image image">
+                                                            <img src="./img/project3.png" alt="project">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="swiper-slide project-section__item project-section__item_small">
+                                                        <div class="project-section__item_image image">
+                                                            <img src="./img/project4.png" alt="project">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="swiper-slide project-section__item project-section__item_small">
+                                                        <div class="project-section__item_image image">
+                                                            <img src="./img/project5.png" alt="project">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="swiper-slide project-section__item project-section__item_small">
+                                                        <div class="project-section__item_image image">
+                                                            <img src="./img/project1.png" alt="project">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="swiper-slide project-section__item project-section__item_small">
+                                                        <div class="project-section__item_image image">
+                                                            <img src="./img/project2.png" alt="project">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="swiper-slide project-section__item project-section__item_small">
+                                                        <div class="project-section__item_image image">
+                                                            <img src="./img/project3.png" alt="project">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="swiper-slide project-section__item project-section__item_small">
+                                                        <div class="project-section__item_image image">
+                                                            <img src="./img/project4.png" alt="project">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="swiper-slide project-section__item project-section__item_small">
+                                                        <div class="project-section__item_image image">
+                                                            <img src="./img/project5.png" alt="project">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="swiper-slide project-section__item project-section__item_small">
+                                                        <div class="project-section__item_image image">
+                                                            <img src="./img/project1.png" alt="project">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-button-next"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section__btn">
+                        <a href="#" class="arrow-btn">Больше проектов</a>
+                    </div>
+                </div>
+            </section>
+            <section class="partner-section dark-bg box">
+                <div class="partner-section__container container">
+                    <div>
+                        <h2 class="partner-section__title title light">Наши партнеры</h2>
+                        <p class="partner-section__text text light">Долгосрочные отношения с партнерами подтверждают
+                            нашу
+                            высокую квалификацию и соответствие международным требованиям деловой этики</p>
+                    </div>
+                    <div class="partners-slider">
+                        <div class="slideshow swiper-viewport">
+                            <div id="slideshow2" class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/partner.png" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/partner.png" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/partner.png" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/partner.png" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/logo.svg" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/logo.svg" alt="slide">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide partner">
+                                        <div class="partner__image image"><img src="./img/logo.svg" alt="slide">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-section box">
+                <div class="contact-section__container container">
+                    <div>
+                        <h2 class="contact-section__title title">Связаться с нами</h2>
+                        <p class="contact-section__text text">По любым вопросам вы можете обратиться к нам через форму
+                            обратной
+                            связи или составить более подробное техническое задание, и наши специалисты свяжутся с вами
+                        </p>
+                        <div class="create-task-btn">Составить ТЗ онлайн
+                            <div class="callback-btn_inner"></div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form action="#" method="post">
+                            <fieldset>
+                                <div class="contact-form__wrapper">
+                                    <div class="input">
+                                        <label for="name" class="input-name">Ваше имя *</label>
+                                        <input class="error" id="name" type="text" placeholder="Иван" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="surname" class="input-name">Ваша фамилия *</label>
+                                        <input id="surname" type="text" placeholder="Иванов" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="email" class="input-name">Ваш электронный адрес *</label>
+                                        <input id="email" type="email" placeholder="ivan.ivanov@mial.ru" required>
+                                    </div>
+                                    <div class="contact-form__tel input">
+                                        <label for="telephone" class="input-name">Ваш номер телефона</label>
+                                        <div>
+                                            <div class="my-select" id="my-select">
+                                                <div data="">BY</div>
+                                                <div>
+                                                    <div data="BY">BY</div>
+                                                    <div data="RU">RU</div>
+                                                    <div data="KZ">KZ</div>
+                                                </div>
+                                                <input type="hidden" value="">
+                                            </div>
+                                            <div class="contact-form__tel_code"><input class="contact-form__code"
+                                                    type="text" value="+375"><input id="telephone" type="text"
+                                                    placeholder="(xx) xxx xx xx" required></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-form__company input">
+                                    <label for="company" class="input-name">Ваша компания *</label>
+                                    <input id="company" type="text" placeholder="IvanIvan" required>
+                                </div>
+                                <div class="contact-form__question input">
+                                    <label for="question" class="input-name">Ваш вопрос</label>
+                                    <textarea name="question" id="question" rows="3"></textarea>
+                                </div>
+                                <div class="contact-form__file input">
+                                    <input type="file" id="file">
+                                    <label for="file">
+                                        <p>Перетащите или <span>выберите</span> файлы</p>
+                                        <p>Прикрепить файл</p>
+                                    </label>
+                                    <div class="progress">
+                                        <div class="progress__info">
+                                            <p class="progress__name">document_ivanov.doc</p>
+                                            <div class="progress__size ready">120 Kb</div>
+                                            <div class="progress__close"></div>
+                                        </div>
+                                        <progress id="progressBar" value="0" max="100"></progress>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress__info">
+                                            <p class="progress__name">document_ivanov.doc</p>
+                                            <div class="progress__size">45 Kb / 120 Kb</div>
+                                            <div class="progress__close"></div>
+                                        </div>
+                                        <progress id="progressBar" value="50" max="100"></progress>
+                                    </div>
+                                </div>
+                                <div class="contact-form__agree">
+                                    <input type="checkbox" class="checkbox-styled" id="agree">
+                                    <label for="agree"> <span></span>
+                                        <p>Я согласен с правилами <a href="#">сбора
+                                                персональных
+                                                данных</a></p>
+                                    </label>
+                                </div>
+                                <button class="contact-form__send button-modal" id="formsend" type="submit"
+                                    data-modal="modal-formsend">Отправить</button>
+                                <p class="contact-form__text">*обязательные поля для заполнения</p>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__logo">
+                    <a href="#"></a>
+                    <p class="text light">Контрактная разработка электроники и программного обеспечения</p>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__contacts">
+                        <h5 class="footer__subtitle main-section__step_title">Контакты</h5>
+                        <ul class="footer__menu">
+                            <li>
+                                <p class="text light">223016, Республика Беларусь,
+                                    Минская обл., Минский р-н,
+                                    Новодворский с/с, 74</p>
+                            </li>
+                            <li class="footer__tel">
+                                <a href="tel:+375296016832">BY: +375 (29) 601-68-32</a>
+                            </li>
+                            <li class="footer__tel">
+                                <a href="tel:+79587628608">RU: +7 (958) 762-86-08</a>
+                            </li>
+                            <li class="footer__mail">
+                                <a href="mailto:sales@unic-lab.by">sales@unic-lab.by</a>
+                            </li>
+                            <li class="footer__social">
+                                <a href="#"><img src="./img/telegram.svg" alt="Telegram">Telegram</a>
+                                <a href="#"><img src="./img/linkedin.svg" alt="Linkidin">Linkidin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-wrapper">
+                        <div>
+                            <h5 class="footer__subtitle main-section__step_title">Компания</h5>
+                            <ul class="footer__menu">
+                                <li class="text light"><a href="#">О компании</a></li>
+                                <li class="text light"><a href="#">Технологии</a></li>
+                                <li class="text light"><a href="#">Проекты</a></li>
+                                <li class="text light"><a href="#">IoT</a></li>
+                                <li class="text light"><a href="#">Блог</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="footer__subtitle main-section__step_title">Услуги</h5>
+                            <div class="footer__menu_col">
+                                <ul class="footer__menu">
+                                    <li class="text light"><a href="#">Научные исследования</a></li>
+                                    <li class="text light"><a href="#">Промышленный дизайн</a></li>
+                                    <li class="text light"><a href="#">Прототипирование</a></li>
+                                    <li class="text light"><a href="#">Подготовка и производство</a></li>
+                                </ul>
+                                <ul class="footer__menu">
+                                    <li class="text light"><a href="#">Разработка ПО</a></li>
+                                    <li class="text light"><a href="#">Встроенное ПО</a></li>
+                                    <li class="text light"><a href="#">Облачная разработка</a></li>
+                                    <li class="text light"><a href="#">Разработка аппаратной части</a></li>
+                                    <li class="text light"><a href="#">Проектирование печатных платг</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__copyright">
+                <div class="copyright__container container">
+                    <p class="text light">© 2016-2022 Unic Lab Company</p>
+                    <a class="footer__copyright_policy text light" href="#">Политика конфидециальности</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <!--scripts for sliders-->
+    <script src="./js/swiper-9.1.1/package/swiper-bundle.min.js"></script>
+    <!--//-->
+</body>
+
+</html>
