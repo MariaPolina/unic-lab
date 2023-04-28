@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIC LAB</title>
+    <link rel="shortcut icon" href="./img/favicon.svg">
+    <link href="./css/style.css" rel="stylesheet">
+    <!--scripts for sliders-->
+    <link rel="stylesheet" href="./js/swiper-9.1.1/package/swiper-bundle.min.css">
+    <!--//-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__logo">
+                    <a href="#"></a>
+                </div>
+                <div class="header__nav">
+                    <nav class="header__menu menu">
+                        <ul class="menu__items">
+                            <li class="menu__item menu-item-has-children">
+                                <a href="#">Компания <span></span></a>
+                                <ul>
+                                    <li><a href="">О компании</a></li>
+                                    <li><a href="">Процесс разработки продукта</a></li>
+                                    <li><a href="">Технологии</a></li>
+                                    <li><a href="">Блог</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item menu-item-has-children">
+                                <a href="#">Услуги <span></span></a>
+                                <ul>
+                                    <li>
+                                        <ul>
+                                            <li><a href="">Разработка аппаратной части</a>
+                                                <ul>
+                                                    <li><a href="">Разработка печатных плат</a></li>
+                                                    <li><a href="">Разработка схемотехники</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="">Разработка программного
+                                                    обеспечения</a>
+                                                <ul>
+                                                    <li><a href="">Встроенное программное обеспечение</a>
+                                                    </li>
+                                                    <li><a href="">Облачное программное обеспечение</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="">Научное исследование</a></li>
+                                            <li><a href="">Промышленный дизайн</a></li>
+                                            <li><a href="">Прототипирование</a></li>
+                                            <li><a href="">Подготовка и производство</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#">IoT</a></li>
+                            <li class="menu__item"><a href="#">Проекты</a></li>
+                            <li class="menu__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__callback button-modal" id="callback" data-modal="modal-callback">Связаться с
+                        нами
+                        <div class="header__callback_inner"></div>
+                    </div>
+                    <div class="header__lang lang">
+                        <div class="lang__selected">RU</div>
+                        <div class="lang__options">
+                            <div class="lang__option"><a href="#">EN</a></div>
+                        </div>
+                    </div>
+                    <div class="burger-close"></div>
+                </div>
+                <div class="header__burger"></div>
+            </div>
+            <div class="header-line"></div>
+        </header>
+        <main>
+            <section class="project-main-section section-top">
+                <div class="project-main-section__container container">
+                    <div class="breadcrumbs">
+                        <p id="breadcrumbs">
+                            <span><span>
+                                    <a href="http://uniclab/">Главная</a>
+                                </span> / <span>
+                                    <a href="http://uniclab/">Проекты</a>
+                                </span> / <span class="breadcrumb_last" aria-current="page">Ультразвуковой счетчик газа
+                                </span></span>
+                        </p>
+                    </div>
+                    <div class="project-main-section__info">
+                        <div>
+                            <h1 class="project-main-section__title">Ультразвуковой счетчик газа </h1>
+                            <h4 class="light">с дистанционным съемом показаний</h4>
+                            <div class="project-main-section__image">
+                                <img src="./img/project2-main.png" alt="project">
+                            </div>
+                            <div class="project-main-section__tags tags">
+                                <div class="tag">SigFox</div>
+                                <div class="tag">Nero UNB</div>
+                                <div class="tag">NB-IoT</div>
+                                <div class="tag">C</div>
+                                <div class="tag">STM32</div>
+                                <div class="tag">ЦОС</div>
+                            </div>
+                            <div class="project-main-section__params">
+                                <p class="text light">Направление</p>
+                                <div class="slide__item">Интернет Вещей</div>
+                                <p class="text light">Индустрия</p>
+                                <div class="slide__item">Система учета</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="fundamentals-section darkgrey-bg box">
+                <div class="container">
+                    <h3 class="fundamentals__title title">Задача</h3>
+                    <div class="fundamentals__wrapper project-main-task">
+                        <div>
+                            <p>Разработать сверхточный счетчик, позволяющий измерять потребление газа с помощью
+                                современных ультразвуковых технологий, а также передавать показания по радиоканалу</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="project-descr-section lightgrey-bg box">
+                <div class="container">
+                    <h4 class="subtitle">разработка</h4>
+                    <h3 class="project-descr-section__title title">чем наделили устройство?</h3>
+                    <div class="project-descr-section__items">
+                        <div class="project-descr-section__item active">
+                            <div class="project-descr-section__item-image">
+                                <img src="./img/project2-item1.png" alt="project">
+                            </div>
+                            <div class="project-descr-section__item-card">
+                                <h4>электроакустические преобразователи</h4>
+                                <p class="text">Счетчик газа выполнен из соединенных через герметизирующую прокладку
+                                    основания и верхней крышки. Внутри счетчика газа образован измерительный канал. В
+                                    торцах измерительного канала закреплены два электроакустических преобразователя
+                                    (печатные платы с установленными на них ультразвуковыми датчиками) с
+                                    герметизированными выводами</p>
+                            </div>
+                        </div>
+                        <div class="project-descr-section__item">
+                            <div class="project-descr-section__item-image">
+                                <img src="./img/project2-item2.png" alt="project">
+                            </div>
+                            <div class="project-descr-section__item-card">
+                                <h4>Модуль измерений и индикации</h4>
+                                <p class="text">В состав устройства добавили модуль измерений и индикации с ЖКИ,
+                                    автономным источником питания и датчиком температуры</p>
+                            </div>
+                        </div>
+                        <div class="project-descr-section__item">
+                            <div class="project-descr-section__item-image">
+                                <img src="./img/project2-item3.png" alt="project">
+                            </div>
+                            <div class="project-descr-section__item-card">
+                                <h4>Модуль передачи данных</h4>
+                                <p class="text">Добавили модуль передачи данных (радиомодуль от 863,0 до 870,0 МГц) с
+                                    автономным источником питания</p>
+                            </div>
+                        </div>
+                        <div class="project-descr-section__item">
+                            <div class="project-descr-section__item-image">
+                                <img src="./img/project2-item4.png" alt="project">
+                            </div>
+                            <div class="project-descr-section__item-card">
+                                <h4>Режимы отображения информации</h4>
+                                <p class="text">Под лицевой панелью счётчика на плате измерений и индикации расположили
+                                    сенсорную кнопку, предназначенную для изменения режимов отображения информации на
+                                    ЖКИ дисплее</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mobile-project-slider project-section__big_slider">
+                        <div class="slideshow swiper-viewport">
+                            <div id="slideshow3" class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide project-descr__item_mob">
+                                        <div class="project-descr__item-image_mob">
+                                            <img src="./img/project2-item1.png" alt="project">
+                                        </div>
+                                        <div class="project-descr-section__item-card">
+                                            <h4>электроакустические преобразователи</h4>
+                                            <p class="text">Счетчик газа выполнен из соединенных через герметизирующую
+                                                прокладку основания и верхней крышки. Внутри счетчика газа образован
+                                                измерительный канал. В торцах измерительного канала закреплены два
+                                                электроакустических преобразователя (печатные платы с установленными на
+                                                них ультразвуковыми датчиками) с герметизированными выводами</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide project-descr__item_mob">
+                                        <div class="project-descr__item-image_mob">
+                                            <img src="./img/project2-item2.png" alt="project">
+                                        </div>
+                                        <div class="project-descr-section__item-card">
+                                            <h4>Модуль измерений и индикации</h4>
+                                            <p class="text">В состав устройства добавили модуль измерений и индикации с
+                                                ЖКИ, автономным источником питания и датчиком температуры</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide project-descr__item_mob">
+                                        <div class="project-descr__item-image_mob">
+                                            <img src="./img/project2-item3.png" alt="project">
+                                        </div>
+                                        <div class="project-descr-section__item-card">
+                                            <h4>Модуль передачи данных</h4>
+                                            <p class="text">Добавили модуль передачи данных (радиомодуль от 863,0 до
+                                                870,0 МГц) с автономным источником питания</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide project-descr__item_mob">
+                                        <div class="project-descr__item-image_mob">
+                                            <img src="./img/project2-item4.png" alt="project">
+                                        </div>
+                                        <div class="project-descr-section__item-card">
+                                            <h4>Режимы отображения информации</h4>
+                                            <p class="text">Под лицевой панелью счётчика на плате измерений и индикации
+                                                расположили сенсорную кнопку, предназначенную для изменения режимов
+                                                отображения информации на ЖКИ дисплее</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="done-section box">
+                <div class="container">
+                    <div class="info-card image-right">
+                        <h3 class="done-section__title info-card__title title light">Что было достигнуто?</h3>
+                        <div class="done-section__item-image info-card__image">
+                            <img src="./img/project2-done.png" alt="done">
+                        </div>
+                        <div class="info-card__info light">
+                            <ul>
+                                <li>Получили евразийский патент на изобретение «Устройство и способ определения фазы
+                                    сигнала ультразвукового датчика расходомера», примененный в ультразвуковом счётчике
+                                    газа</li>
+                                <li>При разработке функциональной схемы подбирались компоненты и протоколы, принято
+                                    решение производить передачу данных с использованием протокола NB-Fi</li>
+                                <li>Измерение счётчиком объёма газа, приведенного к стандартным условиям, выполнили
+                                    косвенным методом динамических измерений. Метод основан на преобразовании объёмного
+                                    расхода газа преобразователем расхода ультразвуковым в сигнал измерительной
+                                    информации с автоматическим вычислением объёма газа при рабочих условиях и
+                                    приведении их к стандартным условиям с помощью электронного устройства, используя
+                                    температуру, полученную от датчика температуры</li>
+                                <li>Реализовали в счётчике ультразвуковой времяимпульсный метод по способу измерения
+                                    объёмного расхода газа в рабочих условиях</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="fundamentals-section lightgrey-bg box">
+                <div class="container">
+                    <h4 class="subtitle">разработка программного обеспечения</h4>
+                    <h3 class="fundamentals__title title">Особености Разработки ПО</h3>
+                    <div class="fundamentals__wrapper">
+                        <div>
+                            <p>
+                                Разработали программное обеспечение, встраиваемое в микроконтроллер счётчика для
+                                отсчёта, интегрирования (накопления) и перевода в объём газа величины разности времени
+                                перемещения коротких импульсов по направлению потока газа, с последующим отображением
+                                измеренного значения на устройстве индикации и передачи его по интерфейсу связи.</p>
+                        </div>
+                        <div>
+                            <p>Разработали алгоритм работы пользовательского интерфейса, в соответствии с которым ПО
+                                счётчика осуществляет отображение запрашиваемой информации из энергонезависимой памяти
+                                на ЖКИ при физическом воздействии на элемент управления (сенсорную кнопку).</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="result-section image-top-bottom box">
+                <div class="result-section__container container">
+                    <div class="info-card">
+                        <h3 class="result-section__title title light">Результат</h3>
+                        <div class="result-section__item-image info-card__image">
+                            <img src="./img/project2-result.png" alt="resulte">
+                        </div>
+                        <div class="info-card__info light">
+                            <p>Разработан ультразвуковой счётчик газа, возможности которого превышают исходные
+                                требования клиента, получен патент на изобретение.</p>
+                            <p>По итогам работ счётчик предназначен для измерения, сохранения в запоминающем
+                                устройстве, отображения на дисплее информации об объёме потреблённого газа, проходящего
+                                через счётчик, и передачи этой информации по радиоканалу на базовую станцию.</p>
+                            <p>Устройство производится серийно.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="fundamentals-section lightgrey-bg box">
+                <div class="container">
+                    <h3 class="fundamentals__title title">Особености Разработки ПО</h3>
+                    <div class="fundamentals__wrapper">
+                        <div>
+                            <p>
+                                Разработали программное обеспечение, встраиваемое в микроконтроллер счётчика для отсчета
+                                числа оборотов крыльчатки, количество оборотов которой пропорционально объему воды, с
+                                последующим отображением данных на ЖКИ, накоплением и сохранением собранных данных, а
+                                также передачи данных по радиоканалу. Для разработки программы (прошивки) для
+                                контроллера использовалась среда разработки (IDE) IAR.</p>
+                            <p>Разработали алгоритм работы пользовательского интерфейса, предназначенный для изменения
+                                режимов отображения информации на ЖКИ дисплее счётчика при касании к сенсорной кнопке.
+                            </p>
+
+                        </div>
+                        <div>
+                            <p>Разработали собственную программную платформу, предоставляющую необходимый набор функций,
+                                реализующих возможность модульной разработки программного обеспечения счётчика.</p>
+                            <p>Построили профили энергопотребления для различных сценариев работы устройства,
+                                оптимизирующие ПО с точки зрения энергосбережения.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__logo">
+                    <a href="#"></a>
+                    <p class="text light">Контрактная разработка электроники и программного обеспечения</p>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__contacts">
+                        <h5 class="footer__subtitle main-section__step_title">Контакты</h5>
+                        <ul class="footer__menu">
+                            <li>
+                                <p class="text light">223016, Республика Беларусь,
+                                    Минская обл., Минский р-н,
+                                    Новодворский с/с, 74</p>
+                            </li>
+                            <li class="footer__tel">
+                                <a href="tel:+375296016832">BY: +375 (29) 601-68-32</a>
+                            </li>
+                            <li class="footer__tel">
+                                <a href="tel:+79587628608">RU: +7 (958) 762-86-08</a>
+                            </li>
+                            <li class="footer__mail">
+                                <a href="mailto:sales@unic-lab.by">sales@unic-lab.by</a>
+                            </li>
+                            <li class="footer__social">
+                                <a href="#"><img src="./img/telegram.svg" alt="Telegram">Telegram</a>
+                                <a href="#"><img src="./img/linkedin.svg" alt="Linkidin">Linkidin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-wrapper">
+                        <div>
+                            <h5 class="footer__subtitle main-section__step_title">Компания</h5>
+                            <ul class="footer__menu">
+                                <li class="text light"><a href="#">О компании</a></li>
+                                <li class="text light"><a href="#">Технологии</a></li>
+                                <li class="text light"><a href="#">Проекты</a></li>
+                                <li class="text light"><a href="#">IoT</a></li>
+                                <li class="text light"><a href="#">Блог</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="footer__subtitle main-section__step_title">Услуги</h5>
+                            <div class="footer__menu_col">
+                                <ul class="footer__menu">
+                                    <li class="text light"><a href="#">Научные исследования</a></li>
+                                    <li class="text light"><a href="#">Промышленный дизайн</a></li>
+                                    <li class="text light"><a href="#">Прототипирование</a></li>
+                                    <li class="text light"><a href="#">Подготовка и производство</a></li>
+                                </ul>
+                                <ul class="footer__menu">
+                                    <li class="text light"><a href="#">Разработка ПО</a></li>
+                                    <li class="text light"><a href="#">Встроенное ПО</a></li>
+                                    <li class="text light"><a href="#">Облачная разработка</a></li>
+                                    <li class="text light"><a href="#">Разработка аппаратной части</a></li>
+                                    <li class="text light"><a href="#">Проектирование печатных платг</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__copyright">
+                <div class="copyright__container container">
+                    <p class="text light">© 2016-2022 Unic Lab Company</p>
+                    <a class="footer__copyright_policy text light" href="#">Политика конфидециальности</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <!--scripts for sliders-->
+    <script src="./js/swiper-9.1.1/package/swiper-bundle.min.js"></script>
+    <!--//-->
+</body>
+
+</html>

@@ -5232,6 +5232,19 @@ progress::-webkit-progress-value {
     margin-bottom: 8px;
 }
 
+.info-card__info ul li>ul li,
+.info-card__info ol li>ul li {
+    background: url(../img/list-dot.svg) no-repeat top 14px left;
+    padding-left: 20px;
+    margin-bottom: 0 !important;
+}
+
+.info-card__info ul li>ul,
+.info-card__info ol li>ul {
+    margin-top: 16px;
+    padding-left: 16px
+}
+
 @media (max-width: 1300px) {
     .fundamentals__title {
         margin-bottom: 8px;
@@ -6148,12 +6161,6 @@ ul.light {
     border-radius: 4px;
 }
 
-.project-descr-section__item-card:hover {
-    background: #EAEAEA;
-    border: 1px solid #A1A1A1;
-    box-shadow: -2px 4px 15px #C9C9C9;
-}
-
 .project-descr-section__item.active .project-descr-section__item-card {
     background: #EAEAEA;
     border: 1px solid #404040;
@@ -6197,6 +6204,14 @@ ul.light {
     background-size: cover;
 }
 
+.video-black {
+    background: #000000;
+}
+
+.video-white {
+    background: #FFFFFF;
+}
+
 .done-section__title {
     margin-bottom: 50px;
 }
@@ -6208,10 +6223,10 @@ ul.light {
 .done-section__item-image {
     max-width: 640px;
     max-height: 600px;
-    margin-top: -100px;
 }
 
-.done-section__item-image img {
+.done-section__item-image img,
+.done-section__item-image video {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -6230,18 +6245,24 @@ ul.light {
 @media (max-width: 1300px) {
 
     .done-section {
-        background: #121212;
+        background: #101010 url(../img/dev-slide-bg-mob.svg) top center no-repeat;
+    }
+
+    .video-black {
+        background: #000000;
+    }
+
+    .video-white {
+        background: #FFFFFF;
     }
 
     .done-section__title {
-        margin-bottom: 24px;
+        margin-bottom: 0;
     }
 
     .done-section__item-image {
         max-width: 330px;
         max-height: 300px;
-        background: url(../img/dev-bg-mob.png) center bottom 20px no-repeat;
-        background-size: cover;
         justify-self: center;
         margin-top: 0;
     }
@@ -6263,8 +6284,7 @@ ul.light {
 .result-section {
     background: #101010 url(../img/result-bg.svg) center center no-repeat;
     background-size: cover;
-    margin-top: 130px;
-    margin-bottom: 130px;
+    min-height: 500px;
 }
 
 .result-section__container {
@@ -6274,14 +6294,6 @@ ul.light {
 .result-section .info-card {
     display: flex;
     flex-direction: column;
-}
-
-.result-section__item-image {
-    max-width: 700px;
-    max-height: 760px;
-    position: absolute;
-    top: -200px;
-    left: 0;
 }
 
 .result-section__item-image img {
@@ -6302,11 +6314,63 @@ ul.light {
     align-self: flex-end;
 }
 
-@media (max-width: 1300px) {
-    .result-section {
-        background: #101010;
+@media (min-width: 1301px) {
+
+    .result-section.image-top-bottom {
+        margin-top: 80px;
+        margin-bottom: 130px;
+    }
+
+    .result-section.image-top-bottom .result-section__item-image {
+        max-width: 700px;
+        max-height: 760px;
+        position: absolute;
+        top: -230px;
+        left: -60px;
+    }
+
+    .result-section.image-top {
+        margin-top: 100px;
+    }
+
+    .result-section.image-top .result-section__item-image {
+        max-width: 700px;
+        max-height: 600px;
+        position: absolute;
+        bottom: -100px;
+        left: -60px;
+    }
+
+    .result-section.image-bottom {
+        margin-bottom: 80px;
+    }
+
+    .result-section.image-bottom .result-section__item-image {
+        max-width: 700px;
+        max-height: 600px;
+        position: absolute;
+        top: -100px;
+        left: -60px;
+    }
+
+    .result-section.image-no-top-bottom {
         margin-top: 0;
         margin-bottom: 0;
+    }
+
+    .result-section.image-no-top-bottom .result-section__item-image {
+        max-width: 700px;
+        max-height: 500px;
+        position: absolute;
+        top: -100px;
+        left: -60px;
+    }
+
+}
+
+@media (max-width: 1300px) {
+    .result-section {
+        background: #101010 url(../img/dev-slide-bg-mob.svg) top center no-repeat;
     }
 
     .result-section .info-card {
@@ -6316,8 +6380,6 @@ ul.light {
     .result-section__item-image {
         max-width: 330px;
         max-height: 300px;
-        background: url(../img/dev-bg-mob.png) center bottom 50px no-repeat;
-        background-size: cover;
         justify-self: center;
         position: unset;
     }
