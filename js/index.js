@@ -349,4 +349,30 @@ $(document).ready(function () {
         });
     }
 
+    //hover effect on project description card
+
+    const projectDescrItems = document.querySelectorAll('.project-descr-section__item');
+
+    projectDescrItems.forEach((projectDescrItem) => {
+        projectDescrItem.addEventListener('mouseenter', function () {
+            projectDescrItems.forEach((projectDescrItem) => {
+                projectDescrItem.classList.remove('active');
+            })
+            this.classList.add('active');
+        });
+    });
+
+    //turn on video on scroll
+
+    $(window).scroll(function () {
+        $('.done-section__video').each(function () {
+            console.log($($(this).closest('.video-section')));
+            let videoSectionTop = $($(this).closest('.video-section')).offset().top;
+            const screenTop = $(window).scrollTop();
+            if (videoSectionTop <= screenTop) {
+                $(this).trigger('play');
+            }
+        });
+    });
+
 });
