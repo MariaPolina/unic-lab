@@ -236,6 +236,8 @@
             </section>
             <section class="done-section box">
                 <div class="container">
+                    <!-- info-card can have additional class "image-right" 
+                        when the image should be on the right-->
                     <div class="info-card image-right">
                         <h3 class="done-section__title info-card__title title light">Что было достигнуто?</h3>
                         <div class="done-section__item-image info-card__image">
@@ -285,6 +287,11 @@
                     </div>
                 </div>
             </section>
+            <!-- result-section can have additional classes: 
+                    image-top-bottom - in case the image should have margings from top and bottom;
+                    image-top - in case the image should have marging only from the top;
+                    image-bottom - in case the image should have marging only from the bottom;
+                    image-no-top-bottom  - in case the image should have no marging at all; -->
             <section class="result-section image-top-bottom box">
                 <div class="result-section__container container">
                     <div class="info-card">
@@ -537,27 +544,130 @@
                     </div>
                 </div>
             </section>
-            <section class="fundamentals-section lightgrey-bg box">
+            <section class="done-section lightgrey-bg box">
                 <div class="container">
-                    <h3 class="fundamentals__title title">Особености Разработки ПО</h3>
+                    <!-- info-card can have additional class "image-right" 
+                        when the image should be on the right-->
+                    <div class="info-card image-right">
+                        <h3 class="info-card__title title">Технологии</h3>
+                        <div class="done-section__item-image info-card__image">
+                            <img src="./img/project20-done.png" alt="done">
+                        </div>
+                        <div class="info-card__info">
+                            <p><strong>Back-end:</strong></p>
+                            <ul>
+                                <li>Основной язык программирования: <strong>Python</strong></li>
+                                <li>Основная шина данных: <strong>RabbitMQ</strong></li>
+                                <li>Основной вебсервер: <strong>Nginx</strong></li>
+                                <li>Основной язык программирования: <strong>Python</strong></li>
+                                <li>Основная шина данных: <strong>RabbitMQ</strong></li>
+                                <li>Основной вебсервер: <strong>Nginx</strong></li>
+                                <li>Основная шина данных: <strong>RabbitMQ</strong></li>
+                                <li>Основной вебсервер: <strong>Nginx</strong></li>
+                            </ul>
+                            <p><strong>Frontend:</strong></p>
+                            <ul>
+                                <li>Основной язык программирования: <strong>Python</strong></li>
+                                <li>Основная шина данных: <strong>RabbitMQ</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="fundamentals-section darkgrey-bg box">
+                <div class="container">
+                    <h4 class="subtitle">разработка программного обеспечения</h4>
+                    <h3 class="fundamentals__title title">Слой получения и хранения данных</h3>
                     <div class="fundamentals__wrapper">
                         <div>
-                            <p>
-                                Разработали программное обеспечение, встраиваемое в микроконтроллер счётчика для отсчета
-                                числа оборотов крыльчатки, количество оборотов которой пропорционально объему воды, с
-                                последующим отображением данных на ЖКИ, накоплением и сохранением собранных данных, а
-                                также передачи данных по радиоканалу. Для разработки программы (прошивки) для
-                                контроллера использовалась среда разработки (IDE) IAR.</p>
-                            <p>Разработали алгоритм работы пользовательского интерфейса, предназначенный для изменения
-                                режимов отображения информации на ЖКИ дисплее счётчика при касании к сенсорной кнопке.
-                            </p>
-
+                            <ul>
+                                <li><strong>DataGateway Service</strong> - входной слой получения и парсинга сырых
+                                    данных;</li>
+                                <li><strong>Input Networks</strong> - отвечает за получение данных извне (посредством
+                                    API или опросом сторонних сервисов);</li>
+                                <li><strong>Input Networks</strong> - отвечает за переброс полученных данных и
+                                    интеграцию с внешней системой (Агрегатор Данных, сторонние системы);</li>
+                                <li><strong>System View</strong> - отвечает за менеджмент и инструменты проверки
+                                    состояния и отладки пакетов и приборов;</li>
+                                <li><strong>DataAggregator Service</strong>- агрегация данных потребления, интерполяция
+                                    и предостав-ление доступа к данным;</li>
+                                <li><strong>Device Control Service</strong>- сбор данных о приборе, владельцах и
+                                    сервисных компаниях, его прошивках, производителях и поддерживаемых протоколах;</li>
+                                <li><strong>Device REST API</strong> - управление счетчиками;</li>
+                                <li><strong>Values REST API</strong> - предоставление данных для нужд личного кабинета;
+                                </li>
+                            </ul>
                         </div>
                         <div>
-                            <p>Разработали собственную программную платформу, предоставляющую необходимый набор функций,
-                                реализующих возможность модульной разработки программного обеспечения счётчика.</p>
-                            <p>Построили профили энергопотребления для различных сценариев работы устройства,
-                                оптимизирующие ПО с точки зрения энергосбережения.</p>
+                            <ul>
+                                <li><strong>DataGateway Service</strong> - входной слой получения и парсинга сырых
+                                    данных;</li>
+                                <li><strong>Input Networks</strong> - отвечает за получение данных извне (посредством
+                                    API или опросом сторонних сервисов);</li>
+                                <li><strong>Input Networks</strong> - отвечает за переброс полученных данных и
+                                    интеграцию с внешней системой (Агрегатор Данных, сторонние системы);</li>
+                                <li><strong>System View</strong> - отвечает за менеджмент и инструменты проверки
+                                    состояния и отладки пакетов и приборов;</li>
+                                <li><strong>DataAggregator Service</strong>- агрегация данных потребления, интерполяция
+                                    и предостав-ление доступа к данным;</li>
+                                <li><strong>Device Control Service</strong>- сбор данных о приборе, владельцах и
+                                    сервисных компаниях, его прошивках, производителях и поддерживаемых протоколах;</li>
+                                <li><strong>Device REST API</strong> - управление счетчиками;</li>
+                                <li><strong>Values REST API</strong> - предоставление данных для нужд личного кабинета;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="fundamentals__title title">Слой менеджмента и визуализации данных</h3>
+                    <div class="fundamentals__wrapper">
+                        <div>
+                            <ul>
+                                <li><strong>DataGateway Service</strong> - входной слой получения и парсинга сырых
+                                    данных;</li>
+                                <li><strong>Input Networks</strong> - отвечает за получение данных извне (посредством
+                                    API или опросом сторонних сервисов);</li>
+                                <li><strong>Input Networks</strong> - отвечает за переброс полученных данных и
+                                    интеграцию с внешней системой (Агрегатор Данных, сторонние системы);</li>
+                                <li><strong>System View</strong> - отвечает за менеджмент и инструменты проверки
+                                    состояния и отладки пакетов и приборов;</li>
+                                <li><strong>DataAggregator Service</strong>- агрегация данных потребления, интерполяция
+                                    и предостав-ление доступа к данным;</li>
+                                <li><strong>Device Control Service</strong>- сбор данных о приборе, владельцах и
+                                    сервисных компаниях, его прошивках, производителях и поддерживаемых протоколах;</li>
+                                <li><strong>Device REST API</strong> - управление счетчиками;</li>
+                                <li><strong>Values REST API</strong> - предоставление данных для нужд личного кабинета;
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><strong>DataGateway Service</strong> - входной слой получения и парсинга сырых
+                                    данных;</li>
+                                <li><strong>Input Networks</strong> - отвечает за получение данных извне (посредством
+                                    API или опросом сторонних сервисов);</li>
+                                <li><strong>Input Networks</strong> - отвечает за переброс полученных данных и
+                                    интеграцию с внешней системой (Агрегатор Данных, сторонние системы);</li>
+                                <li><strong>System View</strong> - отвечает за менеджмент и инструменты проверки
+                                    состояния и отладки пакетов и приборов;</li>
+                                <li><strong>DataAggregator Service</strong>- агрегация данных потребления, интерполяция
+                                    и предостав-ление доступа к данным;</li>
+                                <li><strong>Device Control Service</strong>- сбор данных о приборе, владельцах и
+                                    сервисных компаниях, его прошивках, производителях и поддерживаемых протоколах;</li>
+                                <li><strong>Device REST API</strong> - управление счетчиками;</li>
+                                <li><strong>Values REST API</strong> - предоставление данных для нужд личного кабинета;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="fundamentals__title title">Инфраструктурная часть</h3>
+                    <div class="fundamentals__wrapper">
+                        <div>
+                            <ul>
+                                <li><strong>DataGateway Service</strong> - входной слой получения и парсинга сырых
+                                    данных;</li>
+                                <li><strong>Input Networks</strong> - отвечает за получение данных извне (посредством
+                                    API или опросом сторонних сервисов);</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
