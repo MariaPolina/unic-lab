@@ -5242,7 +5242,8 @@ progress::-webkit-progress-value {
 }
 
 .info-card__info ul li>ul li,
-.info-card__info ol li>ul li {
+.info-card__info ol li>ul li,
+.fundamentals-section.dot-list .fundamentals__wrapper ul li {
     background: url(../img/list-dot.svg) no-repeat top 11px left;
     padding-left: 20px;
     margin-bottom: 0 !important;
