@@ -6084,10 +6084,6 @@ ul.light {
     object-fit: contain;
 }
 
-.project-main-task {
-    max-width: 560px;
-}
-
 @media (max-width: 1300px) {
     .project-main-section {
         padding-top: 88px;
