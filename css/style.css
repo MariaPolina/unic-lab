@@ -296,6 +296,10 @@ h4.light {
     letter-spacing: 0.02em;
 }
 
+strong {
+    font-weight: 500;
+}
+
 .green {
     color: #7DB704;
     font-weight: 400;
@@ -4567,12 +4571,12 @@ progress::-webkit-progress-value {
 }
 
 .pagination__page:hover {
-    color: #9FEA00;
+    color: #9FEA00 !important;
 }
 
 .pagination__page.active,
 .page-numbers.current {
-    color: #9FEA00;
+    color: #9FEA00 !important;
     border-bottom: 1px solid #9FEA00;
 }
 
@@ -5191,12 +5195,17 @@ progress::-webkit-progress-value {
 
 .fundamentals__title {
     margin-bottom: 30px;
+    max-width: 640px;
 }
 
 .fundamentals__wrapper {
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
     column-gap: 100px;
+}
+
+.fundamentals__wrapper:not(:last-child) {
+    margin-bottom: 50px;
 }
 
 .fundamentals__wrapper ul:not(:last-child),
@@ -5234,7 +5243,7 @@ progress::-webkit-progress-value {
 
 .info-card__info ul li>ul li,
 .info-card__info ol li>ul li {
-    background: url(../img/list-dot.svg) no-repeat top 14px left;
+    background: url(../img/list-dot.svg) no-repeat top 11px left;
     padding-left: 20px;
     margin-bottom: 0 !important;
 }
@@ -5251,6 +5260,7 @@ progress::-webkit-progress-value {
     }
 
     .fundamentals__wrapper {
+        grid-template-columns: 1fr;
         grid-auto-flow: row;
         row-gap: 16px;
     }
@@ -6204,12 +6214,16 @@ ul.light {
     background-size: cover;
 }
 
+.done-section.lightgrey-bg {
+    background: #EAEAEA;
+}
+
 .video-black {
-    background: #000000;
+    background: #000000 !important;
 }
 
 .video-white {
-    background: #FFFFFF;
+    background: #FFFFFF !important;
 }
 
 .done-section__title {
@@ -6232,13 +6246,13 @@ ul.light {
     object-fit: contain;
 }
 
-.done-section .info-card__info ul li {
+.done-section .info-card__info.light ul li {
     font-weight: 400;
     line-height: 28px;
 }
 
-.done-section .info-card__info ul li:not(:last-child),
-.done-section .info-card__info p:not(:last-child) {
+.done-section .info-card__info.light ul li:not(:last-child),
+.done-section .info-card__info.light p:not(:last-child) {
     margin-bottom: 30px;
 }
 
@@ -6267,7 +6281,7 @@ ul.light {
         margin-top: 0;
     }
 
-    .done-section .info-card__info ul li {
+    .done-section .info-card__info.light ul li {
         font-weight: 300;
         line-height: 20px;
     }
