@@ -2238,6 +2238,10 @@ strong {
     z-index: 2;
 }
 
+.project-section__item_big .project-section__item_title {
+    font-size: 24px;
+}
+
 .project-section__item_big .project-section__item_image {
     max-width: 640px;
     max-height: 640px;
@@ -3174,6 +3178,7 @@ progress::-webkit-progress-value {
 /*------checkbox--------*/
 
 .checkbox-styled {
+    position: absolute;
     z-index: -1;
     opacity: 0;
     margin-left: -15px;
@@ -3199,9 +3204,9 @@ progress::-webkit-progress-value {
 }
 
 .checkbox-styled.light+label a {
-    color: #9FEA00;
+    color: #E3E3E3;
     border-bottom: 1px solid;
-    border-bottom: 1px solid #404040;
+    border-bottom: 1px solid #E3E3E3;
 }
 
 .checkbox-styled+label>span {
@@ -3227,10 +3232,9 @@ progress::-webkit-progress-value {
 }
 
 @media (min-width: 1301px) {
-    .checkbox-styled:hover+label>span {
+    .checkbox-styled.light:hover+label>span {
         box-shadow: 0px -1px 15px 0px rgb(172 229 70);
     }
-
 }
 
 em {
@@ -3248,7 +3252,7 @@ em {
     border: solid 1px #E3E3E3;
 }
 
-.checkbox-styled.light:checked+label {
+.task-section__item .checkbox-styled.light:checked+label {
     font-weight: 400;
 }
 
@@ -3954,8 +3958,8 @@ em {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 24px;
     letter-spacing: 0.02em;
     color: #A1A1A1;
 }
@@ -6849,7 +6853,6 @@ ul.light {
     .radio-styled:hover+label::before {
         box-shadow: 0px -1px 15px 0px rgb(172 229 70);
     }
-
 }
 
 .task-section__item__options,
@@ -6868,10 +6871,6 @@ ul.light {
     column-gap: 118px;
 }
 
-.task-section__item__options .checkbox-styled+label {
-    margin-top: -16px;
-}
-
 .checkbox-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -6880,17 +6879,18 @@ ul.light {
 
 .checkbox-info>p:last-child {
     width: 640px;
-}
-
-.checkbox-info.wide>p:last-child {
-    width: 900px;
     min-height: 48px;
     color: #A1A1A1;
 }
 
-.radio-styled:checked+label .checkbox-info.wide>p:last-child,
-.checkbox-styled.light:checked+label .checkbox-info.wide>p:last-child {
+.checkbox-info.wide>p:last-child {
+    width: 900px;
+}
+
+.radio-styled:checked+label .checkbox-info>p:last-child,
+.checkbox-styled.light:checked+label .checkbox-info>p:last-child {
     color: #E3E3E3;
+    font-weight: 300;
 }
 
 .task-section__item__options-notify {
@@ -6923,17 +6923,39 @@ ul.light {
     .tabs>div {
         font-size: 14px;
         line-height: 20px;
-        width: calc(100% - 32px);
+        margin: 0 auto;
+        width: calc(100% - 64px);
         text-align: center;
         display: none;
     }
 
-    .tabs>div:last-child {
-        width: 100%;
-    }
-
     .tabs>div.active {
         display: block;
+    }
+
+    .tabs>div:first-child,
+    .tabs>div:last-child {
+        width: calc(100% - 32px);
+        margin: 0;
+    }
+
+    .tabs>div:last-child {
+        margin-left: 32px;
+    }
+
+    .tabs>div::before {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 100%;
+        background: url(../img/arrow-r-grey.svg) center center no-repeat;
+        position: absolute;
+        top: 0;
+        left: -32px;
+    }
+
+    .tabs>div:first-child::before {
+        display: none;
     }
 
     .task-section__item {
@@ -6951,11 +6973,6 @@ ul.light {
     .radio-styled+label {
         font-size: 14px;
         line-height: 20px;
-    }
-
-    .task-section__item__options,
-    .task-section__item__options.two-cols>div {
-        row-gap: 16px;
     }
 
     .task-section__item__options.two-cols {
@@ -6980,14 +6997,16 @@ ul.light {
         margin-top: 24px;
     }
 
-    .checkbox-styled.light+label>.checkbox-info>p:last-child {
+    .checkbox-styled.light+label>.checkbox-info>p:last-child,
+    .radio-styled+label>.checkbox-info>p:last-child {
         font-weight: 300;
         font-size: 12px;
         line-height: 20px;
         color: #404040;
     }
 
-    .checkbox-styled.light:checked+label>.checkbox-info>p:last-child {
+    .checkbox-styled.light:checked+label>.checkbox-info>p:last-child,
+    .radio-styled:checked+label>.checkbox-info>p:last-child {
         color: #A1A1A1;
     }
 }
