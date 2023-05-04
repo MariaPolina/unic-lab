@@ -304,10 +304,12 @@
                             </div>
                             <div class="task-section__item">
                                 <h4 class="task-section__item__title light">10. Формат работы</h4>
-                                <div class="task-section__item__options">
+                                <!-- add class "radio" to "task-section__item__options" element 
+                                    if radio buttons with additional text info are used instead of checkboxes -->
+                                <div class="task-section__item__options radio">
                                     <div>
-                                        <input type="checkbox" class="checkbox-styled light" id="proj">
-                                        <label for="proj"><span></span>
+                                        <input class="radio-styled" type="radio" name="formatwork" id="proj">
+                                        <label for="proj">
                                             <div class="checkbox-info wide">
                                                 <p>Проект</p>
                                                 <p>Формат работ, при котором проект оформляется не на фиксированный
@@ -317,8 +319,8 @@
                                         </label>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="checkbox-styled light" id="outstaff">
-                                        <label for="outstaff"><span></span>
+                                        <input class="radio-styled" type="radio" name="formatwork" id="outstaff">
+                                        <label for="outstaff">
                                             <div class="checkbox-info wide">
                                                 <p>Аутстаф</p>
                                                 <p>Формат работ удаленного найма, при которой компания-подрядчик
@@ -328,8 +330,8 @@
                                         </label>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="checkbox-styled light" id="consult">
-                                        <label for="consult"><span></span>
+                                        <input class="radio-styled" type="radio" name="formatwork" id="consult">
+                                        <label for="consult">
                                             <div class="checkbox-info wide">
                                                 <p>Консультация</p>
                                                 <p>Формат работ, когда компания предоставляет только консультативные
@@ -338,8 +340,8 @@
                                         </label>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="checkbox-styled light" id="otherformat">
-                                        <label for="otherformat"><span></span>
+                                        <input class="radio-styled" type="radio" name="formatwork" id="otherformat">
+                                        <label for="otherformat">
                                             <div class="checkbox-info wide">
                                                 <p>другое</p>
                                                 <p></p>
