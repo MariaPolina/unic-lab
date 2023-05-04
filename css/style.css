@@ -3237,7 +3237,7 @@ em {
 }
 
 .checkbox-styled.light:checked+label {
-    text-shadow: 0 0 1px #E3E3E3, 0 0 1px #E3E3E3, 0 0 1px #E3E3E3;
+    font-weight: 400;
 }
 
 .checkbox-styled.light:checked+label>span {
@@ -6825,7 +6825,7 @@ ul.light {
 }
 
 .radio-styled:checked+label {
-    text-shadow: 0 0 1px #E3E3E3, 0 0 1px #E3E3E3, 0 0 1px #E3E3E3;
+    font-weight: 400;
 }
 
 .radio-styled:checked+label::before {
