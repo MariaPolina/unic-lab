@@ -375,4 +375,34 @@ $(document).ready(function () {
         });
     });
 
+    //change content for tabs
+
+    $('.tabs>div').on('click', function () {
+        $('.tabs>div').removeClass('active');
+        let tabNumber = $(this).attr('class');
+        $('.tabs-data__item').css('display', 'none');
+        $('#' + tabNumber).css('display', 'block');
+        $(this).addClass('active');
+    });
+
+    $('.nav-btn-arrow').on('click', function () {
+        let tabNumber = $(this).closest('.tabs-data__item').attr('id');
+        $('.' + tabNumber).next('div').trigger('click')
+    });
+
+    $('.nav-btn-arrow.reverse').on('click', function () {
+        let tabNumber = $(this).closest('.tabs-data__item').attr('id');
+        $('.' + tabNumber).prev('div').trigger('click')
+    });
+
+    //block checboxes when cimplex dev selected
+
+    $('#complexdev').on('click', function () {
+        if ($('#complexdev').is(':checked')) {
+            $($('#complexdev').parent()).nextAll('div').children('input').prop('disabled', true).prop('checked', false)
+        } else {
+            $($('#complexdev').parent()).nextAll('div').children('input').prop('disabled', false)
+        }
+    });
+
 });
