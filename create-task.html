@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIC LAB</title>
+    <link rel="shortcut icon" href="./img/favicon.svg">
+    <link href="./css/style.css" rel="stylesheet">
+    <!--scripts for sliders-->
+    <link rel="stylesheet" href="./js/swiper-9.1.1/package/swiper-bundle.min.css">
+    <!--//-->
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__logo">
+                    <a href="#"></a>
+                </div>
+                <div class="header__nav">
+                    <nav class="header__menu menu">
+                        <ul class="menu__items">
+                            <li class="menu__item menu-item-has-children">
+                                <a href="#">Компания <span></span></a>
+                                <ul>
+                                    <li><a href="">О компании</a></li>
+                                    <li><a href="">Процесс разработки продукта</a></li>
+                                    <li><a href="">Технологии</a></li>
+                                    <li><a href="">Блог</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item menu-item-has-children">
+                                <a href="#">Услуги <span></span></a>
+                                <ul>
+                                    <li>
+                                        <ul>
+                                            <li><a href="">Разработка аппаратной части</a>
+                                                <ul>
+                                                    <li><a href="">Разработка печатных плат</a></li>
+                                                    <li><a href="">Разработка схемотехники</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="">Разработка программного
+                                                    обеспечения</a>
+                                                <ul>
+                                                    <li><a href="">Встроенное программное обеспечение</a>
+                                                    </li>
+                                                    <li><a href="">Облачное программное обеспечение</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="">Научное исследование</a></li>
+                                            <li><a href="">Промышленный дизайн</a></li>
+                                            <li><a href="">Прототипирование</a></li>
+                                            <li><a href="">Подготовка и производство</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#">IoT</a></li>
+                            <li class="menu__item"><a href="#">Проекты</a></li>
+                            <li class="menu__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__callback button-modal" id="callback" data-modal="modal-callback">Связаться с
+                        нами
+                        <div class="header__callback_inner"></div>
+                    </div>
+                    <div class="header__lang lang">
+                        <div class="lang__selected">RU</div>
+                        <div class="lang__options">
+                            <div class="lang__option"><a href="#">EN</a></div>
+                        </div>
+                    </div>
+                    <div class="burger-close"></div>
+                </div>
+                <div class="header__burger"></div>
+            </div>
+            <div class="header-line"></div>
+        </header>
+        <main>
+            <section class="task-section section-top dark-bg">
+                <div class="container">
+                    <div class="task-section__info">
+                        <h1 class="task-section__title light">Составление Технического задания</h1>
+                        <p class="task-section__text text light">Мы подготовили для Вас ряд вопросов, которые
+                            помогут сформировать технические требования
+                            Вашего проекта. Если Вы видите вопрос, который не относится к Вашему проекту или у Вас
+                            недостаточно информации для ответа - пропускайте его. Мы обязательно свяжемся с Вами и
+                            поможем сформулировать недостающие требования</p>
+                    </div>
+
+                    <div class="task-section__tabs tabs">
+                        <div class="task-tab1 active">Выбор услуги</div>
+                        <div class="task-tab2">Общая информация</div>
+                        <div class="task-tab3">Техническая информация</div>
+                        <div class="task-tab4">Контактная информация</div>
+                    </div>
+
+                    <div class="task-section__wrapper tabs-data__items">
+                        <div class="tabs-data__item" id="task-tab1">
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">1. Тип разработки</h4>
+                                <div class="task-section__item__options">
+                                    <div><input class="radio-styled" type="radio" name="devtype" id="newproject">
+                                        <label for="newproject">Новый проект</label>
+                                    </div>
+                                    <div><input class="radio-styled" type="radio" name="devtype" id="reworkproject">
+                                        <label for="reworkproject">Доработка существующего</label>
+                                    </div>
+                                    <div><input class="radio-styled" type="radio" name="devtype" id="coworkproject">
+                                        <label for="coworkproject">Совместная разработка</label>
+                                    </div>
+                                    <div><input class="radio-styled" type="radio" name="devtype" id="reverseeng">
+                                        <label for="reverseeng">Реверс-ижиниринг</label>
+                                    </div>
+                                    <div><input class="radio-styled" type="radio" name="devtype" id="otherproject">
+                                        <label for="otherproject">Другое</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">2. Что нужно для вашего проекта?</h4>
+                                <div class="task-section__item__options">
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="complexdev">
+                                        <label for="complexdev"><span></span>
+                                            <div class="checkbox-info">
+                                                <p>Комплексная разработка электроники <em>*</em></p>
+                                                <p>Разработка электронного продукта “под ключ”. От сбора требований
+                                                    и формирования ТЗ до опытного образца/серийного производства</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="promdesign">
+                                        <label for="promdesign"><span></span>
+                                            <div class="checkbox-info">
+                                                <p>Промышленный дизайн</p>
+                                                <p>Разработка дизайна/конструктива корпуса, подготовка
+                                                    конструкторской документации, прототипирование/изготовление
+                                                    корпуса</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="hardwaredev">
+                                        <label for="hardwaredev"><span></span>
+                                            <div class="checkbox-info">
+                                                <p>Разработка аппаратной части</p>
+                                                <p>Разработка электронного модуля, схемотехника, трассировка, расчет
+                                                    и проектирование антен</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="softwaredev">
+                                        <label for="softwaredev"><span></span>
+                                            <div class="checkbox-info">
+                                                <p>Разработка программного обеспечения</p>
+                                                <p>Разработка встроенного ПО, бэк енд разработка, GUI</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="task-section__item__options-notify"><em>*</em> Выбрав данный пункт , Вы не
+                                    можете выбрать несколько вариантов для
+                                    прокта
+                                </div>
+                            </div>
+                            <div class="task-section__buttons">
+                                <a href="#" class="nav-btn-arrow">Далее</a>
+                            </div>
+                        </div>
+
+                        <div class="tabs-data__item" id="task-tab2">
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">3. Общая информация о проекте</h4>
+                                <div class="task-section__item__textarea input light">
+                                    <textarea placeholder="Введите краткую информацию о проекте"></textarea>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">4. Опишите основные функции и возможности
+                                    устройства/продукта</h4>
+                                <div class="task-section__item__textarea input light">
+                                    <textarea placeholder="Введите краткую информацию о проекте"></textarea>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">5. Для каких рынков необходима разработка
+                                </h4>
+                                <div class="task-section__item__options two-cols">
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="sng">
+                                            <label for="sng"><span></span>СНГ</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="la">
+                                            <label for="la"><span></span>Латинская Америка</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="europe">
+                                            <label for="europe"><span></span>Европа</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="asia">
+                                            <label for="asia"><span></span>Азия</label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="usa">
+                                            <label for="usa"><span></span>США</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="arab">
+                                            <label for="arab"><span></span>Арабские страны</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light checkbox-with-input"
+                                                id="othercountry">
+                                            <label for="othercountry"><span></span>другое <div class="input light">
+                                                    <input type="text" placeholder="Ведите нужный рынок">
+                                                </div> </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">6. Желаемые сроки реализации проекта</h4>
+                                <div class="task-section__item__options">
+                                    <div><input class="radio-styled" type="radio" name="devtype" id="month">
+                                        <label for="month">до месяца</label>
+                                    </div>
+                                    <div><input class="radio-styled" type="radio" name="devtype" id="6month">
+                                        <label for="6month">1-6 месяцев</label>
+                                    </div>
+                                    <div><input class="radio-styled" type="radio" name="devtype" id="12month">
+                                        <label for="12month">6-12 месяцев</label>
+                                    </div>
+                                    <div><input class="radio-styled" type="radio" name="devtype" id="year">
+                                        <label for="year">год и более</label>
+                                    </div>
+                                    <div><input class="radio-styled" type="radio" name="devtype" id="asap">
+                                        <label for="asap">как можно скорее</label>
+                                    </div>
+                                    <div><input class="radio-styled" type="radio" name="devtype" id="noterm">
+                                        <label for="noterm">срок не имеет значения</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">7. Планируемый объем производства (шт/в год)
+                                </h4>
+                                <div class="input-from-to">
+                                    <div class="task-section__item__textarea input light">
+                                        <input type="text" placeholder="от">
+                                    </div>
+                                    <span></span>
+                                    <div class="task-section__item__textarea input light">
+                                        <input type="text" placeholder="до">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">8. Границы себестоимости изделия (доллар
+                                    США)</h4>
+                                <div class="input-from-to">
+                                    <div class="task-section__item__textarea input light">
+                                        <input type="text" placeholder="от">
+                                    </div>
+                                    <span></span>
+                                    <div class="task-section__item__textarea input light">
+                                        <input type="text" placeholder="до">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">9. Бюджет на разработку (доллар США)</h4>
+                                <div class="input-from-to">
+                                    <div class="task-section__item__textarea input light">
+                                        <input type="text" placeholder="от">
+                                    </div>
+                                    <span></span>
+                                    <div class="task-section__item__textarea input light">
+                                        <input type="text" placeholder="до">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">10. Формат работы</h4>
+                                <div class="task-section__item__options">
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="proj">
+                                        <label for="proj"><span></span>
+                                            <div class="checkbox-info wide">
+                                                <p>Проект</p>
+                                                <p>Формат работ, при котором проект оформляется не на фиксированный
+                                                    результат работ и ее стоимость соответственно, а часы работы занятых
+                                                    на проекте специалистов и их наработки за это время</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="outstaff">
+                                        <label for="outstaff"><span></span>
+                                            <div class="checkbox-info wide">
+                                                <p>Аутстаф</p>
+                                                <p>Формат работ удаленного найма, при которой компания-подрядчик
+                                                    предоставляет специалиста или группу профессионалов для участия в
+                                                    проекте клиента на период действия контракта</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="consult">
+                                        <label for="consult"><span></span>
+                                            <div class="checkbox-info wide">
+                                                <p>Консультация</p>
+                                                <p>Формат работ, когда компания предоставляет только консультативные
+                                                    услуги</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="otherformat">
+                                        <label for="otherformat"><span></span>
+                                            <div class="checkbox-info wide">
+                                                <p>другое</p>
+                                                <p></p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__buttons">
+                                <a href="#" class="nav-btn-arrow reverse">Назад</a>
+                                <a href="#" class="nav-btn-arrow">Далее</a>
+                            </div>
+                        </div>
+
+                        <div class="tabs-data__item" id="task-tab3">
+                            <h2 class="tabs-data__title title light">Разработка аппаратной части</h2>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">1. Детали работ</h4>
+                                <div class="task-section__item__options">
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="schemetech">
+                                        <label for="schemetech"><span></span>схемотехника и трассировка</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="calcpr">
+                                        <label for="calcpr"><span></span>расчет и проектирование антенн</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="calcpr2">
+                                        <label for="calcpr2"><span></span>расчет и проектирование моточных
+                                            изделий</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="devfpga">
+                                        <label for="devfpga"><span></span>разработка на FPGA</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="devdoc">
+                                        <label for="devdoc"><span></span>разработка документации</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light checkbox-with-input"
+                                            id="otherwork">
+                                        <label for="otherwork"><span></span>другое <div class="input light">
+                                                <input type="text" placeholder="Ведите нужные работы">
+                                            </div> </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">2. Уже есть корпус?</h4>
+                                <div class="task-section__item__options">
+                                    <div><input class="radio-styled" type="radio" name="havehard" id="hardyes">
+                                        <label for="hardyes">да</label>
+                                    </div>
+                                    <div><input class="radio-styled" type="radio" name="havehard" id="hardno">
+                                        <label for="hardno">нет</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">3. Есть габаритные ограничения платы?</h4>
+                                <div class="task-section__item__textarea input light">
+                                    <textarea placeholder="Введите габаритные ограничения, если они есть"></textarea>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">4. Условия эксплуатации устройства</h4>
+                                <div class="task-section__item__options">
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="indoor">
+                                        <label for="indoor"><span></span>в помещении</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="outdoor">
+                                        <label for="outdoor"><span></span>на улице</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="inwater">
+                                        <label for="inwater"><span></span>в водной среде</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="otherenv">
+                                        <label for="otherenv"><span></span>другое</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">5. Тип электропитания</h4>
+                                <div class="task-section__item__options">
+                                    <div><input class="radio-styled" type="radio" name="elpower" id="batery">
+                                        <label for="batery">батарейное</label>
+                                    </div>
+                                    <div><input class="radio-styled" type="radio" name="elpower" id="elec">
+                                        <label for="elec">сетевое</label>
+                                    </div>
+                                    <div><input class="radio-styled" type="radio" name="elpower" id="combo">
+                                        <label for="combo">комбинированное</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">6. Интерфейсы передачи данных - Проводные
+                                </h4>
+                                <div class="task-section__item__options two-cols">
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="RS485">
+                                            <label for="RS485"><span></span>RS485</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="M-Bus">
+                                            <label for="M-Bus"><span></span>M-Bus</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="Ethernet">
+                                            <label for="Ethernet"><span></span>Ethernet</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="G3-PLC">
+                                            <label for="G3-PLC"><span></span>G3-PLC</label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="RS-232">
+                                            <label for="RS-232"><span></span>RS-232</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="USB">
+                                            <label for="USB"><span></span>USB</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="EtherCat">
+                                            <label for="EtherCat"><span></span>EtherCat</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="otherui">
+                                            <label for="otherui"><span></span>другое</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">7. Интерфейсы передачи данных - Беспроводные
+                                </h4>
+                                <div class="task-section__item__options two-cols">
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="RFID: NFC">
+                                            <label for="RFID: NFC"><span></span>RFID: NFC</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="Zigbee">
+                                            <label for="Zigbee"><span></span>Zigbee</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="Bluetooth">
+                                            <label for="Bluetooth"><span></span>Bluetootht</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="Sigfox">
+                                            <label for="Sigfox"><span></span>Sigfox</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="NB-FI">
+                                            <label for="NB-FI"><span></span>NB-FI</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="LoRa">
+                                            <label for="LoRa"><span></span>LoRa</label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="GPRS">
+                                            <label for="GPRS"><span></span>GPRS</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="LTE">
+                                            <label for="LTE"><span></span>LTE</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="NB-IoT">
+                                            <label for="NB-IoT"><span></span>NB-IoT</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="Wi-Fi">
+                                            <label for="Wi-Fi"><span></span>Wi-Fi</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="Irda">
+                                            <label for="Irda"><span></span>Irda</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="checkbox-styled light" id="otheruiwl">
+                                            <label for="otheruiwl"><span></span>другое</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">8. Есть ли устройства, на которые
+                                    ориентируетесь? Если да, прикрепите ссылки</h4>
+                                <div class="task-section__item__textarea input light">
+                                    <textarea
+                                        placeholder="Назовите данные устройства и ссылки на них, если есть"></textarea>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">9. Есть ли другие элементы системы, с
+                                    которыми разрабатываемое устройство должно взаимодействовать? Если да, опишите</h4>
+                                <div class="task-section__item__textarea input light">
+                                    <textarea placeholder="Опишите данные системы"></textarea>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">10. Требования к документации</h4>
+                                <div class="task-section__item__options">
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="Altium">
+                                        <label for="Altium"><span></span>Altium проект</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="Gerber">
+                                        <label for="Gerber"><span></span>Gerber файлы</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="kd">
+                                        <label for="kd"><span></span>КД по ЕСКД</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox-styled light" id="otherreq">
+                                        <label for="otherreq"><span></span>другое</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__item">
+                                <h4 class="task-section__item__title light">10. Какой результат работ вы ожидаете?</h4>
+                                <div class="task-section__item__options">
+                                    <div><input class="radio-styled" type="radio" name="expectedres" id="expectedres1">
+                                        <label for="expectedres1">Комплект КД на изделие + опытные образцы</label>
+                                    </div>
+                                    <div><input class="radio-styled" type="radio" name="expectedres" id="expectedres2">
+                                        <label for="expectedres2">Комплект КД на изделие + опытные образцы + подготовка
+                                            к
+                                            производству</label>
+                                    </div>
+                                    <div><input class="radio-styled" type="radio" name="expectedres" id="expectedres3">
+                                        <label for="expectedres3">Комплект КД на изделие + опытные образцы + подготовка
+                                            к
+                                            производству+ производство</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-section__buttons">
+                                <a href="#" class="nav-btn-arrow reverse">Назад</a>
+                                <a href="#" class="nav-btn-arrow">Далее</a>
+                            </div>
+                        </div>
+
+                        <div class="tabs-data__item" id="task-tab4">
+                            <div class="task-section__form contact-form">
+                                <form action="#" method="post">
+                                    <fieldset>
+                                        <div class="task-section__form-wrapper">
+                                            <div class="input light">
+                                                <label for="name" class="input-name">Ваше имя *</label>
+                                                <input class="" id="name" type="text" placeholder="Иван" required>
+                                            </div>
+                                            <div class="input light">
+                                                <label for="surname" class="input-name">Ваша фамилия *</label>
+                                                <input id="surname" type="text" placeholder="Иванов" required>
+                                            </div>
+                                            <div class="input light">
+                                                <label for="email" class="input-name">Ваш электронный адрес *</label>
+                                                <input id="email" type="email" placeholder="ivan.ivanov@mial.ru"
+                                                    required>
+                                            </div>
+                                            <div class="contact-form__tel input light">
+                                                <label for="telephone" class="input-name">Ваш номер телефона</label>
+                                                <div>
+                                                    <div class="my-select black-select" id="my-select">
+                                                        <div data="">BY</div>
+                                                        <div>
+                                                            <div data="BY">BY</div>
+                                                            <div data="RU">RU</div>
+                                                            <div data="KZ">KZ</div>
+                                                        </div>
+                                                        <input type="hidden" value="">
+                                                    </div>
+                                                    <div class="contact-form__tel_code"><input
+                                                            class="contact-form__code" type="text" value="+375"><input
+                                                            id="telephone" type="text" placeholder="(xx) xxx xx xx"
+                                                            required></div>
+                                                </div>
+                                            </div>
+                                            <div class="input light">
+                                                <label for="company" class="input-name">Ваша компания *</label>
+                                                <input id="company" type="text" placeholder="IvanIvan" required>
+                                            </div>
+                                            <div class="contact-form__file input light">
+                                                <input type="file" id="file">
+                                                <label for="file">
+                                                    <p>Перетащите или <span>выберите</span> файлы</p>
+                                                    <p>Прикрепить файл</p>
+                                                </label>
+                                                <div class="progress">
+                                                    <div class="progress__info">
+                                                        <p class="progress__name">document_ivanov.doc</p>
+                                                        <div class="progress__size ready">120 Kb</div>
+                                                        <div class="progress__close"></div>
+                                                    </div>
+                                                    <progress id="progressBar" value="0" max="100"></progress>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress__info">
+                                                        <p class="progress__name">document_ivanov.doc</p>
+                                                        <div class="progress__size">45 Kb / 120 Kb</div>
+                                                        <div class="progress__close"></div>
+                                                    </div>
+                                                    <progress id="progressBar" value="50" max="100"></progress>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" class="checkbox-styled light" id="agree">
+                                                <label for="agree"> <span></span>
+                                                    <p>Я согласен с правилами <a href="#">сбора
+                                                            персональных
+                                                            данных</a></p>
+                                                </label>
+                                            </div>
+                                            <button class="contact-form__send nav-btn button-modal" id="formsend"
+                                                type="submit" data-modal="modal-formsend">Отправить</button>
+                                            <p class="contact-form__text light">*обязательные поля для заполнения</p>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="task-section__buttons">
+                                <a href="#" class="nav-btn-arrow reverse">Назад</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__logo">
+                    <a href="#"></a>
+                    <p class="text light">Контрактная разработка электроники и программного обеспечения</p>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__contacts">
+                        <h5 class="footer__subtitle main-section__step_title">Контакты</h5>
+                        <ul class="footer__menu">
+                            <li>
+                                <p class="text light">223016, Республика Беларусь,
+                                    Минская обл., Минский р-н,
+                                    Новодворский с/с, 74</p>
+                            </li>
+                            <li class="footer__tel">
+                                <a href="tel:+375296016832">BY: +375 (29) 601-68-32</a>
+                            </li>
+                            <li class="footer__tel">
+                                <a href="tel:+79587628608">RU: +7 (958) 762-86-08</a>
+                            </li>
+                            <li class="footer__mail">
+                                <a href="mailto:sales@unic-lab.by">sales@unic-lab.by</a>
+                            </li>
+                            <li class="footer__social">
+                                <a href="#"><img src="./img/telegram.svg" alt="Telegram">Telegram</a>
+                                <a href="#"><img src="./img/linkedin.svg" alt="Linkidin">Linkidin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-wrapper">
+                        <div>
+                            <h5 class="footer__subtitle main-section__step_title">Компания</h5>
+                            <ul class="footer__menu">
+                                <li class="text light"><a href="#">О компании</a></li>
+                                <li class="text light"><a href="#">Технологии</a></li>
+                                <li class="text light"><a href="#">Проекты</a></li>
+                                <li class="text light"><a href="#">IoT</a></li>
+                                <li class="text light"><a href="#">Блог</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="footer__subtitle main-section__step_title">Услуги</h5>
+                            <div class="footer__menu_col">
+                                <ul class="footer__menu">
+                                    <li class="text light"><a href="#">Научные исследования</a></li>
+                                    <li class="text light"><a href="#">Промышленный дизайн</a></li>
+                                    <li class="text light"><a href="#">Прототипирование</a></li>
+                                    <li class="text light"><a href="#">Подготовка и производство</a></li>
+                                </ul>
+                                <ul class="footer__menu">
+                                    <li class="text light"><a href="#">Разработка ПО</a></li>
+                                    <li class="text light"><a href="#">Встроенное ПО</a></li>
+                                    <li class="text light"><a href="#">Облачная разработка</a></li>
+                                    <li class="text light"><a href="#">Разработка аппаратной части</a></li>
+                                    <li class="text light"><a href="#">Проектирование печатных платг</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__copyright">
+                <div class="copyright__container container">
+                    <p class="text light">© 2016-2022 Unic Lab Company</p>
+                    <a class="footer__copyright_policy text light" href="#">Политика конфидециальности</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal__wrapper" id="modal-formsend">
+        <div class="modal__content">
+            <div class="close"></div>
+            <div class="formsend-messege">
+                <p class="formsend-messege__text-main">Ваша форма успешно отправлена!</p>
+                <p class="formsend-messege__text text">В ближайшее время с Вами свяжутся наши специалисты.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <!--scripts for sliders-->
+    <script src="./js/swiper-9.1.1/package/swiper-bundle.min.js"></script>
+    <!--//-->
+</body>
+
+</html>
