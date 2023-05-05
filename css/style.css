@@ -480,6 +480,10 @@ strong {
     padding-left: 12px;
 }
 
+.list.light li {
+    background: url(../img/list-dot-g.svg) no-repeat center left;
+}
+
 .breadcrumbs {
     display: flex;
     flex-direction: row;
@@ -671,10 +675,6 @@ strong {
     content: '' !important;
 }
 
-/* #swiperPrev.swiper-button-disabled, #swiperNext.swiper-button-disabled {
-    display: none;
-} */
-
 .main-slider .swiper-button-prev {
     width: 11px;
     height: 24px;
@@ -714,56 +714,7 @@ strong {
     background-size: contain;
 }
 
-/* .swiper-navigation {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    display: grid;
-    width: 120%;
-    transform: translate(-50%, -50%);
-}
-
-#swiperPrev {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.04) url(../img/next.svg) left 33px center no-repeat;
-    transform: rotate(180deg);
-    box-shadow: -4px 4px 10px rgba(17, 17, 17, 0.35);
-    backdrop-filter: blur(2.5px);
-    -webkit-backdrop-filter: blur(2.5px);
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#swiperNext:hover, #swiperNext:active {
-    background: rgba(255, 255, 255, 0.04) url(../img/next-g.svg) left 33px center no-repeat;
-}
-
-#swiperPrev:hover, #swiperPrev:active {
-    background: rgba(255, 255, 255, 0.04) url(../img/next-g.svg) left 33px center no-repeat;
-}
-
-#swiperNext {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.04) url(../img/next.svg) left 33px center no-repeat;
-    box-shadow: -4px 4px 10px rgba(17, 17, 17, 0.35);
-    backdrop-filter: blur(2.5px);
-    -webkit-backdrop-filter: blur(2.5px);
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-} */
-
 @media (max-width: 1300px) {
-    /* #swiperPrev, #swiperNext {
-        display: none;
-    } */
 
     .main-slider .swiper-button-prev,
     .main-slider .swiper-button-next {
@@ -2806,8 +2757,10 @@ strong {
     background: url(../img/error.svg) right 10px center no-repeat !important;
 }
 
-.input input:hover {
-    border-bottom: 1px solid #404040;
+@media (min-width: 1301px) {
+    .input input:hover {
+        border-bottom: 1px solid #404040;
+    }
 }
 
 .input input:focus {
@@ -3078,7 +3031,7 @@ progress::-webkit-progress-value {
 }
 
 .contact-form__text.light {
-    color: #EAEAEA;
+    color: #A1A1A1;
 }
 
 /*------my select--------*/
@@ -6805,6 +6758,11 @@ ul.light {
     column-gap: 16px;
 }
 
+.task-section__buttons .nav-btn-arrow {
+    width: calc(50% - 8px);
+    max-width: 400px;
+}
+
 /*------radio-styled--------*/
 
 .radio-styled {
@@ -7120,6 +7078,7 @@ ul.light {
 
 .task-section__form-wrapper .contact-form__send {
     margin-bottom: 0;
+    border: 1px solid #9FEA00;
 }
 
 @media (max-width: 1300px) {
@@ -7132,7 +7091,57 @@ ul.light {
         row-gap: 16px;
     }
 
+    .task-section__form-wrapper .contact-form__send {
+        margin-top: 8px;
+
+    }
+
+}
+
+/*--------------------------------------------------CREATE TASK PAGE end----------------------------------------*/
+
+/*--------------------------------------------------POLICY PAGE start----------------------------------------*/
+
+/*--------------policy section-------------------*/
+
+.policy-section {
+    padding-top: 129px;
+    padding-bottom: 100px;
+}
+
+.policy-section__title {
+    margin-bottom: 50px;
+}
+
+.policy-section__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+.policy-section__item {
+    display: grid;
+    grid-template-columns: 530px auto;
+    column-gap: 130px;
+}
+
+.policy-section__item-info {
+    max-width: 640px;
 }
 
 
-/*--------------------------------------------------CREATE TASK PAGE end----------------------------------------*/
+/*--------------special footer for policy section-------------------*/
+
+.footer.footer-policy {
+    background: #121212;
+    border-top: 1px solid #404040;
+}
+
+@media (max-width: 1300px) {
+    .footer.footer-policy {
+        background: #101010;
+        border-top: 1px solid #404040;
+    }
+}
+
+/*--------------------------------------------------POLICY PAGE end----------------------------------------*/
