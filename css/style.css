@@ -6760,7 +6760,7 @@ ul.light {
 
 .task-section__buttons .nav-btn-arrow {
     width: calc(50% - 8px);
-    max-width: 400px;
+    max-width: 320px;
 }
 
 /*------radio-styled--------*/
