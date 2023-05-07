@@ -405,4 +405,39 @@ $(document).ready(function () {
         }
     });
 
+    //activete pins on scroll
+
+    $(window).on('scroll', function () {
+        let scrollTop = $(this).scrollTop();
+        let activeIndex = -1;
+
+        $('.title-pin').each(function (index, element) {
+            let $element = $(element);
+            let offsetTop = $element.offset().top;
+            let elementHeight = $element.outerHeight();
+            let isTitlePinAdd = $element.hasClass('title-pin_add');
+
+            if ($(window).width() > 1330 && isTitlePinAdd) {
+                return true;
+            }
+
+            if (scrollTop > offsetTop + elementHeight) {
+                return true;
+            }
+
+            if (scrollTop >= offsetTop && scrollTop <= offsetTop + elementHeight) {
+                activeIndex = index;
+                return false;
+            }
+
+            activeIndex = index;
+            return false;
+        });
+
+        if (activeIndex >= 0) {
+            $('.title-pin').removeClass('active');
+            $('.title-pin').eq(activeIndex).addClass('active');
+        }
+    });
+
 });
