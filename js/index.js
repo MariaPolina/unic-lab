@@ -147,7 +147,7 @@ $(document).ready(function () {
         $(this).addClass('loading');
     });
 
-    // slider1
+    // slider1 main page complex section
 
     const swiper1 = new Swiper('#slideshow1', {
         mode: 'horizontal',
@@ -439,5 +439,42 @@ $(document).ready(function () {
             $('.title-pin').eq(activeIndex).addClass('active');
         }
     });
+
+    // IoT page slider
+
+    const swiper5 = new Swiper('#slideshow5', {
+        mode: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        speed: 1000,
+        autoplay: true,
+        autoplay: {
+            delay: 10000,
+        },
+        autoplayDisableOnInteraction: true,
+        paginationClickable: true,
+        loop: false,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    swiper5.autoplay.stop();
+    document.addEventListener('scroll', onScroll2);
+
+    function onScroll2() {
+        const iotSlider = document.querySelector('.iot__slider-section');
+        const posTop = iotSlider.getBoundingClientRect().top;
+
+        if (posTop + iotSlider.clientHeight <= window.innerHeight && posTop >= 0) {
+            swiper5.autoplay.start();
+        };
+    }
 
 });
