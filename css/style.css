@@ -7897,34 +7897,64 @@ ul.light {
 
 /*--------------iot slider section-------------------*/
 
-.iot__slider-section {}
-
 .iot__slider-section__title {
     margin-bottom: 50px;
 }
 
+.iot-slide__info-right {
+    text-align: right;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 
+.iot-slide__info-right>p,
+.iot-slide__info-left>p {
+    max-width: 540px;
+}
 
-.main-slider {}
+.iot-slide__title {
+    margin-bottom: 20px;
+}
 
-.iot-slide {}
+.iot-slide__image_mob {
+    display: none;
+}
 
-.iot-slide__info-right {}
+.iot-slide__info-left {
+    margin-bottom: 30px;
+}
 
-.iot-slide__title {}
+@media (max-width: 1300px) {
+    .iot__slider-section__title {
+        margin-bottom: 24px;
+    }
 
-.iot-slide__image {}
+    .iot-slide__info-right {
+        margin-top: 16px;
+    }
 
-.iot-slide__image_desk {}
+    .iot-slide__info-right>p,
+    .iot-slide__info-left>p {
+        max-width: 100%;
+    }
 
-.iot-slide__image_mob {}
+    .iot-slide__title {
+        margin-bottom: 8px;
+    }
 
-.iot-slider__info-right {}
+    .iot-slide__image_desk {
+        display: none;
+    }
 
-.swiper-pagination {}
+    .iot-slide__image_mob {
+        display: block;
+    }
 
-.swiper-button-prev {}
-
-.swiper-button-next {}
+    .iot-slide__info-left {
+        margin-bottom: 16px;
+    }
+}
 
 /*--------------------------------------------------IOT PAGE end----------------------------------------*/
