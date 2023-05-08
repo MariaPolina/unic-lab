@@ -7644,3 +7644,236 @@ ul.light {
 }
 
 /*--------------------------------------------------PROCESS PAGE end----------------------------------------*/
+
+/*--------------------------------------------------IOT PAGE start----------------------------------------*/
+
+/*--------------iot-main section-------------------*/
+
+.iot-info-section .fundamentals__wrapper>div {
+    max-width: 530px;
+}
+
+@media (max-width: 1300px) {
+    .iot-info-section .fundamentals__wrapper>div {
+        max-width: 100%;
+    }
+}
+
+/*--------------iot section-------------------*/
+
+.iot-section {
+    padding-bottom: 236px;
+}
+
+.iot-section .fundamentals__wrapper>div {
+    max-width: 530px;
+}
+
+.iot-section__container {
+    position: relative;
+}
+
+.iot-section__wrapper {
+    position: absolute;
+    bottom: -462px;
+    left: 0;
+}
+
+.iot-section__image {
+    padding: 0 30px 0 150px;
+}
+
+.iot-section__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.iot-section__item {
+    background: #EAEAEA;
+    box-shadow: 0px 4px 15px rgba(202, 202, 202, 0.58);
+    border-radius: 4px;
+    padding: 17px 11px 21px 11px;
+    display: grid;
+    justify-items: center;
+}
+
+.iot-section__item-image {
+    max-width: 240px;
+    max-height: 200px;
+    margin-bottom: 12px;
+}
+
+.iot-section__item-title {
+    margin-bottom: 8px;
+    text-align: center;
+    color: #171717;
+}
+
+.iot-section__item-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #404040;
+}
+
+@media (max-width: 1300px) {
+    .iot-section {
+        padding-bottom: 40px;
+    }
+
+    .iot-section .fundamentals__wrapper>div {
+        max-width: 100%;
+    }
+
+    .iot-section__wrapper {
+        position: unset;
+    }
+
+    .iot-section__image {
+        display: none;
+    }
+
+    .iot-section .fundamentals__wrapper {
+        margin-bottom: 24px;
+    }
+
+    .iot-section__items {
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+    }
+
+    .iot-section__item {
+        background: #EAEAEA;
+        box-shadow: -1px 2px 7px #C9C9C9;
+        border-radius: 2px;
+        padding: 13px 16px;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    .iot-section__item-image {
+        max-width: 70px;
+        aspect-ratio: 1/1;
+        margin-bottom: 0;
+    }
+
+    .iot-section__item-title {
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .iot-section__item-text {
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+/*--------------iot description section-------------------*/
+
+.iot-padding-section {
+    padding-top: 326px;
+}
+
+.iot-padding-section .description__item__title {
+    margin-top: 58px;
+}
+
+.iot-padding-section .info-card {
+    column-gap: 60px;
+}
+
+.iot-padding-section .info-card__info {
+    max-width: 530px;
+}
+
+@media (max-width: 1300px) {
+    .iot-padding-section {
+        padding-top: 40px;
+    }
+
+    .iot-padding-section .description__item__title {
+        margin-top: 0px;
+    }
+
+    .iot-padding-section .info-card__info {
+        max-width: 100%;
+    }
+}
+
+/*--------------iot apply section-------------------*/
+
+.iot-apply-section__title {
+    margin-bottom: 30px;
+}
+
+.iot-apply-section__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 50px;
+}
+
+.iot-apply-section__item {
+    padding: 20px 0 24px 0;
+    border-bottom: 1px solid #B8B8B8;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+}
+
+.iot-apply-section__item-image {
+    max-width: 90px;
+    aspect-ratio: 1/1;
+}
+
+.iot-apply-section__item-title {
+    color: #171717;
+    text-transform: none;
+    margin-bottom: 8px;
+}
+
+.iot-apply-section__item-text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #404040;
+}
+
+@media (max-width: 1300px) {
+    .iot-apply-section__title {
+        margin-bottom: 24px;
+    }
+
+    .iot-apply-section__items {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .iot-apply-section__item {
+        padding: 16px 0 16px 0;
+    }
+
+    .iot-apply-section__item-image {
+        max-width: 90px;
+        aspect-ratio: 1/1;
+    }
+
+    .iot-apply-section__item-title {
+        color: #171717;
+        text-transform: none;
+        margin-bottom: 8px;
+    }
+
+    .iot-apply-section__item-text {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #404040;
+    }
+}
+
+/*--------------------------------------------------IOT PAGE end----------------------------------------*/
