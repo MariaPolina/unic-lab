@@ -465,16 +465,16 @@ $(document).ready(function () {
         },
     });
 
-    swiper5.autoplay.stop();
-    document.addEventListener('scroll', onScroll2);
+    // swiper5.autoplay.stop();
+    // document.addEventListener('scroll', onScroll2);
 
-    function onScroll2() {
-        const iotSlider = document.querySelector('.iot__slider-section');
-        const posTop = iotSlider.getBoundingClientRect().top;
+    // function onScroll2() {
+    //     const iotSlider = document.querySelector('.iot__slider-section');
+    //     const posTop = iotSlider.getBoundingClientRect().top;
 
-        if (posTop + iotSlider.clientHeight <= window.innerHeight && posTop >= 0) {
-            swiper5.autoplay.start();
-        };
-    }
+    //     if (posTop + iotSlider.clientHeight <= window.innerHeight && posTop >= 0) {
+    //         swiper5.autoplay.start();
+    //     };
+    // }
 
 });
