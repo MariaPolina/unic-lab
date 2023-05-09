@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     if ($(window).width() > 1300) {
+
         // Line over header submenu and header hover
         $('.menu__items > .menu-item-has-children').on('mouseover', function () {
             $('.header-line').css('display', 'block');
@@ -15,8 +16,7 @@ $(document).ready(function () {
             $('.header').removeClass('hover');
         });
 
-        // Language select
-
+        // Language select in header
         $('.lang__selected').on('click', function () {
             $('.lang__options').toggleClass('active');
         });
@@ -36,7 +36,6 @@ $(document).ready(function () {
     }
 
     // menu burger
-
     if ($(window).width() < 1301) {
         $('.menu-item-has-children').on('click', function () {
             $(this).toggleClass('active');
@@ -66,7 +65,6 @@ $(document).ready(function () {
     }
 
     // fix header on scroll
-
     $(window).on("scroll", function () {
         if ($(window).scrollTop() > 50) {
             $(".header").addClass("active");
@@ -76,13 +74,11 @@ $(document).ready(function () {
     });
 
     //faq section
-
     $('.faq-section__question').on('click', function () {
         $($(this).parent()).toggleClass('active');
     });
 
     // select
-
     $('.my-select>div:first-child').on('click', function () {
         $('.my-select>div:nth-child(2):not(#' + $($(this).parent('div')).attr('id') + '>div:nth-child(2))').css('display', 'none');
         $($(this).next('div')).toggleClass('active');
@@ -113,8 +109,7 @@ $(document).ready(function () {
         }
     });
 
-    //----modal windows----//
-
+    //modal windows
     $('.button-modal').on('click', function (e) {
 
         var modalButtonId = $(this).attr("id");
@@ -130,7 +125,6 @@ $(document).ready(function () {
         });
 
         //close modal on click OUT of modal
-
         $(document).mouseup(function (e) {
             var div = $('.modal__content');
             if (!div.is(e.target)
@@ -142,13 +136,11 @@ $(document).ready(function () {
     });
 
     //preloader for submit button
-
     $('.contact-form__send').on('click', function () {
         $(this).addClass('loading');
     });
 
     // slider1 main page complex section
-
     const swiper1 = new Swiper('#slideshow1', {
         mode: 'horizontal',
         slidesPerView: 1,
@@ -172,23 +164,57 @@ $(document).ready(function () {
         },
     });
 
-    const elem = document.querySelector('.complex-section__container');
-
-    document.addEventListener('DOMContentLoaded', function () {
-        swiper1.autoplay.stop();
-        document.addEventListener('scroll', onScroll);
+    // IoT page slider
+    const swiper5 = new Swiper('#slideshow5', {
+        mode: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        speed: 1000,
+        autoplay: true,
+        autoplay: {
+            delay: 10000,
+        },
+        autoplayDisableOnInteraction: true,
+        paginationClickable: true,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     });
 
-    function onScroll() {
-        const posTop = elem.getBoundingClientRect().top;
+    //start autoplay when sliders are visible
+    swiper1.autoplay.stop();
+    swiper5.autoplay.stop();
 
-        if (posTop + elem.clientHeight <= window.innerHeight && posTop >= 0) {
-            swiper1.autoplay.start();
-        };
+    function isElementInViewport(el) {
+        const elementView = el[0].getBoundingClientRect();
+
+        return (
+            elementView.top >= 0 &&
+            elementView.top <= $(window).height()
+        );
     }
 
-    // slider 2
+    $(window).scroll(() => {
+        const slider1 = $('#slideshow1');
+        const slider5 = $('#slideshow5');
 
+        if (slider1.length && isElementInViewport(slider1)) {
+            swiper1.autoplay.start();
+        }
+
+        if (slider5.length && isElementInViewport(slider5)) {
+            swiper5.autoplay.start();
+        }
+    });
+
+    // slider 2
     const swiper2 = new Swiper('#slideshow2', {
         mode: 'horizontal',
         slidesPerView: 2,
@@ -216,7 +242,6 @@ $(document).ready(function () {
     });
 
     // slider3+4
-
     const swiper3 = new Swiper('#slideshow3', {
         mode: 'horizontal',
         slidesPerView: 1,
@@ -245,7 +270,6 @@ $(document).ready(function () {
 
 
     // mobile slider for projects cards
-
     if ($(window).width() < 1301) {
 
         swiper4.disable();
@@ -265,13 +289,11 @@ $(document).ready(function () {
     }
 
     // accept cookies
-
     $('.accept-cookies__btn').on('click', function () {
         $('.accept-cookies').remove();
     });
 
-    // trigger click foc callback button
-
+    // trigger click for callback button
     $('.callback-btn').on('click', function () {
         $('#callback').trigger('click');
     });
@@ -287,7 +309,6 @@ $(document).ready(function () {
 
 
     //hover effect on the sphere
-
     const sphereItems = document.querySelectorAll('.sphere__item');
     const sphereImage = document.querySelector('.sphere__image');
     const sphereImage2 = document.querySelector('.sphere.sphere7 .sphere__image');
@@ -350,7 +371,6 @@ $(document).ready(function () {
     }
 
     //hover effect on project description card
-
     const projectDescrItems = document.querySelectorAll('.project-descr-section__item');
 
     projectDescrItems.forEach((projectDescrItem) => {
@@ -363,7 +383,6 @@ $(document).ready(function () {
     });
 
     //turn on video on scroll
-
     $(window).scroll(function () {
         $('.done-section__video').each(function () {
             console.log($($(this).closest('.video-section')));
@@ -376,7 +395,6 @@ $(document).ready(function () {
     });
 
     //change content for tabs
-
     $('.tabs>div').on('click', function () {
         $('.tabs>div').removeClass('active');
         let tabNumber = $(this).attr('class');
@@ -395,8 +413,7 @@ $(document).ready(function () {
         $('.' + tabNumber).prev('div').trigger('click')
     });
 
-    //block checboxes when cimplex dev selected
-
+    //block checkboxes when complex dev selected
     $('#complexdev').on('click', function () {
         if ($('#complexdev').is(':checked')) {
             $($('#complexdev').parent()).nextAll('div').children('input').prop('disabled', true).prop('checked', false)
@@ -405,8 +422,7 @@ $(document).ready(function () {
         }
     });
 
-    //activete pins on scroll
-
+    //activate pins on scroll for process page
     $(window).on('scroll', function () {
         let scrollTop = $(this).scrollTop();
         let activeIndex = -1;
@@ -439,42 +455,5 @@ $(document).ready(function () {
             $('.title-pin').eq(activeIndex).addClass('active');
         }
     });
-
-    // IoT page slider
-
-    const swiper5 = new Swiper('#slideshow5', {
-        mode: 'horizontal',
-        slidesPerView: 1,
-        spaceBetween: 30,
-        speed: 1000,
-        autoplay: true,
-        autoplay: {
-            delay: 10000,
-        },
-        autoplayDisableOnInteraction: true,
-        paginationClickable: true,
-        loop: false,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
-    // swiper5.autoplay.stop();
-    // document.addEventListener('scroll', onScroll2);
-
-    // function onScroll2() {
-    //     const iotSlider = document.querySelector('.iot__slider-section');
-    //     const posTop = iotSlider.getBoundingClientRect().top;
-
-    //     if (posTop + iotSlider.clientHeight <= window.innerHeight && posTop >= 0) {
-    //         swiper5.autoplay.start();
-    //     };
-    // }
 
 });
