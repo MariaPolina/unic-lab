@@ -248,7 +248,8 @@ h4 {
 .title.light,
 .title-sm.light,
 h2.light,
-h4.light {
+h4.light,
+.dark-bg .title {
     color: #E3E3E3;
 }
 
@@ -305,7 +306,8 @@ strong {
     font-weight: 400;
 }
 
-.text.light {
+.text.light,
+.dark-bg .text {
     color: #A1A1A1;
 }
 
@@ -4102,6 +4104,10 @@ em {
     text-transform: uppercase;
     color: #171717;
     margin-bottom: 20px;
+}
+
+.dark-bg .expertise-section__important {
+    color: #E3E3E3;
 }
 
 .expertise-section__text:not(:last-child) {
