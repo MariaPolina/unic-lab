@@ -516,7 +516,7 @@ strong {
         box-shadow: -4px 4px 10px rgba(17, 17, 17, 0.35);
         backdrop-filter: blur(2.5px);
         -webkit-backdrop-filter: blur(2.5px);
-        background: #E0E0E0 url(../img/topbtn.svg) center center no-repeat;
+        background: rgba(224, 224, 224, 0.5) url(../img/topbtn.svg) center center no-repeat;
         transition: all 0.4s ease;
         position: fixed;
         bottom: 130px;
