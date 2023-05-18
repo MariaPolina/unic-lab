@@ -104,7 +104,7 @@ $(document).ready(function () {
         var div = $('.my-select>div:nth-child(2)');
         if (!div.is(e.target)
             && div.has(e.target).length === 0) {
-            div.hide();
+            div.removeClass('active');
             $('.my-select').removeClass('border');
         }
     });
@@ -453,6 +453,15 @@ $(document).ready(function () {
         if (activeIndex >= 0) {
             $('.title-pin').removeClass('active');
             $('.title-pin').eq(activeIndex).addClass('active');
+        }
+    });
+
+    // scroll to tob button
+    $(window).on('scroll', function () {
+        if ($('.top-btn').length && $(this).scrollTop() > 1080) {
+            $('.top-btn').addClass('active');
+        } else {
+            $('.top-btn').removeClass('active');
         }
     });
 
