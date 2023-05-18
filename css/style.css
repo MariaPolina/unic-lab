@@ -971,7 +971,8 @@ strong {
         color: #A1A1A1;
     }
 
-    .menu__items>.menu-item-has-children>a>span {
+    .menu__items>.menu-item-has-children>a::before {
+        content: '';
         position: absolute;
         left: 40%;
         transform: translateX(-50%);
@@ -1034,7 +1035,7 @@ strong {
         display: flex;
     }
 
-    .menu__items>.menu-item-has-children:hover>a>span {
+    .menu__items>.menu-item-has-children:hover>a::before {
         display: block;
     }
 
