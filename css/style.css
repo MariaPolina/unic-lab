@@ -507,6 +507,34 @@ strong {
     line-height: 24px;
 }
 
+@media (min-width: 1301px) {
+    .top-btn {
+        display: none;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        box-shadow: -4px 4px 10px rgba(17, 17, 17, 0.35);
+        backdrop-filter: blur(2.5px);
+        -webkit-backdrop-filter: blur(2.5px);
+        background: #E0E0E0 url(../img/topbtn.svg) center center no-repeat;
+        transition: all 0.4s ease;
+        position: fixed;
+        bottom: 130px;
+        right: 4%;
+        z-index: 3;
+    }
+
+    .top-btn.active {
+        display: block;
+    }
+
+    .top-btn:hover,
+    .top-btn:active {
+        background: #9FEA00 url(../img/topbtn.svg) center center no-repeat;
+    }
+
+}
+
 @media (max-width: 1300px) {
 
     .section-top {
@@ -990,15 +1018,14 @@ strong {
 
 @media (min-width: 1301px) {
 
-    .menu__items>.menu__item>a:hover,
-    .menu__items>.menu-item-has-children>ul>li a:hover {
+    .menu__items a:hover {
         background: linear-gradient(100.08deg, #9FEA00 0.68%, #F7F7F7 133.9%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
-    .menu__items>.menu-item-has-children>a:hover::after,
+    .menu__items a:hover::after,
     .header__lang:hover .lang__selected::after {
         background: url(../img/arrow-down-g.svg) right center no-repeat;
     }
@@ -1870,6 +1897,10 @@ strong {
     flex-wrap: wrap;
 }
 
+.list-column .tech-section__item-list {
+    flex-direction: column;
+}
+
 @media (max-width: 1300px) {
     .tech-section__container {
         grid-template-columns: 1fr;
@@ -1919,7 +1950,7 @@ strong {
 }
 
 .complex-section.service .complex-section__container {
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .complex-section__title {
@@ -1946,6 +1977,7 @@ strong {
 
 .complex-section.service .banner {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     column-gap: 20px;
     grid-template-areas: "name image""info image";
 }
@@ -6027,7 +6059,7 @@ ul.light {
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas: "image name""image text";
-    column-gap: 130px;
+    column-gap: 80px;
 }
 
 .info-card__image {
