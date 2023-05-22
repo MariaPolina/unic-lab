@@ -5394,6 +5394,7 @@ em {
 
 .research-section__title {
     margin-bottom: 30px;
+    width: 770px;
 }
 
 .research-section__text {
@@ -5408,6 +5409,7 @@ em {
 
     .research-section__title {
         margin-bottom: 8px;
+        width: auto;
     }
 
 }
