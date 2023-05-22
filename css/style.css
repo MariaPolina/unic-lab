@@ -177,8 +177,7 @@ main {
 
 .section__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 70px;
+    grid-template-columns: 1fr auto;
     align-items: center;
 }
 
