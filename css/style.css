@@ -6169,11 +6169,12 @@ ul.light {
 
 .description__item__image {
     max-width: 640px;
+    width: 640px;
 }
 
 .description__item__image img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 5px;
 }
 
@@ -6185,6 +6186,11 @@ ul.light {
 }
 
 @media (max-width: 1300px) {
+
+    .description__item__image {
+        width: auto;
+    }
+
     .info-card.two-image .info-card__image {
         column-gap: 16px;
     }
