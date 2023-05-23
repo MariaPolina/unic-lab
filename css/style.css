@@ -6272,6 +6272,7 @@ ul.light {
     background-size: cover;
     padding-top: 110px;
     padding-bottom: 40px;
+    min-height: 744px;
 }
 
 .project-main-section__container {
@@ -6317,6 +6318,7 @@ ul.light {
 @media (max-width: 1300px) {
     .project-main-section {
         padding-top: 88px;
+        min-height: auto;
     }
 
     .project-main-section__info {
