@@ -93,6 +93,16 @@ $(document).ready(function () {
         $(this).addClass('active');
 
         $($($(this).parent()).next('input')).val($(this).attr('data'));
+        const dataAttr = $(this).attr('data-code');
+        const vanilaInput = $(this).parent().next('input')[0]
+        if (vanilaInput) {
+
+            if (vanilaInput.classList.contains('phone-code-js')) {
+                vanilaInput.dataset.code = dataAttr;
+            }
+            vanilaInput.dispatchEvent(new Event('change'))
+        }
+
 
         $($($(this).parent()).prev("div")).text($(this).text()).trigger('click');
         $('.my-select').removeClass('border');
@@ -119,29 +129,54 @@ $(document).ready(function () {
 
         $('body,html').css('overflow-y', 'hidden');
 
-        $('.modal__content .close').on('click', function () {
-            $('.modal__wrapper').css('display', 'none');
-            $('body,html').css('overflow-y', 'auto');
-        });
-
-        //close modal on click OUT of modal
-        $(document).mouseup(function (e) {
-            var div = $('.modal__content');
-            if (!div.is(e.target)
-                && div.has(e.target).length === 0) {
-                $('.modal__content .close').trigger('click');
-            }
-        });
-
     });
+    $('.modal__content .close').on('click', function () {
+        $('.modal__wrapper').css('display', 'none');
+        $('body,html').css('overflow-y', 'auto');
+    });
+
+    //close modal on click OUT of modal
+    $(document).mouseup(function (e) {
+        var div = $('.modal__content');
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $('.modal__content .close').trigger('click');
+        }
+    });
+
+
 
     //preloader for submit button
-    $('.contact-form__send').on('click', function () {
-        $(this).addClass('loading');
-    });
+    // $('.contact-form__send').on('click', function () {
+    //     $(this).addClass('loading');
+    // });
 
     // slider1 main page complex section
     const swiper1 = new Swiper('#slideshow1', {
+        mode: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        speed: 1000,
+        autoplay: true,
+        autoplay: {
+            delay: 10000,
+        },
+        autoplayDisableOnInteraction: true,
+        paginationClickable: true,
+        loop: false,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    // slider7 services page big slider    
+    const swiper7 = new Swiper('#slideshow7', {
         mode: 'horizontal',
         slidesPerView: 1,
         spaceBetween: 30,
@@ -190,6 +225,7 @@ $(document).ready(function () {
 
     //start autoplay when sliders are visible
     swiper1.autoplay.stop();
+    swiper7.autoplay.stop();
     swiper5.autoplay.stop();
 
     function isElementInViewport(el) {
@@ -204,6 +240,7 @@ $(document).ready(function () {
     $(window).scroll(() => {
         const slider1 = $('#slideshow1');
         const slider5 = $('#slideshow5');
+        const slider7 = $('#slideshow7');
 
         if (slider1.length && isElementInViewport(slider1)) {
             swiper1.autoplay.start();
@@ -211,6 +248,10 @@ $(document).ready(function () {
 
         if (slider5.length && isElementInViewport(slider5)) {
             swiper5.autoplay.start();
+        }
+
+        if (slider7.length && isElementInViewport(slider7)) {
+            swiper7.autoplay.start();
         }
     });
 
@@ -241,8 +282,38 @@ $(document).ready(function () {
         }
     });
 
-    // slider3+4
+    //slider 3
     const swiper3 = new Swiper('#slideshow3', {
+        mode: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: false,
+        paginationClickable: true,
+        loop: false,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+    });
+
+    //slider 8
+    const swiper8 = new Swiper('#slideshow8', {
+        mode: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: false,
+        paginationClickable: true,
+        loop: false,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+    });
+
+    // slider6+4
+    const swiper6 = new Swiper('#slideshow6', {
         mode: 'horizontal',
         slidesPerView: 1,
         spaceBetween: 30,
@@ -274,13 +345,13 @@ $(document).ready(function () {
 
         swiper4.disable();
 
-        swiper3.on('slideNextTransitionEnd', function () {
+        swiper6.on('slideNextTransitionEnd', function () {
             swiper4.enable();
             $('#slideshow4 .swiper-button-next').trigger('click');
             swiper4.disable();
         });
 
-        swiper3.on('slidePrevTransitionEnd', function () {
+        swiper6.on('slidePrevTransitionEnd', function () {
             swiper4.enable();
             $('#slideshow4 .swiper-button-prev').trigger('click');
             swiper4.disable();
@@ -292,6 +363,7 @@ $(document).ready(function () {
     $('.accept-cookies__btn').on('click', function () {
         $('.accept-cookies').remove();
     });
+
 
     // trigger click for callback button
     $('.callback-btn').on('click', function () {
@@ -455,7 +527,6 @@ $(document).ready(function () {
             $('.title-pin').eq(activeIndex).addClass('active');
         }
     });
-
     // scroll to tob button
     $(window).on('scroll', function () {
         if ($('.top-btn').length && $(this).scrollTop() > 1080) {
@@ -464,5 +535,4 @@ $(document).ready(function () {
             $('.top-btn').removeClass('active');
         }
     });
-
 });
