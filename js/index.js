@@ -175,6 +175,30 @@ $(document).ready(function () {
         },
     });
 
+    // slider7 services page big slider    
+    const swiper7 = new Swiper('#slideshow7', {
+        mode: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        speed: 1000,
+        autoplay: true,
+        autoplay: {
+            delay: 10000,
+        },
+        autoplayDisableOnInteraction: true,
+        paginationClickable: true,
+        loop: false,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
     // IoT page slider
     const swiper5 = new Swiper('#slideshow5', {
         mode: 'horizontal',
@@ -201,6 +225,7 @@ $(document).ready(function () {
 
     //start autoplay when sliders are visible
     swiper1.autoplay.stop();
+    swiper7.autoplay.stop();
     swiper5.autoplay.stop();
 
     function isElementInViewport(el) {
@@ -215,6 +240,7 @@ $(document).ready(function () {
     $(window).scroll(() => {
         const slider1 = $('#slideshow1');
         const slider5 = $('#slideshow5');
+        const slider7 = $('#slideshow7');
 
         if (slider1.length && isElementInViewport(slider1)) {
             swiper1.autoplay.start();
@@ -222,6 +248,10 @@ $(document).ready(function () {
 
         if (slider5.length && isElementInViewport(slider5)) {
             swiper5.autoplay.start();
+        }
+
+        if (slider7.length && isElementInViewport(slider7)) {
+            swiper7.autoplay.start();
         }
     });
 
@@ -252,8 +282,38 @@ $(document).ready(function () {
         }
     });
 
-    // slider3+4
+    //slider 3
     const swiper3 = new Swiper('#slideshow3', {
+        mode: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: false,
+        paginationClickable: true,
+        loop: false,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+    });
+
+    //slider 8
+    const swiper8 = new Swiper('#slideshow8', {
+        mode: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: false,
+        paginationClickable: true,
+        loop: false,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+    });
+
+    // slider6+4
+    const swiper6 = new Swiper('#slideshow6', {
         mode: 'horizontal',
         slidesPerView: 1,
         spaceBetween: 30,
@@ -285,13 +345,13 @@ $(document).ready(function () {
 
         swiper4.disable();
 
-        swiper3.on('slideNextTransitionEnd', function () {
+        swiper6.on('slideNextTransitionEnd', function () {
             swiper4.enable();
             $('#slideshow4 .swiper-button-next').trigger('click');
             swiper4.disable();
         });
 
-        swiper3.on('slidePrevTransitionEnd', function () {
+        swiper6.on('slidePrevTransitionEnd', function () {
             swiper4.enable();
             $('#slideshow4 .swiper-button-prev').trigger('click');
             swiper4.disable();

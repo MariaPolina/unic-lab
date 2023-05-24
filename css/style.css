@@ -188,7 +188,7 @@ main {
 
 .section__image img {
     max-width: 100%;
-    max-height: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -2378,7 +2378,7 @@ strong {
         cursor: pointer;
     }
 
-    .project-section__item:active {
+    .project-section__item_big:active {
         border: 1px solid #7DB704;
     }
 
@@ -5010,8 +5010,8 @@ em {
     margin-bottom: 16px;
 }
 
-.contacts-section__tel:last-child {
-    margin-bottom: 30px;
+.contacts-section__card .footer__social {
+    margin-top: 30px;
 }
 
 .contacts-section__card .footer__mail a {
@@ -6178,8 +6178,9 @@ ul.light {
 
 .description__item__image img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 5px;
+    height: 100%;
 }
 
 .info-card.two-image .info-card__image {
@@ -6249,6 +6250,7 @@ ul.light {
         border-radius: 5px;
         padding: 20px 16px;
         box-shadow: none;
+        border: 1px solid #E0E0E0;
     }
 
     .equipment-section__item-image {
