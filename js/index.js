@@ -93,6 +93,16 @@ $(document).ready(function () {
         $(this).addClass('active');
 
         $($($(this).parent()).next('input')).val($(this).attr('data'));
+        const dataAttr = $(this).attr('data-code');
+        const vanilaInput = $(this).parent().next('input')[0]
+        if (vanilaInput) {
+
+            if (vanilaInput.classList.contains('phone-code-js')) {
+                vanilaInput.dataset.code = dataAttr;
+            }
+            vanilaInput.dispatchEvent(new Event('change'))
+        }
+
 
         $($($(this).parent()).prev("div")).text($(this).text()).trigger('click');
         $('.my-select').removeClass('border');
@@ -119,26 +129,27 @@ $(document).ready(function () {
 
         $('body,html').css('overflow-y', 'hidden');
 
-        $('.modal__content .close').on('click', function () {
-            $('.modal__wrapper').css('display', 'none');
-            $('body,html').css('overflow-y', 'auto');
-        });
-
-        //close modal on click OUT of modal
-        $(document).mouseup(function (e) {
-            var div = $('.modal__content');
-            if (!div.is(e.target)
-                && div.has(e.target).length === 0) {
-                $('.modal__content .close').trigger('click');
-            }
-        });
-
     });
+    $('.modal__content .close').on('click', function () {
+        $('.modal__wrapper').css('display', 'none');
+        $('body,html').css('overflow-y', 'auto');
+    });
+
+    //close modal on click OUT of modal
+    $(document).mouseup(function (e) {
+        var div = $('.modal__content');
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $('.modal__content .close').trigger('click');
+        }
+    });
+
+
 
     //preloader for submit button
-    $('.contact-form__send').on('click', function () {
-        $(this).addClass('loading');
-    });
+    // $('.contact-form__send').on('click', function () {
+    //     $(this).addClass('loading');
+    // });
 
     // slider1 main page complex section
     const swiper1 = new Swiper('#slideshow1', {
@@ -292,6 +303,7 @@ $(document).ready(function () {
     $('.accept-cookies__btn').on('click', function () {
         $('.accept-cookies').remove();
     });
+
 
     // trigger click for callback button
     $('.callback-btn').on('click', function () {
@@ -455,7 +467,6 @@ $(document).ready(function () {
             $('.title-pin').eq(activeIndex).addClass('active');
         }
     });
-
     // scroll to tob button
     $(window).on('scroll', function () {
         if ($('.top-btn').length && $(this).scrollTop() > 1080) {
@@ -464,5 +475,4 @@ $(document).ready(function () {
             $('.top-btn').removeClass('active');
         }
     });
-
 });
