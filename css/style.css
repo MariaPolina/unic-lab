@@ -4795,7 +4795,8 @@ em {
     border-bottom: 1px solid transparent;
 }
 
-.pagination__page:hover {
+.pagination__page:hover,
+.page-numbers:hover {
     color: #9FEA00 !important;
 }
 
