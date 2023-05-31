@@ -6534,7 +6534,6 @@ ul.light {
 .result-section {
     background: #101010 url(../img/result-bg.svg) center center no-repeat;
     background-size: cover;
-    min-height: 500px;
 }
 
 .result-section__container {
@@ -6555,6 +6554,7 @@ ul.light {
 .result-section .info-card__info {
     max-width: 640px;
     align-self: flex-end;
+    width: 100%;
 }
 
 .result-section__title {
