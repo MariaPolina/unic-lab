@@ -6375,6 +6375,7 @@ ul.light {
 
 .project-descr-section__item {
     max-width: 530px;
+    width: 100%;
 }
 
 .project-descr-section__item-image {
