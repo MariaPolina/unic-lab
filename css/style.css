@@ -6570,6 +6570,7 @@ ul.light {
     .result-section.image-top-bottom {
         margin-top: 100px;
         margin-bottom: 100px;
+        min-height: 500px;
     }
 
     .result-section.image-top-bottom .result-section__item-image {
