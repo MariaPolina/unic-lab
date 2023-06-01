@@ -455,13 +455,12 @@ $(document).ready(function () {
     });
 
     //turn on video on scroll
-    $(window).scroll(function () {
-        $('.done-section__video').each(function () {
-            console.log($($(this).closest('.video-section')));
-            let videoSectionTop = $($(this).closest('.video-section')).offset().top;
-            const screenTop = $(window).scrollTop();
+    window.addEventListener('scroll', function () {
+        document.querySelectorAll('.done-section__video').forEach(function (element) {
+            let videoSectionTop = element.closest('.video-section').offsetTop;
+            const screenTop = window.pageYOffset || document.documentElement.scrollTop;
             if (videoSectionTop <= screenTop) {
-                $(this).trigger('play');
+                element.play();
             }
         });
     });
