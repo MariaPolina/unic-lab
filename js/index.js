@@ -454,17 +454,6 @@ $(document).ready(function () {
         });
     });
 
-    // //turn on video on scroll
-    // window.addEventListener('scroll', function () {
-    //     document.querySelectorAll('.done-section__video').forEach(function (element) {
-    //         let videoSectionTop = element.closest('.video-section').offsetTop;
-    //         const screenTop = window.pageYOffset || document.documentElement.scrollTop;
-    //         if (videoSectionTop <= screenTop) {
-    //             element.play();
-    //         }
-    //     });
-    // });
-
     //change content for tabs
     $('.tabs>div').on('click', function () {
         $('.tabs>div').removeClass('active');

@@ -3591,7 +3591,7 @@ em {
     }
 
     .footer__social a {
-        font-size: 0px;
+        font-size: 0px !important;
         display: block;
         width: 44px;
         height: 44px;
