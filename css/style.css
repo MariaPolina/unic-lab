@@ -6595,6 +6595,7 @@ ul.light {
 
     .result-section.image-bottom {
         margin-bottom: 100px;
+        min-height: 500px;
     }
 
     .result-section.image-bottom .result-section__item-image {
