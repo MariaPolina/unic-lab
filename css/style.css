@@ -6567,8 +6567,8 @@ ul.light {
 @media (min-width: 1301px) {
 
     .result-section.image-top-bottom {
-        margin-top: 80px;
-        margin-bottom: 130px;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 
     .result-section.image-top-bottom .result-section__item-image {
@@ -6576,7 +6576,7 @@ ul.light {
         max-height: 760px;
         aspect-ratio: 0.92/1;
         position: absolute;
-        top: -230px;
+        top: -200px;
         left: -60px;
     }
 
@@ -6595,6 +6595,7 @@ ul.light {
 
     .result-section.image-bottom {
         margin-bottom: 100px;
+        min-height: 500px;
     }
 
     .result-section.image-bottom .result-section__item-image {
