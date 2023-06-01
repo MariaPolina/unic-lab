@@ -6574,6 +6574,7 @@ ul.light {
     .result-section.image-top-bottom .result-section__item-image {
         max-width: 700px;
         max-height: 760px;
+        aspect-ratio: 0.92/1;
         position: absolute;
         top: -230px;
         left: -60px;
@@ -6586,6 +6587,7 @@ ul.light {
     .result-section.image-top .result-section__item-image {
         max-width: 700px;
         max-height: 600px;
+        aspect-ratio: 1.17/1;
         position: absolute;
         bottom: -100px;
         left: -60px;
@@ -6598,6 +6600,7 @@ ul.light {
     .result-section.image-bottom .result-section__item-image {
         max-width: 700px;
         max-height: 600px;
+        aspect-ratio: 1.17/1;
         position: absolute;
         top: -100px;
         left: -60px;
