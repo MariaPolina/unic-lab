@@ -94,11 +94,13 @@ $(document).ready(function () {
 
         $($($(this).parent()).next('input')).val($(this).attr('data'));
         const dataAttr = $(this).attr('data-code');
+        const dataAttrMask = $(this).attr('data-phone-mask');
         const vanilaInput = $(this).parent().next('input')[0]
         if (vanilaInput) {
 
             if (vanilaInput.classList.contains('phone-code-js')) {
                 vanilaInput.dataset.code = dataAttr;
+                vanilaInput.dataset.phoneMask = dataAttrMask;
             }
             vanilaInput.dispatchEvent(new Event('change'))
         }
