@@ -2162,6 +2162,10 @@ strong {
         max-height: 244px;
     }
 
+    .slider__image img {
+        aspect-ratio: 1.13/1;
+    }
+
     .complex-section__btn {
         bottom: 40px;
         left: 50%;
